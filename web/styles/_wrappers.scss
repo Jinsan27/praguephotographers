@@ -5,3 +5,18 @@
 .nav-wrapper {
   display: flex;
 }
+
+//.menu-wrapper {
+  //position: absolute;
+  //top: 0;
+  //z-index: 20;
+//}
+
+.menu-wrapper {
+  height: 0;
+  transition: ease-in-out 400ms;
+  
+  &.is-open {
+    height: 200px;
+  }
+}

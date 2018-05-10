@@ -18,3 +18,10 @@ $('.owl-carousel').owlCarousel({
     autoplayHoverPause: true,
     autoplaySpeed: true
 });
+
+let menu = document.getElementById('js-menu');
+let trigger = document.querySelector('.js-trigger');
+
+menu.addEventListener('click', function () {
+    trigger.classList.toggle('is-open');
+});
