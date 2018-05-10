@@ -1,0 +1,17 @@
+//================
+//=== #BUTTONS ===
+//================
+
+.btn {
+  outline: 0;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+
+  &--menu {
+    margin-left: auto;
+    margin-right: $spacing-unit-small * 2;
+    font-size: 2.5rem;
+  }
+}

@@ -5,11 +5,52 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="The official website of PraguePhotographers">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
 
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="./styles/main.css">
+
+  <link rel="stylesheet" href="./styles/owlcarousel/owl.carousel.css">
+  <link rel="stylesheet" href="./styles/owlcarousel/owl.theme.default.css">
   <title>Prague Photographers</title>
 </head>
 
 <body>
-  
+  <header class="nav-wrapper homepage-header">
+    <a href="index.html"><img class="logo" src="./images/logo-only.jpeg" alt="Logo Icon"></a>
+    <button class="btn btn--menu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </header>
+  <nav class="hidden">
+    <ul class="site-nav">
+      <li class="site-nav__items"><a href="#">Home</a></li>
+      <li class="site-nav__items"><a href="#">Gallery</a></li>
+      <li class="site-nav__items"><a href="#">About Us</a></li>
+      <li class="site-nav__items"><a href="#">Contact</a></li>
+      <li class="site-nav__items"><a href="#">Book Us</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <div class="owl-carousel owl-theme">
+      <img src="./images/gallery/1.jpg" alt="">
+      <img src="./images/gallery/2.jpg" alt="">
+      <img src="./images/gallery/3.jpg" alt="">
+      <img src="./images/gallery/4.jpg" alt="">
+      <img src="./images/gallery/5.jpg" alt="">
+      <img src="./images/gallery/6.jpg" alt="">
+      <img src="./images/gallery/7.jpg" alt="">
+      <img src="./images/gallery/8.jpg" alt="">
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="./js/owl.carousel.js"></script>
+  <script src="./js/custom.js"></script>
 </body>
 </html>
