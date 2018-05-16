@@ -6,17 +6,32 @@
   display: flex;
 }
 
-//.menu-wrapper {
-  //position: absolute;
-  //top: 0;
-  //z-index: 20;
-//}
-
 .menu-wrapper {
-  height: 0;
-  transition: ease-in-out 400ms;
-  
+  display: none;
+
   &.is-open {
-    height: 200px;
+    display: block;
   }
+}
+
+//=====================
+//=== #FLEX WRAPPER ===
+//=====================
+
+.flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-end {
+  align-items: flex-end;
+}
+
+//=========================
+//=== #HOMEPAGE WRAPPER ===
+//=========================
+
+.homepage-wrapper {
+  padding: 0 2.5 * $spacing-unit-small;
 }
