@@ -398,9 +398,11 @@ img {
     font-family: "Roboto Condensed", serif;
     font-size: 1.8rem; }
 
-@media screen and (min-width: 767px) {
-  .logo {
-    height: 120px; } }
+.logo {
+  height: auto; }
+  @media screen and (min-width: 767px) {
+    .logo {
+      height: 120px; } }
 
 .site-nav {
   width: 100%;
