@@ -3,8 +3,11 @@
 //===================
 
 .logo {
-  height: 70px;
-  width: 100%;
+  height: auto;
+
+  @media screen and (min-width: 767px) {
+    height: 120px;
+  }
 }
 
 .site-nav {
@@ -14,7 +17,8 @@
   text-transform: uppercase;
 
   &__items {
-    padding: ($spacing-unit-small * 1.5) 0 ($spacing-unit-small * 1.5) $spacing-unit-small;
+    padding: $spacing-unit-small * 1.5;
+    text-align: center;
 
     &:hover {
       background-color: #ccc;

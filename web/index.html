@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="The official website of PraguePhotographers">
+  <meta name="author" content="Nguyen Ngoc Tu, Nguyen Huy">
   
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
@@ -22,7 +23,7 @@
 </head>
 
 <body>
-  <header class="nav-wrapper homepage-header">
+  <header class="nav-wrapper">
     <a href="index.html"><img class="logo" src="./images/logo.jpeg" alt="Logo Icon"></a>
     <button class="btn btn--menu" id="js-menu">
       <i class="fas fa-bars"></i>
@@ -30,28 +31,53 @@
   </header>
   <nav class="menu-wrapper js-trigger">
     <ul class="site-nav">
-      <li class="site-nav__items"><a href="#">Home</a></li>
+      <li class="site-nav__items"><a href="#">Our Story</a></li>
       <li class="site-nav__items"><a href="#">Gallery</a></li>
-      <li class="site-nav__items"><a href="#">About Us</a></li>
-      <li class="site-nav__items"><a href="#">Contact</a></li>
       <li class="site-nav__items"><a href="#">Book Us</a></li>
+      <li class="site-nav__items"><a href="#">Contact Us</a></li>
     </ul>
   </nav>
 
-  <section class="homepage-banner">
-    <!--<h1 class="homepage-banner__title">Welcome to Prague Photographers</h1>-->
-    <div class="owl-carousel owl-theme">
-      <img src="./images/gallery/1.jpg" alt="">
-      <img src="./images/gallery/2.jpg" alt="">
-      <img src="./images/gallery/3.jpg" alt="">
-      <img src="./images/gallery/4.jpg" alt="">
-      <img src="./images/gallery/5.jpg" alt="">
-      <img src="./images/gallery/6.jpg" alt="">
-      <img src="./images/gallery/7.jpg" alt="">
-      <img src="./images/gallery/8.jpg" alt="">
+  <section>
+    <div class="homepage-banner flex-wrapper">
+      <div class="homepage-wrapper">
+        <div class="homepage-banner__overlay"></div>
+  
+        <h1 class="homepage-banner__title">Prague Photographers</h1>
+        
+        <a href="#" class="btn btn--primary" role="button">Book Us</a>
+      </div>
     </div>
   </section>
 
+  <section class="homepage-description">
+    <p class="homepage-description__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p class="homepage-description__text">Laboriosam illum est facilis possimus veniam cupiditate maiores quia provident consequatur tempore.</p>
+    <p class="homepage-description__text">Unde aspernatur corrupti saepe distinctio animi iste quas odit odio.</p>
+  </section>
+
+  <section class="homepage-banner homepage-banner--second-banner">
+    <div class="homepage-wrapper">
+      <div class="homepage-banner__overlay"></div>
+    </div>
+  </section>
+
+  <footer class="footer-section">
+    <h3 class="footer-section__title">Social Links</h3>
+    <ul class="footer-section__social">
+      <li class="social-item">
+          <a href="#" class="social-item__link">
+            <i class="fab fa-facebook-f social-icon"></i>
+          </a>
+      </li>
+      <li class="social-item">
+        <a href="#" class="social-item__link">
+            <i class="fab fa-instagram social-icon"></i>
+        </a>
+      </li>
+    </ul>
+    <p class="footer-section__copy">&copy; 2018 - Prague Photographers</p>
+  </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
