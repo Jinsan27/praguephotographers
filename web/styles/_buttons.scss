@@ -14,4 +14,34 @@
     margin-right: $spacing-unit-small * 2;
     font-size: 2.5rem;
   }
+
+  &--primary {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    font-family: $font-family-roboto;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    color: darken($white, 5%);
+    border: 2px solid currentColor;
+    padding: (1.5 * $spacing-unit-small) (2 * $spacing-unit-small);
+    transition: all ease-in 200ms;
+
+    &:hover {
+      background-color: darken($white, 5%);
+      color: $blackish;
+      border-color: darken($white, 5%);
+      box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, .25);
+      transform: scale(.98);
+    }
+
+    @media screen and (min-width: 767px) {
+      min-width: 280px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }
