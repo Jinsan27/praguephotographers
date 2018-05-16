@@ -16,6 +16,10 @@
   }
 
   &--primary {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
     font-family: $font-family-roboto;
     font-size: 1.8rem;
     letter-spacing: 1px;
@@ -24,7 +28,6 @@
     color: darken($white, 5%);
     border: 2px solid currentColor;
     padding: (1.5 * $spacing-unit-small) (2 * $spacing-unit-small);
-    z-index: 1;
     transition: all ease-in 200ms;
 
     &:hover {

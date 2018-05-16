@@ -354,6 +354,9 @@ img {
       -ms-flex-align: end;
           align-items: flex-end; }
 
+.homepage-wrapper {
+  padding: 0 25px; }
+
 .homepage-header {
   border-bottom: 1px solid #333;
   box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.3); }
@@ -363,8 +366,10 @@ img {
   background: url(../images/intro-bg.jpg) no-repeat center center;
   background-size: cover;
   width: 100%;
-  height: 75vh;
-  padding: 25px; }
+  height: 75vh; }
+  .homepage-banner--second-banner {
+    background: url(../images/intro-bg-2.jpg) no-repeat center center;
+    background-size: cover; }
   .homepage-banner__overlay {
     position: absolute;
     top: 0;
@@ -373,18 +378,25 @@ img {
     right: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); }
+    background-color: rgba(0, 0, 0, 0.35); }
   .homepage-banner__title {
+    position: relative;
+    z-index: 1;
     font-size: 3.5rem;
     letter-spacing: 2px;
     line-height: 1.4;
     font-family: "Playfair Display", sans-serif;
     text-align: center;
-    color: #f2f2f2;
-    z-index: 1; }
+    color: #f2f2f2; }
     @media screen and (min-width: 767px) {
       .homepage-banner__title {
         font-size: 4.5rem; } }
+
+.homepage-description {
+  padding: 30px 15px; }
+  .homepage-description__text {
+    font-family: "Roboto Condensed", serif;
+    font-size: 1.8rem; }
 
 @media screen and (min-width: 767px) {
   .logo {
@@ -401,10 +413,34 @@ img {
     .site-nav__items:hover {
       background-color: #ccc; }
 
-.footer-section__copy {
+.footer-section {
   font-size: 1.8rem;
   font-family: "Roboto Condensed", serif;
   text-align: center; }
+  .footer-section__title {
+    font-weight: 400; }
+  .footer-section__social {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+.social-item {
+  padding: 0 10px; }
+  .social-item__link {
+    -webkit-transition: ease-in 200ms;
+            transition: ease-in 200ms; }
+  .social-item:hover .fa-facebook-f {
+    color: #3b5998; }
+  .social-item:hover .fa-instagram {
+    color: #c32aa3; }
+
+.social-icon {
+  font-size: 2rem; }
 
 .btn {
   outline: 0;
@@ -417,6 +453,10 @@ img {
     margin-right: 20px;
     font-size: 2.5rem; }
   .btn--primary {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
     font-family: "Roboto Condensed", serif;
     font-size: 1.8rem;
     letter-spacing: 1px;
@@ -425,7 +465,6 @@ img {
     color: #f2f2f2;
     border: 2px solid currentColor;
     padding: 15px 20px;
-    z-index: 1;
     -webkit-transition: all ease-in 200ms;
             transition: all ease-in 200ms; }
     .btn--primary:hover {

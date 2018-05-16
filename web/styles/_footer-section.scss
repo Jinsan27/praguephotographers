@@ -3,10 +3,40 @@
 //===============
 
 .footer-section {
+  font-size: 1.8rem;
+  font-family: $font-family-roboto;
+  text-align: center;
 
-  &__copy {
-    font-size: 1.8rem;
-    font-family: $font-family-roboto;
-    text-align: center;
+  &__title {
+    font-weight: 400;
   }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.social-item {
+  padding: 0 $spacing-unit-small;
+
+  &__link {
+    transition: ease-in 200ms;
+  }
+
+  &:hover {
+    .fa-facebook-f {
+      color: $fb-purple;
+    }
+  }
+
+  &:hover {
+    .fa-instagram {
+      color: $instagram-pink;
+    }
+  }
+}
+
+.social-icon {
+  font-size: 2rem;
 }

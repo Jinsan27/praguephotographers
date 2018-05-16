@@ -14,6 +14,10 @@
   }
 }
 
+//=====================
+//=== #FLEX WRAPPER ===
+//=====================
+
 .flex-wrapper {
   display: flex;
   flex-direction: column;
@@ -22,4 +26,12 @@
 
 .flex-end {
   align-items: flex-end;
+}
+
+//=========================
+//=== #HOMEPAGE WRAPPER ===
+//=========================
+
+.homepage-wrapper {
+  padding: 0 2.5 * $spacing-unit-small;
 }
