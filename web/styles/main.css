@@ -373,7 +373,7 @@ img {
     right: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.45); }
+    background-color: rgba(0, 0, 0, 0.5); }
   .homepage-banner__title {
     font-size: 3.5rem;
     letter-spacing: 2px;
@@ -429,8 +429,13 @@ img {
       color: #333;
       border-color: #f2f2f2;
       box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.25);
-      -webkit-transform: scale(0.95);
-          -ms-transform: scale(0.95);
-              transform: scale(0.95); }
+      -webkit-transform: scale(0.98);
+          -ms-transform: scale(0.98);
+              transform: scale(0.98); }
+    @media screen and (min-width: 76.8em) {
+      .btn--primary {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto; } }
 
 /*# sourceMappingURL=main.css.map */
