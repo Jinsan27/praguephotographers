@@ -6,16 +6,20 @@
   display: flex;
 }
 
-//.menu-wrapper {
-  //position: absolute;
-  //top: 0;
-  //z-index: 20;
-//}
-
 .menu-wrapper {
   display: none;
 
   &.is-open {
     display: block;
   }
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-end {
+  align-items: flex-end;
 }
