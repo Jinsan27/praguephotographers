@@ -8,7 +8,7 @@
 html {
   line-height: 1.15;
   /* 1 */
-  -webkit-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%;
   /* 2 */ }
 
 /* Sections
@@ -38,7 +38,7 @@ hr {
   /* 1 */
   height: 0;
   /* 1 */
-  overflow: visible
+  overflow: visible;
   /* 2 */ }
 
 /**
@@ -48,7 +48,7 @@ hr {
 pre {
   font-family: monospace, monospace;
   /* 1 */
-  font-size: 1em
+  font-size: 1em;
   /* 2 */ }
 
 /* Text-level semantics
@@ -68,7 +68,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted
+  text-decoration: underline dotted;
   /* 2 */ }
 
 /**
@@ -87,7 +87,7 @@ kbd,
 samp {
   font-family: monospace, monospace;
   /* 1 */
-  font-size: 1em
+  font-size: 1em;
   /* 2 */ }
 
 /**
@@ -138,7 +138,7 @@ textarea {
   /* 1 */
   line-height: 1.15;
   /* 1 */
-  margin: 0
+  margin: 0;
   /* 2 */ }
 
 /**
@@ -210,7 +210,7 @@ legend {
   /* 1 */
   padding: 0;
   /* 3 */
-  white-space: normal
+  white-space: normal;
   /* 1 */ }
 
 /**
@@ -233,7 +233,7 @@ textarea {
 [type="radio"] {
   box-sizing: border-box;
   /* 1 */
-  padding: 0
+  padding: 0;
   /* 2 */ }
 
 /**
@@ -250,7 +250,7 @@ textarea {
 [type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-  outline-offset: -2px
+  outline-offset: -2px;
   /* 2 */ }
 
 /**
@@ -266,7 +266,7 @@ textarea {
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   /* 1 */
-  font: inherit
+  font: inherit;
   /* 2 */ }
 
 /* Interactive
@@ -323,15 +323,11 @@ img {
   max-width: 100%; }
 
 .nav-wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex; }
 
 .menu-wrapper {
   height: 0;
-  -webkit-transition: ease-in-out 400ms;
-          transition: ease-in-out 400ms; }
+  transition: ease-in-out 400ms; }
   .menu-wrapper.is-open {
     height: 200px; }
 
@@ -344,9 +340,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   margin: 0;
   z-index: 10; }
   @media screen and (min-width: 767px) {
@@ -356,8 +350,7 @@ img {
       color: #333; } }
 
 .logo {
-  height: 70px;
-  width: 100%; }
+  max-width: 100%; }
 
 .site-nav {
   width: 100%;
