@@ -34,4 +34,11 @@
 
 .homepage-wrapper {
   padding: 0 2.5 * $spacing-unit-small;
+  
+  &--flex {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
 }

@@ -308,7 +308,8 @@ html {
 
 body {
   margin: 0;
-  position: relative; }
+  position: relative;
+  line-height: 1.5; }
 
 ul {
   margin: 0;
@@ -356,6 +357,20 @@ img {
 
 .homepage-wrapper {
   padding: 0 25px; }
+  .homepage-wrapper--flex {
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
 
 .homepage-header {
   border-bottom: 1px solid #333;
@@ -382,21 +397,26 @@ img {
   .homepage-banner__title {
     position: relative;
     z-index: 1;
-    font-size: 3rem;
+    font-size: 3.4rem;
     letter-spacing: 2px;
-    line-height: 1.4;
-    font-family: "Playfair Display", sans-serif;
+    font-family: "Josefin Slab", sans-serif;
     text-align: center;
-    color: #f2f2f2; }
+    color: #f2f2f2;
+    margin: 0 0 30px 0; }
     @media screen and (min-width: 767px) {
       .homepage-banner__title {
         font-size: 4.5rem; } }
 
 .homepage-description {
-  padding: 30px 15px; }
+  padding: 30px 15px;
+  text-align: center; }
+  .homepage-description__title {
+    font-family: "Josefin Slab", sans-serif;
+    font-size: 2.1rem; }
   .homepage-description__text {
     font-family: "Roboto Condensed", serif;
-    font-size: 1.8rem; }
+    font-size: 1.8rem;
+    font-weight: 400; }
 
 .logo {
   height: auto; }
@@ -449,14 +469,14 @@ img {
   background-color: transparent;
   border: 0;
   padding: 0;
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative;
+  z-index: 1; }
   .btn--menu {
     margin-left: auto;
     margin-right: 20px;
     font-size: 2.5rem; }
   .btn--primary {
-    position: relative;
-    z-index: 1;
     display: block;
     width: 100%;
     font-family: "Roboto Condensed", serif;
@@ -482,5 +502,31 @@ img {
         min-width: 280px;
         margin-left: auto;
         margin-right: auto; } }
+  .btn--scroll-top {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #fff;
+    -webkit-transition: all ease-in 200ms;
+            transition: all ease-in 200ms;
+    box-shadow: 4px 4px 7px 4px rgba(0, 0, 0, 0.35); }
+    .btn--scroll-top .fa-chevron-up {
+      font-size: 1.6rem;
+      color: #fff; }
+    .btn--scroll-top:hover {
+      background-color: #fff; }
+      .btn--scroll-top:hover .fa-chevron-up {
+        color: #333; }
 
 /*# sourceMappingURL=main.css.map */
