@@ -35,8 +35,8 @@
       transform: scale(.98);
     }
 
-    @media screen and (min-width: 76.8em) {
-      max-width: 400px;
+    @media screen and (min-width: 767px) {
+      min-width: 280px;
       margin-left: auto;
       margin-right: auto;
     }

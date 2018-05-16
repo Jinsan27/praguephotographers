@@ -382,9 +382,13 @@ img {
     text-align: center;
     color: #f2f2f2;
     z-index: 1; }
+    @media screen and (min-width: 767px) {
+      .homepage-banner__title {
+        font-size: 4.5rem; } }
 
-.logo {
-  max-width: 100%; }
+@media screen and (min-width: 767px) {
+  .logo {
+    height: 120px; } }
 
 .site-nav {
   width: 100%;
@@ -432,9 +436,9 @@ img {
       -webkit-transform: scale(0.98);
           -ms-transform: scale(0.98);
               transform: scale(0.98); }
-    @media screen and (min-width: 76.8em) {
+    @media screen and (min-width: 767px) {
       .btn--primary {
-        max-width: 400px;
+        min-width: 280px;
         margin-left: auto;
         margin-right: auto; } }
 
