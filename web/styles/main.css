@@ -372,6 +372,16 @@ img {
         -ms-flex-align: end;
             align-items: flex-end; }
 
+.layout-wrapper {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media screen and (min-width: 767px) {
+    .layout-wrapper--small {
+      max-width: 70%;
+      margin-left: auto;
+      margin-right: auto; } }
+
 .homepage-header {
   border-bottom: 1px solid #333;
   box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.3); }
