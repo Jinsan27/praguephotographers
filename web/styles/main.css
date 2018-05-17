@@ -329,11 +329,21 @@ img {
   display: -ms-flexbox;
   display: flex;
   overflow-x: hidden; }
+  @media screen and (min-width: 992px) {
+    .nav-wrapper {
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; } }
 
 .menu-wrapper {
   display: none; }
   .menu-wrapper.is-open {
     display: block; }
+  @media screen and (min-width: 992px) {
+    .menu-wrapper {
+      display: block;
+      margin-left: auto; } }
 
 .flex-wrapper {
   display: -webkit-box;
@@ -462,6 +472,32 @@ img {
     text-align: center; }
     .site-nav__items:hover {
       background-color: #ccc; }
+    @media screen and (min-width: 992px) {
+      .site-nav__items {
+        padding: 0 15px; }
+        .site-nav__items a {
+          position: relative; }
+          .site-nav__items a::after {
+            content: "";
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: transparent;
+            -webkit-transition: all ease-in-out 300ms;
+                    transition: all ease-in-out 300ms; }
+          .site-nav__items a:hover::after {
+            background-color: #333;
+            width: 100%; }
+        .site-nav__items:hover {
+          background-color: transparent; } }
+  @media screen and (min-width: 992px) {
+    .site-nav {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; } }
 
 .footer-section {
   font-size: 1.8rem;
@@ -523,6 +559,9 @@ img {
         -webkit-transform-origin: center;
             -ms-transform-origin: center;
                 transform-origin: center; }
+    @media screen and (min-width: 992px) {
+      .btn--menu {
+        display: none; } }
   .btn--primary {
     display: block;
     width: 100%;

@@ -5,6 +5,10 @@
 .nav-wrapper {
   display: flex;
   overflow-x: hidden;
+
+  @media screen and (min-width: 992px) {
+    align-items: center;
+  }
 }
 
 .menu-wrapper {
@@ -12,6 +16,11 @@
 
   &.is-open {
     display: block;
+  }
+
+  @media screen and (min-width: 992px) {
+    display: block;
+    margin-left: auto;
   }
 }
 
