@@ -332,7 +332,8 @@ img {
   @media screen and (min-width: 992px) {
     .nav-wrapper {
       display: block;
-      float: left; } }
+      float: left;
+      height: 104px; } }
 
 .menu-wrapper {
   display: none; }
@@ -411,6 +412,9 @@ img {
   background-size: cover;
   width: 100%;
   height: 75vh; }
+  @media screen and (min-width: 1023px) {
+    .homepage-banner {
+      background-attachment: fixed; } }
   .homepage-banner--second-banner {
     display: -webkit-box;
     display: -webkit-flex;
@@ -459,7 +463,7 @@ img {
   height: auto; }
   @media screen and (min-width: 767px) {
     .logo {
-      height: 120px; } }
+      height: 100px; } }
 
 .site-nav {
   width: 100%;
@@ -614,6 +618,9 @@ img {
       background-color: #fff; }
       .btn--scroll-top:hover .fa-chevron-up {
         color: #333; }
+    @media screen and (min-width: 992px) {
+      .btn--scroll-top {
+        display: none; } }
 
 .menu-line {
   display: block;
