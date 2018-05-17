@@ -4,6 +4,7 @@
 
 .nav-wrapper {
   display: flex;
+  overflow-x: hidden;
 }
 
 .menu-wrapper {
@@ -22,10 +23,23 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  &--center {
+    align-items: center;
+  }
 }
 
 .flex-end {
   align-items: flex-end;
+}
+
+//=====================
+//=== #TEXT WRAPPER ===
+//=====================
+
+.text-wrapper {
+  color: $white;
+  z-index: 1;
 }
 
 //=========================

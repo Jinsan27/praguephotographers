@@ -15,6 +15,27 @@
     margin-left: auto;
     margin-right: $spacing-unit-small * 2;
     font-size: 2.5rem;
+
+    &.has-cross {
+
+      .menu-line {
+        transition: ease-in-out 280ms;
+
+        &:nth-of-type(1) {
+          transform: rotate(-45deg) translate(-4px);
+          transform-origin: center;
+        }
+
+        &:nth-of-type(2) {
+          display: none;
+        }
+
+        &:nth-of-type(3) {
+          transform: rotate(45deg) translate(-4px);
+          transform-origin: center;
+        }
+      } 
+    }
   }
 
   &--primary {
@@ -46,11 +67,12 @@
   }
 
   &--scroll-top {
+    position: absolute;
+    bottom: 2.2 * $spacing-unit-small;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 1.5 * $spacing-unit-small;
-    margin-bottom: 1.5 * $spacing-unit-small;
     border: 1px solid $white;
     transition: all ease-in 200ms;
     box-shadow: 4px 4px 7px 4px rgba(0, 0, 0, .35);
@@ -67,5 +89,21 @@
         color: $blackish;
       }
     }
+  }
+}
+
+//=======================
+//=== #HAMBURGER MENU ===
+//=======================
+
+.menu-line {
+  display: block;
+  width: 30px;  
+  height: 5px;
+  background-color: $blackish;
+  border-radius: 8px;
+
+  &:nth-of-type(2) {
+    margin: $spacing-unit-small / 2 0;
   }
 }
