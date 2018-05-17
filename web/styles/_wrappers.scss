@@ -4,6 +4,13 @@
 
 .nav-wrapper {
   display: flex;
+  overflow-x: hidden;
+
+  @media screen and (min-width: 992px) {
+    display: block;
+    float: left;
+    height: 104px;
+  }
 }
 
 .menu-wrapper {
@@ -12,6 +19,12 @@
 
   &.is-open {
     display: block;
+  }
+
+  @media screen and (min-width: 992px) {
+    display: block;
+    float: right;
+    margin-top: 3%;
   }
 }
 
@@ -23,10 +36,23 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  &--center {
+    align-items: center;
+  }
 }
 
 .flex-end {
   align-items: flex-end;
+}
+
+//=====================
+//=== #TEXT WRAPPER ===
+//=====================
+
+.text-wrapper {
+  color: $white;
+  z-index: 1;
 }
 
 //=========================
@@ -35,4 +61,30 @@
 
 .homepage-wrapper {
   padding: 0 2.5 * $spacing-unit-small;
+  
+  &--flex {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+}
+
+//=======================
+//=== #LAYOUT WRAPPER ===
+//=======================
+
+.layout-wrapper {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &--small {
+    
+    @media screen and (min-width: 767px) {
+      max-width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }

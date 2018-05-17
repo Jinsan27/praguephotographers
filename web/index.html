@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="./styles/main.css">
   
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,700|Roboto+Condensed:400,700" rel="stylesheet">
   
   <title>Prague Photographers</title>
 </head>
@@ -23,9 +23,12 @@
   <header class="nav-wrapper">
     <a href="index.html"><img class="logo" src="./images/logo.jpeg" alt="Logo Icon"></a>
     <button class="btn btn--menu" id="js-menu">
-      <i class="fas fa-bars"></i>
+      <span class="menu-line"></span>
+      <span class="menu-line"></span>
+      <span class="menu-line"></span>
     </button>
   </header>
+  
   <nav class="menu-wrapper js-trigger">
     <ul class="site-nav">
       <li class="site-nav__items"><a href="story.html">Our Story</a></li>
@@ -34,28 +37,42 @@
       <li class="site-nav__items"><a href="contact.html">Contact Us</a></li>
     </ul>
   </nav>
+  <section class="homepage-banner flex-wrapper">
+    <div class="homepage-wrapper layout-wrapper layout-wrapper--small">
+      <div class="homepage-banner__overlay"></div>
 
-  <section>
-    <div class="homepage-banner flex-wrapper">
-      <div class="homepage-wrapper">
-        <div class="homepage-banner__overlay"></div>
-  
-        <h1 class="homepage-banner__title">Prague Photographers</h1>
-        
-        <a href="#" class="btn btn--primary" role="button">Book Us</a>
-      </div>
+      <h1 class="homepage-banner__title">
+        <a href="#top">Prague Photographers</a>
+      </h1>
+      
+      <a href="#" class="btn btn--primary" role="button">Book Us</a>
     </div>
   </section>
 
   <section class="homepage-description">
-    <p class="homepage-description__text">Book an amazing photo walk with locals photographers and enjoy the city!</p>
-    <p class="homepage-description__text">We're band of local enthusiastic proffessional photographers who love this city 
-      so much so we've decided to share our excitement with others. </p>
+    <div class="layout-wrapper layout-wrapper--small">
+      <h2 class="homepage-description__title">Book an amazing photo walk with local photographers and enjoy the city!</h2>
+      <p class="homepage-description__text">
+          We are a band of local enthusiastic professional
+          photographers who love this city 
+          so much, that we have decided to share our excitement with other people.
+      </p>
+    </div>
   </section>
 
   <section class="homepage-banner homepage-banner--second-banner">
-    <div class="homepage-wrapper">
+    <div class="homepage-wrapper flex-wrapper flex-wrapper--center layout-wrapper">
+      <div class="text-wrapper">
+        <h2 class="homepage-description__title">Lorem Ipsum dolor sit</h2>
+
+        <p class="homepage-description__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <p class="homepage-description__text">Consequatur veniam aliquam delectus tenetur ad aperiam iusto distinctio quod aliquid,
+          error magni magnam, ipsum illum hic dignissimos id quisquam eius officiis?</p>
+      </div>
       <div class="homepage-banner__overlay"></div>
+      <a href="#top" class="btn btn--scroll-top" title="Top">
+          <i class="fas fa-chevron-up"></i>
+      </a>
     </div>
   </section>
 

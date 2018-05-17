@@ -6,7 +6,7 @@
   height: auto;
 
   @media screen and (min-width: 767px) {
-    height: 120px;
+    height: 100px;
   }
 }
 
@@ -27,5 +27,40 @@
     &:hover {
       background-color: #ccc;
     }
+    
+    @media screen and (min-width: 992px) {
+      padding: 0 1.5 * $spacing-unit-small;
+      
+      a {
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -4px;
+          left: 0;
+          width: 0;
+          height: 2px;
+          background-color: transparent;
+          transition: all ease-in-out 300ms;
+        }
+  
+        &:hover {
+  
+          &::after {
+            background-color: $blackish;
+            width: 100%;
+          }
+        }
+      }
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    display: flex;
   }
 }

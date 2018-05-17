@@ -8,16 +8,41 @@
   border: 0;
   padding: 0;
   cursor: pointer;
+  position: relative;
+  z-index: 1;
 
   &--menu {
     margin-left: auto;
     margin-right: $spacing-unit-small * 2;
     font-size: 2.5rem;
+
+    &.has-cross {
+
+      .menu-line {
+        transition: ease-in-out 280ms;
+
+        &:nth-of-type(1) {
+          transform: rotate(-45deg) translate(-4px);
+          transform-origin: center;
+        }
+
+        &:nth-of-type(2) {
+          display: none;
+        }
+
+        &:nth-of-type(3) {
+          transform: rotate(45deg) translate(-4px);
+          transform-origin: center;
+        }
+      } 
+    }
+
+    @media screen and (min-width: 992px) {
+      display: none;
+    }
   }
 
   &--primary {
-    position: relative;
-    z-index: 1;
     display: block;
     width: 100%;
     font-family: $font-family-roboto;
@@ -63,10 +88,49 @@
       transform: scale(.98);
     }
   }
+  
+  &--scroll-top {
+    position: absolute;
+    bottom: 2.2 * $spacing-unit-small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5 * $spacing-unit-small;
+    border: 1px solid $white;
+    transition: all ease-in 200ms;
+    box-shadow: 4px 4px 7px 4px rgba(0, 0, 0, .35);
 
-  @media screen and (min-width: 767px) {
-    min-width: 280px;
-    margin-left: auto;
-    margin-right: auto;
+    .fa-chevron-up {
+      font-size: 1.6rem;
+      color: $white;
+    }
+
+    &:hover {
+      background-color: $white;
+
+      .fa-chevron-up {
+        color: $blackish;
+      }
+    }
+
+    @media screen and (min-width: 992px) {
+      display: none;
+    }
+  }
+}
+
+//=======================
+//=== #HAMBURGER MENU ===
+//=======================
+
+.menu-line {
+  display: block;
+  width: 30px;  
+  height: 5px;
+  background-color: $blackish;
+  border-radius: 8px;
+
+  &:nth-of-type(2) {
+    margin: $spacing-unit-small / 2 0;
   }
 }
