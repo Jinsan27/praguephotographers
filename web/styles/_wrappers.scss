@@ -8,6 +8,7 @@
 
 .menu-wrapper {
   display: none;
+  position: relative;
 
   &.is-open {
     display: block;
