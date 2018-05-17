@@ -10,6 +10,7 @@
     display: block;
     float: left;
     height: 104px;
+    width: 50%;
   }
 }
 
@@ -24,6 +25,7 @@
   @media screen and (min-width: 992px) {
     display: block;
     float: right;
+    width: 50%;
     margin-top: 3%;
   }
 }
