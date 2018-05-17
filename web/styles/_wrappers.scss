@@ -7,7 +7,8 @@
   overflow-x: hidden;
 
   @media screen and (min-width: 992px) {
-    align-items: center;
+    display: block;
+    float: left;
   }
 }
 
@@ -20,7 +21,8 @@
 
   @media screen and (min-width: 992px) {
     display: block;
-    margin-left: auto;
+    float: right;
+    margin-top: 3%;
   }
 }
 
