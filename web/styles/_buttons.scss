@@ -91,26 +91,21 @@
   
   &--scroll-top {
     position: absolute;
-    bottom: 2.2 * $spacing-unit-small;
+    bottom: 20.5 * $spacing-unit-small;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 1.5 * $spacing-unit-small;
-    border: 1px solid $white;
+    border: 1px solid $blackish;
     transition: all ease-in 200ms;
-    box-shadow: 4px 4px 7px 4px rgba(0, 0, 0, .35);
 
     .fa-chevron-up {
       font-size: 1.6rem;
-      color: $white;
+      color: $blackish;
     }
 
     &:hover {
-      background-color: $white;
-
-      .fa-chevron-up {
-        color: $blackish;
-      }
+      box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, .25);
     }
 
     @media screen and (min-width: 992px) {
