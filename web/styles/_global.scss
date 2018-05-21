@@ -33,3 +33,13 @@ a {
 img {
   max-width: 100%;
 }
+
+.clearfix::after,
+.clearfix::before {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
