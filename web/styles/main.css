@@ -684,6 +684,23 @@ img {
       .btn--scroll-top {
         display: none; } }
 
+.primary--small {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.primary--dark {
+  color: #333;
+  border-color: currentColor; }
+
+.primary--no-interaction:hover {
+  -webkit-transform: initial;
+      -ms-transform: initial;
+          transform: initial;
+  box-shadow: unset;
+  background-color: transparent;
+  border-color: initial; }
+
 .menu-line {
   display: block;
   width: 30px;

@@ -88,7 +88,7 @@
       transform: scale(.98);
     }
   }
-  
+
   &--scroll-top {
     position: absolute;
     bottom: 20.5 * $spacing-unit-small;
@@ -111,6 +111,39 @@
     @media screen and (min-width: 992px) {
       display: none;
     }
+  }
+}
+
+//======================
+//=== #BUTTONS SIZES ===
+//======================
+
+.primary--small {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//=======================
+//=== #BUTTONS COLORS ===
+//=======================
+
+.primary--dark {
+  color: $blackish;
+  border-color: currentColor;
+}
+
+//=============================
+//=== #BUTTONS INTERACTIONS ===
+//=============================
+
+.primary--no-interaction {
+
+  &:hover {
+    transform: initial;
+    box-shadow: unset;
+    background-color: transparent;
+    border-color: initial;
   }
 }
 
