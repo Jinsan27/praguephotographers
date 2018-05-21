@@ -8,10 +8,124 @@
   border: 0;
   padding: 0;
   cursor: pointer;
+  position: relative;
+  z-index: 1;
 
   &--menu {
     margin-left: auto;
     margin-right: $spacing-unit-small * 2;
     font-size: 2.5rem;
+
+    &.has-cross {
+
+      .menu-line {
+        transition: ease-in-out 280ms;
+
+        &:nth-of-type(1) {
+          transform: rotate(-45deg) translate(-4px);
+          transform-origin: center;
+        }
+
+        &:nth-of-type(2) {
+          display: none;
+        }
+
+        &:nth-of-type(3) {
+          transform: rotate(45deg) translate(-4px);
+          transform-origin: center;
+        }
+      } 
+    }
+
+    @media screen and (min-width: 992px) {
+      display: none;
+    }
+  }
+
+  &--primary {
+    display: block;
+    width: 100%;
+    font-family: $font-family-roboto;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    color: darken($white, 5%);
+    border: 2px solid currentColor;
+    padding: (1.5 * $spacing-unit-small) (2 * $spacing-unit-small);
+    transition: all ease-in 200ms;
+
+    &:hover {
+      background-color: darken($white, 5%);
+      color: $blackish;
+      border-color: darken($white, 5%);
+      box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, .25);
+      transform: scale(.98);
+    }
+  }
+
+  &--secondary {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 90%;
+    font-family: $font-family-roboto;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    color: darken($white, 5%);
+    border: 2px solid currentColor;
+    padding: (1.5 * $spacing-unit-small) (2 * $spacing-unit-small);
+    transition: all ease-in 200ms;
+    margin: 0 auto;
+
+    &:hover {
+      background-color: darken($white, 5%);
+      color: $blackish;
+      border-color: darken($white, 5%);
+      box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, .25);
+      transform: scale(.98);
+    }
+  }
+  
+  &--scroll-top {
+    position: absolute;
+    bottom: 20.5 * $spacing-unit-small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5 * $spacing-unit-small;
+    border: 1px solid $blackish;
+    transition: all ease-in 200ms;
+
+    .fa-chevron-up {
+      font-size: 1.6rem;
+      color: $blackish;
+    }
+
+    &:hover {
+      box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, .25);
+    }
+
+    @media screen and (min-width: 992px) {
+      display: none;
+    }
+  }
+}
+
+//=======================
+//=== #HAMBURGER MENU ===
+//=======================
+
+.menu-line {
+  display: block;
+  width: 30px;  
+  height: 5px;
+  background-color: $blackish;
+  border-radius: 8px;
+
+  &:nth-of-type(2) {
+    margin: $spacing-unit-small / 2 0;
   }
 }

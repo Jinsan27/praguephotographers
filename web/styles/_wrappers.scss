@@ -4,19 +4,100 @@
 
 .nav-wrapper {
   display: flex;
+  overflow-x: hidden;
+
+  @media screen and (min-width: 992px) {
+    display: block;
+    float: left;
+    height: 104px;
+    width: 50%;
+  }
 }
 
-//.menu-wrapper {
-  //position: absolute;
-  //top: 0;
-  //z-index: 20;
-//}
-
 .menu-wrapper {
-  height: 0;
-  transition: ease-in-out 400ms;
-  
+  display: none;
+  position: relative;
+
   &.is-open {
-    height: 200px;
+    display: block;
+  }
+
+  @media screen and (min-width: 992px) {
+    display: block;
+    float: right;
+    width: 50%;
+    margin-top: 3%;
+  }
+}
+
+//=====================
+//=== #FLEX WRAPPER ===
+//=====================
+
+.flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &--row {
+    
+    @media screen and (min-width: 767px) {
+      flex-direction: row;
+    }
+  }
+
+  &--center {
+    align-items: center;
+  }
+
+  &--space {
+    justify-content: space-between;
+  }
+}
+
+.flex-end {
+  align-items: flex-end;
+}
+
+//=====================
+//=== #TEXT WRAPPER ===
+//=====================
+
+.text-wrapper {
+  color: $white;
+  z-index: 1;
+}
+
+//=========================
+//=== #HOMEPAGE WRAPPER ===
+//=========================
+
+.homepage-wrapper {
+  padding: 0 2.5 * $spacing-unit-small;
+  
+  &--flex {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+}
+
+//=======================
+//=== #LAYOUT WRAPPER ===
+//=======================
+
+.layout-wrapper {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &--small {
+    
+    @media screen and (min-width: 767px) and (max-width: 1024) {
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }

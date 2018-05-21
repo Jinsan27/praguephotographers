@@ -1,0 +1,47 @@
+//===============
+//=== #FOOTER ===
+//===============
+
+.footer-section {
+  font-size: 1.8rem;
+  font-family: $font-family-roboto;
+  text-align: center;
+
+  &__title {
+    font-weight: 400;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__copy {
+    margin: 0;
+    padding: 0 1.5 * $spacing-unit-small 1.5 * $spacing-unit-small 1.5 * $spacing-unit-small;
+  }
+}
+
+.social-item {
+  padding: 0 $spacing-unit-small;
+
+  &__link {
+    transition: ease-in 200ms;
+  }
+
+  &:hover {
+    .fa-facebook-f {
+      color: $fb-purple;
+    }
+  }
+
+  &:hover {
+    .fa-instagram {
+      color: $instagram-pink;
+    }
+  }
+}
+
+.social-icon {
+  font-size: 2rem;
+}

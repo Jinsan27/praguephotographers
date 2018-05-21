@@ -3,7 +3,11 @@
 //===================
 
 .logo {
-  max-width: 100%;
+  height: auto;
+
+  @media screen and (min-width: 767px) {
+    height: 100px;
+  }
 }
 
 .site-nav {
@@ -11,12 +15,53 @@
   font-size: 1.4rem;
   font-family: $font-family-roboto;
   text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  z-index: 20;
+  background-color: $white;
 
   &__items {
-    padding: ($spacing-unit-small * 1.5) 0 ($spacing-unit-small * 1.5) $spacing-unit-small;
+    padding: $spacing-unit-small * 1.5;
+    text-align: center;
 
     &:hover {
       background-color: #ccc;
     }
+    
+    @media screen and (min-width: 992px) {
+      padding: 0 1.5 * $spacing-unit-small;
+      
+      a {
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -4px;
+          left: 0;
+          width: 0;
+          height: 2px;
+          background-color: transparent;
+          transition: all ease-in-out 300ms;
+        }
+  
+        &:hover {
+  
+          &::after {
+            background-color: $blackish;
+            width: 100%;
+          }
+        }
+      }
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    display: flex;
+    padding-left: 30%;
   }
 }
