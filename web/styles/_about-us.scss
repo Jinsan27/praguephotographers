@@ -1,0 +1,39 @@
+//=================
+//=== #ABOUT US ===
+//=================
+
+.about-us-banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../images/intro-bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 40vh;
+
+  &__title {
+    font-family: $font-family-josefin;
+    font-size: 3rem;
+    color: $white;
+    z-index: 1;
+  }
+
+  &__sub-title {
+    font-family: $font-family-josefin;
+    font-size: 2.6rem;
+    color: $blackish;
+    padding: 4 * $spacing-unit-small 0;
+    background-color: lighten($blackish, 75%);
+    margin: 0;
+  }
+
+  &__text {
+    padding: 0 1.5 * $spacing-unit-small;
+    font-family: $font-family-roboto;
+    font-size: 1.8rem;
+  }
+}
+
+.about-us-card {
+  text-align: center;
+}
