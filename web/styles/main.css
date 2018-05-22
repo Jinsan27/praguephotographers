@@ -354,7 +354,7 @@ img {
       display: block;
       float: right;
       width: 50%;
-      margin-top: 1.5%; } }
+      margin-top: 3%; } }
 
 .flex-wrapper {
   display: -webkit-box;
@@ -466,7 +466,7 @@ img {
         font-size: 8rem; } }
 
 .homepage-description {
-  padding: 30px 15px;
+  padding: 70px 20px;
   text-align: center; }
   .homepage-description__title {
     font-family: "Josefin Slab", sans-serif;
@@ -639,7 +639,12 @@ img {
               transform: scale(0.98); }
     @media screen and (min-width: 991px) {
       .btn--primary {
-        font-size: 3rem; } }
+        font-size: 2rem; } }
+    @media screen and (min-width: 1200px) {
+      .btn--primary {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto; } }
   .btn--secondary {
     position: relative;
     z-index: 1;

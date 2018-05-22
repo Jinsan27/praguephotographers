@@ -64,7 +64,13 @@
     }
 
     @media screen and (min-width: 991px) {
-      font-size: 3rem;
+      font-size: 2rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
