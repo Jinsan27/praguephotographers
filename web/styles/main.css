@@ -354,7 +354,7 @@ img {
       display: block;
       float: right;
       width: 50%;
-      margin-top: 3%; } }
+      margin-top: 1.5%; } }
 
 .flex-wrapper {
   display: -webkit-box;
@@ -463,7 +463,7 @@ img {
     margin: 0 0 30px 0; }
     @media screen and (min-width: 767px) {
       .homepage-banner__title {
-        font-size: 6.5rem; } }
+        font-size: 8rem; } }
 
 .homepage-description {
   padding: 30px 15px;
@@ -471,13 +471,16 @@ img {
   .homepage-description__title {
     font-family: "Josefin Slab", sans-serif;
     font-size: 3.8rem; }
+    @media screen and (min-width: 991px) {
+      .homepage-description__title {
+        font-size: 6rem; } }
   .homepage-description__text {
     font-family: "Roboto Condensed", serif;
     font-size: 1.8rem;
     font-weight: 400; }
     @media screen and (min-width: 767px) {
       .homepage-description__text {
-        font-size: 1.6rem; } }
+        font-size: 2.4rem; } }
   .homepage-description__image {
     width: 100px; }
   .homepage-description--medium-size {
@@ -501,7 +504,8 @@ img {
   height: auto; }
   @media screen and (min-width: 767px) {
     .logo {
-      height: 100px; } }
+      height: 100px;
+      padding-left: 30%; } }
 
 .site-nav {
   width: 100%;
@@ -516,12 +520,13 @@ img {
     padding: 15px;
     text-align: center; }
     .site-nav__items:hover {
-      background-color: #ccc; }
+      background-color: #f2f2f2; }
     @media screen and (min-width: 992px) {
       .site-nav__items {
         padding: 0 15px; }
         .site-nav__items a {
-          position: relative; }
+          position: relative;
+          font-size: 1.8rem; }
           .site-nav__items a::after {
             content: "";
             position: absolute;
@@ -632,6 +637,9 @@ img {
       -webkit-transform: scale(0.98);
           -ms-transform: scale(0.98);
               transform: scale(0.98); }
+    @media screen and (min-width: 991px) {
+      .btn--primary {
+        font-size: 3rem; } }
   .btn--secondary {
     position: relative;
     z-index: 1;
