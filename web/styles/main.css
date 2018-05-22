@@ -425,6 +425,9 @@ img {
       margin-left: auto;
       margin-right: auto; } }
 
+.about-us-banner-wrapper {
+  padding: 40px 0; }
+
 .homepage-header {
   border-bottom: 1px solid #333;
   box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.3); }
@@ -449,15 +452,6 @@ img {
             justify-content: center;
     background: url(../images/intro-bg-2.jpg) no-repeat center center;
     background-size: cover; }
-  .homepage-banner__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.35); }
   .homepage-banner__title {
     position: relative;
     z-index: 1;
@@ -492,6 +486,16 @@ img {
 
 .card {
   margin: 0 25px; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.35); }
 
 .logo {
   height: auto; }
@@ -680,6 +684,23 @@ img {
       .btn--scroll-top {
         display: none; } }
 
+.primary--small {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.primary--dark {
+  color: #333;
+  border-color: currentColor; }
+
+.primary--no-interaction:hover {
+  -webkit-transform: initial;
+      -ms-transform: initial;
+          transform: initial;
+  box-shadow: unset;
+  background-color: transparent;
+  border-color: initial; }
+
 .menu-line {
   display: block;
   width: 30px;
@@ -756,5 +777,42 @@ img {
       grid-column: 9 / 13; } }
   .gallery-item__caption {
     display: none; }
+
+.about-us-banner {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url("../images/intro-bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 40vh; }
+  .about-us-banner__title {
+    font-family: "Josefin Slab", sans-serif;
+    font-size: 3rem;
+    color: #fff;
+    z-index: 1; }
+  .about-us-banner__sub-title {
+    font-family: "Josefin Slab", sans-serif;
+    font-size: 2.4rem;
+    color: #333;
+    padding: 40px 0;
+    background-color: #f2f2f2;
+    margin: 0; }
+  .about-us-banner__text {
+    padding: 0 15px;
+    font-family: "Roboto Condensed", serif;
+    font-size: 1.8rem; }
+
+.about-us-card {
+  text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
