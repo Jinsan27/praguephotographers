@@ -38,7 +38,7 @@ function smoothScroll(target, duration) {
 var btnScroll = document.querySelector('.smooth-scroll-top');
 
 btnScroll.addEventListener('click', function() {
-    smoothScroll('.smooth-scroll', 1000);
+    smoothScroll('.smooth-scroll', 1500);
 });
 
 var initPhotoSwipeFromDOM = function(gallerySelector) {
