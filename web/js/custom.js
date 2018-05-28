@@ -6,6 +6,9 @@ menu.addEventListener('click', function () {
     menu.classList.toggle('has-cross');
 });
 
+//https://www.youtube.com/watch?v=oUSvlrDTLi4&feature=youtu.be
+//Smooth Scroll Tutorial
+
 function smoothScroll(target, duration) {
     var target = document.querySelector(target);
     var targetPosition = target.getBoundingClientRect().top; //Gets a relative position of an element to the window
