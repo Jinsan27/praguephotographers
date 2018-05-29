@@ -25,6 +25,10 @@
     padding: 4 * $spacing-unit-small 0;
     background-color: lighten($blackish, 75%);
     margin: 0;
+
+    &--margin {
+      margin-bottom: $spacing-unit-small * 5;
+    }
   }
 
   &__text {
