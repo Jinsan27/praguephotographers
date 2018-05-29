@@ -4,6 +4,7 @@
 
 .contact-text {
     text-align: center;
+    font-size: 2.1rem;
     
     &__header {
         font-family: $font-family-josefin;
@@ -34,6 +35,8 @@
 }
 
 .contact-form {
+    font-size: 1.5rem;
+
     &__name {
         height: 3rem;
     }

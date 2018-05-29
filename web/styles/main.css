@@ -849,7 +849,8 @@ img {
   text-align: center; }
 
 .contact-text {
-  text-align: center; }
+  text-align: center;
+  font-size: 2.1rem; }
   .contact-text__header {
     font-family: "Josefin Slab", sans-serif;
     font-size: 4rem; }
@@ -877,11 +878,13 @@ img {
   .form-style__last {
     width: 100%; }
 
-.contact-form__name {
-  height: 3rem; }
-.contact-form__email {
-  height: 3rem; }
-.contact-form__text {
-  height: 8rem; }
+.contact-form {
+  font-size: 1.5rem; }
+  .contact-form__name {
+    height: 3rem; }
+  .contact-form__email {
+    height: 3rem; }
+  .contact-form__text {
+    height: 8rem; }
 
 /*# sourceMappingURL=main.css.map */
