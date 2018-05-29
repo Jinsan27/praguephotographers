@@ -1,0 +1,48 @@
+//=================
+//=== #CONTACT ===
+//=================
+
+.contact-text {
+    text-align: center;
+    
+    &__header {
+        font-family: $font-family-josefin;
+        font-size: 4rem;
+    }
+
+    &__description {
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+}
+
+.form-style {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-family: $font-family-roboto;
+    width: 75%;
+    margin: 1rem auto;
+
+    &__half {
+        width: 100%;
+    }
+    &__last {
+        width: 100%;
+    }
+}
+
+.contact-form {
+    &__name {
+        height: 3rem;
+    }
+
+    &__email {
+        height: 3rem;
+    }
+
+    &__text {
+        height: 8rem;
+    }
+}

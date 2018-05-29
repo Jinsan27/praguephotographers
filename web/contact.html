@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="./styles/main.css">
   
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,700|Roboto+Condensed:400,700" rel="stylesheet">
   
 <body>
     <header class="nav-wrapper">
@@ -33,22 +33,36 @@
           <li class="site-nav__items"><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
-    
-<section>
-    <h1 class="">Hello</h1>
-        <p class="#">Are you a photographer?</p>
-        <a href="#" class="btn btn--secondary" role="button">Join Us</a>
 
-        <p class="#">Or do you want an extraordinary exprience in Prague?</p>
+<section class="contact-text">
+    <h1 class="contact-text__header">Hello there!</h1>
 
-        <a href="#" class="btn btn--secondary" role="button">Book Us</a>
-
-        <p class="#">For everything else</p>
-        <a href="#">Email</a>
-        <p class="#">or</p>
-        <p class="#">Telephone</p>
+    <form class="contact-form" action="https://formspree.io/martin@praguephotographers.com"
+        method="POST">
+        <div class="form-style">
+            <h2 class="contact-text">
+                We'd love to hear from you.
+                Send us a message and we'll respond as soon as possible!
+            </h2>
+            <div class="form-style form-style__half">
+                <label class="contact-text__description">Name</label>
+                <input class="contact-form__name" type="text" id="name">
+            </div>
+            <div class="form-style form-style__half">
+                <label class="contact-text__description">Email Address</label>
+                <input class="contact-form__email" type="email" id="_email">
+            </div>
+            <div class="form-style form-style__last">
+                <label class="contact-text__description">Message</label>
+                <input class="contact-form__text" type="text" id="message">
+            </div>
+        </div>
+            <input class="btn btn--primary primary--dark primary--small" type="submit" value="Send">
+    </form>
 
 </section>
+
+
         
 <footer class="footer-section">
     <h3 class="footer-section__title">Social Links</h3>
