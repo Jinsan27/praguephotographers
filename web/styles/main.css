@@ -807,12 +807,23 @@ img {
           justify-content: center;
   background: url("../images/intro-bg.jpg") no-repeat center center;
   background-size: cover;
-  height: 40vh; }
+  height: 40vh;
+  width: 100%; }
+  @media screen and (min-width: 767px) {
+    .about-us-banner {
+      height: 70vh;
+      width: 100%; } }
+  @media screen and (min-width: 1199px) {
+    .about-us-banner {
+      background-attachment: fixed; } }
   .about-us-banner__title {
     font-family: "Josefin Slab", sans-serif;
     font-size: 3rem;
     color: #fff;
     z-index: 1; }
+    @media screen and (min-width: 767px) {
+      .about-us-banner__title {
+        font-size: 6rem; } }
   .about-us-banner__sub-title {
     font-family: "Josefin Slab", sans-serif;
     font-size: 2.4rem;
@@ -822,10 +833,17 @@ img {
     margin: 0; }
     .about-us-banner__sub-title--margin {
       margin-bottom: 50px; }
+    @media screen and (min-width: 767px) {
+      .about-us-banner__sub-title {
+        font-size: 3.2rem; } }
   .about-us-banner__text {
     padding: 0 15px;
     font-family: "Roboto Condensed", serif;
     font-size: 1.8rem; }
+    @media screen and (min-width: 767px) {
+      .about-us-banner__text {
+        margin: 8px 0;
+        font-size: 2.1rem; } }
 
 .about-us-card {
   text-align: center; }
