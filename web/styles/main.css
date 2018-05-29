@@ -502,7 +502,7 @@ img {
 
 .logo {
   height: auto; }
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 600px) {
     .logo {
       height: 100px;
       padding-left: 30%; } }
