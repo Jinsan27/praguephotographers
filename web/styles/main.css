@@ -710,6 +710,16 @@ img {
   margin-left: auto;
   margin-right: auto; }
 
+.primary--extra-small {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto; }
+  @media screen and (min-width: 1199px) {
+    .primary--extra-small {
+      max-width: 45%;
+      margin-left: auto;
+      margin-right: auto; } }
+
 .primary--dark {
   color: #333;
   border-color: currentColor; }
@@ -888,6 +898,11 @@ img {
     width: 100%; }
   .form-style__last {
     width: 100%; }
+  @media screen and (min-width: 1199px) {
+    .form-style {
+      max-width: 65%;
+      margin-left: auto;
+      margin-right: auto; } }
 
 .contact-form {
   font-size: 1.5rem; }

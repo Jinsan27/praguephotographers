@@ -36,6 +36,12 @@
     &__last {
         width: 100%;
     }
+
+    @media screen and (min-width: 1199px) {
+        max-width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .contact-form {
