@@ -109,3 +109,11 @@
 .about-us-banner-wrapper {
   padding: 4 * $spacing-unit-small 0;
 }
+
+.heading-wrapper {
+  
+  @media screen and (min-width: 1199px) {
+    padding-top: 15%;
+    text-align: center;
+  }
+}

@@ -21,8 +21,12 @@
   &--second-banner {
     display: flex;
     justify-content: center;
-    background: url(../images/intro-bg-2.jpg) no-repeat center center;
+    background: url(../images/photographers.jpg) no-repeat center center;
     background-size: cover;
+
+    @media screen and (min-width: 1023px) {
+      height: 85vh;
+    }
   }
 
   &__title {
