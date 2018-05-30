@@ -862,6 +862,9 @@ img {
   .contact-text__header {
     font-family: "Josefin Slab", sans-serif;
     font-size: 4rem; }
+    @media screen and (min-width: 1199px) {
+      .contact-text__header {
+        padding-top: 10%; } }
   .contact-text__description {
     font-size: 1.3rem;
     font-weight: bold;

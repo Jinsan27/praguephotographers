@@ -9,6 +9,10 @@
     &__header {
         font-family: $font-family-josefin;
         font-size: 4rem;
+
+        @media screen and (min-width: 1199px) {
+            padding-top: 10%;
+        }
     }
 
     &__description {
