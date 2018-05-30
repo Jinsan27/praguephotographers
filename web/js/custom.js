@@ -1,5 +1,5 @@
-let menu = document.getElementById('js-menu');
-let trigger = document.querySelector('.js-trigger');
+var menu = document.getElementById('js-menu');
+var trigger = document.querySelector('.js-trigger');
 
 menu.addEventListener('click', function () {
     trigger.classList.toggle('is-open');
