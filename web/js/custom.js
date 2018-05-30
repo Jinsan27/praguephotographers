@@ -6,41 +6,6 @@ menu.addEventListener('click', function () {
     menu.classList.toggle('has-cross');
 });
 
-//https://www.youtube.com/watch?v=oUSvlrDTLi4&feature=youtu.be
-//Smooth Scroll Tutorial
-
-function smoothScroll(target, duration) {
-    var target = document.querySelector(target);
-    var targetPosition = target.getBoundingClientRect().top; //Gets a relative position of an element to the window
-    var startPosition = window.pageYOffset;
-    var distance = targetPosition - startPosition;
-    var startTime = null;
-
-    function animation(currentTime) {
-        if(startTime === null) startTime = currentTime;
-        var timeElapsed = currentTime - startTime;
-        var run = easeInOutQuad(timeElapsed, startPosition, distance, duration);
-        window.scrollTo(0, run);
-
-        if(timeElapsed < duration) requestAnimationFrame(animation);
-    }
-
-    var easeInOutQuad = Math.easeInOutQuad = function (t, b, c, d) {
-        t /= d/2;
-        if (t < 1) return c/2*t*t + b;
-        t--;
-        return -c/2 * (t*(t-2) - 1) + b;
-    };
-
-    requestAnimationFrame(animation);
-}
-
-var btnScroll = document.querySelector('.smooth-scroll-top');
-
-btnScroll.addEventListener('click', function() {
-    smoothScroll('.smooth-scroll', 1500);
-});
-
 var initPhotoSwipeFromDOM = function(gallerySelector) {
 
     // parse slide data (url, title, size ...) from DOM elements 
@@ -246,3 +211,38 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 
 // execute above function
 initPhotoSwipeFromDOM('.gallery');
+
+//https://www.youtube.com/watch?v=oUSvlrDTLi4&feature=youtu.be
+//Smooth Scroll Tutorial
+
+function smoothScroll(target, duration) {
+    var target = document.querySelector(target);
+    var targetPosition = target.getBoundingClientRect().top; //Gets a relative position of an element to the window
+    var startPosition = window.pageYOffset;
+    var distance = targetPosition - startPosition;
+    var startTime = null;
+
+    function animation(currentTime) {
+        if(startTime === null) startTime = currentTime;
+        var timeElapsed = currentTime - startTime;
+        var run = easeInOutQuad(timeElapsed, startPosition, distance, duration);
+        window.scrollTo(0, run);
+
+        if(timeElapsed < duration) requestAnimationFrame(animation);
+    }
+
+    var easeInOutQuad = Math.easeInOutQuad = function (t, b, c, d) {
+        t /= d/2;
+        if (t < 1) return c/2*t*t + b;
+        t--;
+        return -c/2 * (t*(t-2) - 1) + b;
+    };
+
+    requestAnimationFrame(animation);
+}
+
+var btnScroll = document.querySelector('.smooth-scroll-top');
+
+btnScroll.addEventListener('click', function() {
+    smoothScroll('.smooth-scroll', 1500);
+});
