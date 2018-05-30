@@ -428,6 +428,11 @@ img {
 .about-us-banner-wrapper {
   padding: 40px 0; }
 
+@media screen and (min-width: 1199px) {
+  .heading-wrapper {
+    padding-top: 15%;
+    text-align: center; } }
+
 .homepage-header {
   border-bottom: 1px solid #333;
   box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.3); }
@@ -450,8 +455,11 @@ img {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background: url(../images/intro-bg-2.jpg) no-repeat center center;
+    background: url(../images/photographers.jpg) no-repeat center center;
     background-size: cover; }
+    @media screen and (min-width: 1023px) {
+      .homepage-banner--second-banner {
+        height: 85vh; } }
   .homepage-banner__title {
     position: relative;
     z-index: 1;
