@@ -117,3 +117,16 @@
     text-align: center;
   }
 }
+
+//=========================
+//=== #ABOUT US WRAPPER ===
+//=========================
+
+.card-wrapper {
+  padding-bottom: $spacing-unit-small * 14;
+
+  @media screen and (min-width: 992px) {
+    display: flex;
+    justify-content: center;
+  }
+}
