@@ -143,6 +143,29 @@
   }
 }
 
+.contact_btn {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: $font-family-roboto;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  color: darken($white, 5%);
+  border: 2px solid currentColor;
+  padding: (1.5 * $spacing-unit-small) (2 * $spacing-unit-small);
+  transition: all ease-in 200ms;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 //=======================
 //=== #BUTTONS COLORS ===
 //=======================

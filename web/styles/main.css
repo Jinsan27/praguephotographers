@@ -674,6 +674,27 @@ img {
       margin-left: auto;
       margin-right: auto; } }
 
+.contact_btn {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Roboto Condensed", serif;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #f2f2f2;
+  border: 2px solid currentColor;
+  padding: 15px 20px;
+  transition: all ease-in 200ms;
+  margin-left: auto;
+  margin-right: auto; }
+  @media screen and (min-width: 767px) {
+    .contact_btn {
+      margin-left: auto;
+      margin-right: auto; } }
+
 .primary--dark {
   color: #333;
   border-color: currentColor; }
@@ -826,24 +847,20 @@ img {
   text-align: left;
   font-family: "Roboto Condensed", serif;
   width: 75%;
+  max-width: 55rem;
   margin: 1rem auto; }
   .form-style__half {
     width: 100%; }
   .form-style__last {
     width: 100%; }
-  @media screen and (min-width: 1199px) {
-    .form-style {
-      max-width: 65%;
-      margin-left: auto;
-      margin-right: auto; } }
 
 .contact-form {
   font-size: 1.5rem; }
-  .contact-form__name {
-    height: 3rem; }
-  .contact-form__email {
-    height: 3rem; }
+  .contact-form__initials {
+    height: 3rem;
+    border: 1px solid gainsboro; }
   .contact-form__text {
-    height: 8rem; }
+    height: 8rem;
+    border: 1px solid gainsboro; }
 
 /*# sourceMappingURL=main.css.map */
