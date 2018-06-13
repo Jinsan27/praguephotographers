@@ -45,6 +45,9 @@
   &--primary {
     display: block;
     width: 100%;
+    max-width: 35rem;
+    margin-left: auto;
+    margin-right: auto;
     font-family: $font-family-roboto;
     font-size: 1.8rem;
     letter-spacing: 1px;
@@ -61,6 +64,16 @@
       border-color: darken($white, 5%);
       box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, .25);
       transform: scale(.98);
+    }
+
+    @media screen and (min-width: 991px) {
+      font-size: 2rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
@@ -88,7 +101,7 @@
       transform: scale(.98);
     }
   }
-  
+
   &--scroll-top {
     position: absolute;
     bottom: 20.5 * $spacing-unit-small;
@@ -105,12 +118,74 @@
     }
 
     &:hover {
-      box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, .25);
+      box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, .10);
     }
 
     @media screen and (min-width: 992px) {
       display: none;
     }
+  }
+}
+
+//======================
+//=== #BUTTONS SIZES ===
+//======================
+
+.primary--small {
+  width: 75%;
+  max-width: 35rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.contact_btn {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: $font-family-roboto;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  color: darken($white, 5%);
+  border: 2px solid currentColor;
+  padding: (1.5 * $spacing-unit-small) (2 * $spacing-unit-small);
+  transition: all ease-in 200ms;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+//=======================
+//=== #BUTTONS COLORS ===
+//=======================
+
+.primary--dark {
+  color: $blackish;
+  border-color: currentColor;
+}
+
+//=============================
+//=== #BUTTONS INTERACTIONS ===
+//=============================
+
+.primary--no-interaction {
+
+  &:hover {
+    transform: initial;
+    box-shadow: unset;
+    background-color: transparent;
+    border-color: initial;
   }
 }
 

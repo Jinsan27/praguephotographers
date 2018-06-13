@@ -1,0 +1,54 @@
+//=================
+//=== #CONTACT ===
+//=================
+
+.contact-text {
+    text-align: center;
+    font-size: 2.1rem;
+    
+    &__header {
+        font-family: $font-family-josefin;
+        font-size: 4rem;
+
+        @media screen and (min-width: 1199px) {
+            padding-top: 10%;
+        }
+    }
+
+    &__description {
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+}
+
+.form-style {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-family: $font-family-roboto;
+    width: 75%;
+    max-width: 55rem;
+    margin: 1rem auto;
+
+    &__half {
+        width: 100%;
+    }
+    &__last {
+        width: 100%;
+    }
+}
+
+.contact-form {
+    font-size: 1.5rem;
+
+    &__initials {
+        height: 3rem;
+        border: 1px solid gainsboro;
+    }
+
+    &__text {
+        height: 8rem;
+        border: 1px solid gainsboro;
+    }
+}

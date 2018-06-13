@@ -9,7 +9,7 @@
   @media screen and (min-width: 992px) {
     display: block;
     float: left;
-    height: 104px;
+    height: 106px;
     width: 50%;
   }
 }
@@ -73,7 +73,7 @@
 //=========================
 
 .homepage-wrapper {
-  padding: 0 2.5 * $spacing-unit-small;
+  padding: 0 1.5 * $spacing-unit-small;
   
   &--flex {
     height: 100%;
@@ -99,5 +99,34 @@
       margin-left: auto;
       margin-right: auto;
     }
+  }
+}
+
+//=========================
+//=== #ABOUT US WRAPPER ===
+//=========================
+
+.about-us-banner-wrapper {
+  padding: 4 * $spacing-unit-small 0;
+}
+
+.heading-wrapper {
+  
+  @media screen and (min-width: 1199px) {
+    padding-top: 15%;
+    text-align: center;
+  }
+}
+
+//=========================
+//=== #ABOUT US WRAPPER ===
+//=========================
+
+.card-wrapper {
+  padding-bottom: $spacing-unit-small * 14;
+
+  @media screen and (min-width: 992px) {
+    display: flex;
+    justify-content: center;
   }
 }

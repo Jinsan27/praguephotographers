@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="The official website of PraguePhotographers">
   <meta name="author" content="Nguyen Ngoc Tu, Nguyen Huy">
+  
+  <!-- FB Meta tags for sharing -->
+  <meta property="og:title" content="Prague Photographers">
+  <meta property="og:description" content="Service providing tours with professional photographers.">
+  <meta property="og:url" content=""> <!-- Put index.html once the site is online -->
+  <meta property="og:image" content=""> <!-- Put thumbnail image path, thumbnail size - 1200x1200 -->
+  <meta property="og:site_name" content="Prague Photographers">
   
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
@@ -17,6 +24,7 @@
   <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,700|Roboto+Condensed:400,700" rel="stylesheet">
   
   <title>Prague Photographers</title>
+  <link rel="shortcut icon" type="images/favicon.jpeg" href="images/favicon.jpeg">
 </head>
 
 <body>
@@ -33,19 +41,19 @@
     <ul class="site-nav">
       <li class="site-nav__items"><a href="story.html">Our Story</a></li>
       <li class="site-nav__items"><a href="gallery.html">Gallery</a></li>
-      <li class="site-nav__items"><a href="book.html">Book Us</a></li>
+      <li class="site-nav__items"><a href="https://praguephotographers.rezgo.com/details/158099/catch-the-best-photos-of-prague">Book Us</a></li>
       <li class="site-nav__items"><a href="contact.html">Contact Us</a></li>
     </ul>
   </nav>
   <section class="homepage-banner flex-wrapper">
     <div class="homepage-wrapper layout-wrapper layout-wrapper--small">
-      <div class="homepage-banner__overlay"></div>
+      <div class="overlay"></div>
 
       <h1 class="homepage-banner__title">
-        <a href="#top">Prague Photographers</a>
+        <a href="#top" class="smooth-scroll">Prague Photographers</a>
       </h1>
       
-      <a href="#" class="btn btn--primary" role="button">Book Us</a>
+      <a href="https://praguephotographers.rezgo.com/details/158099/catch-the-best-photos-of-prague" class="btn btn--primary" role="button">Book Us</a>
     </div>
   </section>
 
@@ -73,7 +81,7 @@
       <div class="text-wrapper">
         <h2 class="homepage-description__title">Meet Prague Photographers</h2>
       </div>
-      <div class="homepage-banner__overlay"></div>
+      <div class="overlay"></div>
     </div>
   </section>
 
@@ -100,22 +108,39 @@
         <p class="homepage-description__text">You will have 100% fun.</p>
       </div>
       
-      <a href="#top" class="btn btn--scroll-top" title="Top">
+      <a href="#top" class="btn btn--scroll-top smooth-scroll-top" title="Top">
         <i class="fas fa-chevron-up"></i>
       </a>
     </div>
   </section>
 
+  <section class="card-wrapper">
+    <div class="card home-card">
+      <h3 class="home-card__title">1</h3>
+      <p class="home-card__text">Click on the <strong>BOOK US</strong> button.</p>
+    </div>
+
+    <div class="card home-card">
+      <h3 class="home-card__title">2</h3>
+      <p class="home-card__text">Select the date, book your place and proceed to the payment process.</p>
+    </div>
+
+    <div class="card home-card">
+      <h3 class="home-card__title">3</h3>
+      <p class="home-card__text">Receive the confirmation of the reservation and enjoy your amazing photo-tour!</p>
+    </div>
+  </section>
+
   <footer class="footer-section">
-    <h3 class="footer-section__title">Social Links</h3>
+    <h3 class="footer-section__title">Social Media</h3>
     <ul class="footer-section__social">
       <li class="social-item">
-          <a href="#" class="social-item__link">
+          <a href="https://www.facebook.com/praguephotographers/" class="social-item__link">
             <i class="fab fa-facebook-f social-icon"></i>
           </a>
       </li>
       <li class="social-item">
-        <a href="#" class="social-item__link">
+        <a href="https://www.instagram.com/praguephotographers/" class="social-item__link">
             <i class="fab fa-instagram social-icon"></i>
         </a>
       </li>
@@ -125,6 +150,6 @@
       <p class="footer-section__copy">Icons by <a href="https://www.flaticon.com/"><em>Flaticon</em></a></p>
     </div>
   </footer>
-  <script src="./js/custom.js"></script>
+  <script src="./js/custom.min.js"></script>
 </body>
 </html>

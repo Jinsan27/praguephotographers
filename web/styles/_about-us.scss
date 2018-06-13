@@ -1,0 +1,66 @@
+//=================
+//=== #ABOUT US ===
+//=================
+
+.about-us-banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../images/aboutus.jpg") no-repeat center center;
+  background-size: cover;
+  height: 55vh;
+  width: 100%;
+
+  @media screen and (min-width: 767px) {
+    height: 70vh;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1199px) {
+    background-attachment: fixed;
+  }
+
+  &__title {
+    font-family: $font-family-josefin;
+    font-size: 3rem;
+    color: $white;
+    z-index: 1;
+
+    @media screen and (min-width: 767px) {
+      font-size: 6rem;
+    }
+  }
+
+  &__sub-title {
+    font-family: $font-family-josefin;
+    font-size: 2.4rem;
+    color: $blackish;
+    padding: 4 * $spacing-unit-small 0;
+    background-color: lighten($blackish, 75%);
+    margin: 0;
+
+    &--margin {
+      margin-bottom: $spacing-unit-small * 5;
+    }
+
+    @media screen and (min-width: 767px) {
+      font-size: 3.2rem;
+    }
+  }
+
+  &__text {
+    padding: 0 1.5 * $spacing-unit-small;
+    font-family: $font-family-roboto;
+    font-size: 1.8rem;
+
+    @media screen and (min-width: 767px) {
+      margin: 8px 0;
+      font-size: 2.1rem;
+    }
+  }
+}
+
+.about-us-card {
+  text-align: center;
+}

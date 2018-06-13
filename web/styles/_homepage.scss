@@ -21,19 +21,12 @@
   &--second-banner {
     display: flex;
     justify-content: center;
-    background: url(../images/intro-bg-2.jpg) no-repeat center center;
+    background: url(../images/photographers.jpg) no-repeat center center;
     background-size: cover;
-  }
 
-  &__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .35);
+    @media screen and (min-width: 1023px) {
+      height: 85vh;
+    }
   }
 
   &__title {
@@ -47,7 +40,7 @@
     margin: 0 0 3 * $spacing-unit-small 0;
 
     @media screen and (min-width: 767px) {
-      font-size: 6.5rem;
+      font-size: 8rem;
     }
   }
 }
@@ -57,12 +50,16 @@
 //=============================
 
 .homepage-description {
-  padding: 3 * $spacing-unit-small 1.5 * $spacing-unit-small;
+  padding: 7 * $spacing-unit-small 2 * $spacing-unit-small;
   text-align: center;
 
   &__title {
     font-family: $font-family-josefin;
     font-size: 3.8rem;
+
+    @media screen and (min-width: 991px) {
+      font-size: 6rem;
+    }
   }
 
   &__text {
@@ -71,7 +68,7 @@
     font-weight: 400;
 
     @media screen and (min-width: 767px) {
-      font-size: 1.6rem;
+      font-size: 2.4rem;
     }
   }
 
@@ -81,7 +78,7 @@
 
   &--medium-size {
     padding-top: 8 * $spacing-unit-small;
-    padding-bottom: 12 * $spacing-unit-small;
+    padding-bottom: 6 * $spacing-unit-small;
   }
 }
 
@@ -91,4 +88,55 @@
 
 .card {
   margin: 0 2.5 * $spacing-unit-small;
+}
+
+.home-card {
+  text-align: center;
+  padding: $spacing-unit-small * 1.8;
+  box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, .25);
+  font-family: $font-family-roboto;
+
+  &:nth-of-type(2) {
+    margin-top: $spacing-unit-small * 4;
+    margin-bottom: $spacing-unit-small * 4;
+
+    @media screen and (min-width: 992px) {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    font-size: 2rem;
+
+    @media screen and (min-width: 992px) {
+      font-size: 4rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.6rem;
+
+    @media screen and (min-width: 992px) {
+      max-width: 250px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 2rem;
+    }
+  }
+}
+
+//=====================
+//=== #DARK OVERLAY ===
+//=====================
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .35);
 }

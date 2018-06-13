@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -13,7 +13,11 @@
   <link rel="stylesheet" href="./styles/main.css">
   
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+
+  <title>Contact Us</title>
+  <link rel="shortcut icon" type="images/favicon.jpeg" href="images/favicon.jpeg">
+</head>
   
 <body>
     <header class="nav-wrapper">
@@ -29,43 +33,61 @@
         <ul class="site-nav">
           <li class="site-nav__items"><a href="story.html">Our Story</a></li>
           <li class="site-nav__items"><a href="gallery.html">Gallery</a></li>
-          <li class="site-nav__items"><a href="book.html">Book Us</a></li>
+          <li class="site-nav__items"><a href="https://praguephotographers.rezgo.com/details/158099/catch-the-best-photos-of-prague">Book Us</a></li>
           <li class="site-nav__items"><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
-    
-<section>
-    <h1 class="">Hello</h1>
-        <p class="#">Are you a photographer?</p>
-        <a href="#" class="btn btn--secondary" role="button">Join Us</a>
 
-        <p class="#">Or do you want an extraordinary exprience in Prague?</p>
+        <title>Contact Us</title>
+        <link rel="shortcut icon" type="images/favicon.jpeg" href="images/favicon.jpeg">
+    </head>
 
-        <a href="#" class="btn btn--secondary" role="button">Book Us</a>
+<section class="contact-text">
+    <h1 class="contact-text__header">Hello there!</h1>
 
-        <p class="#">For everything else</p>
-        <a href="#">Email</a>
-        <p class="#">or</p>
-        <p class="#">Telephone</p>
+    <form class="contact-form" action="https://formspree.io/martin@praguephotographers.com"
+        method="POST">
+        <div class="form-style">
+            <h2 class="contact-text">
+                We'd love to hear from you.
+                Send us a message and we'll respond as soon as possible!
+            </h2>
+            <div class="form-style form-style__half">
+                <label class="contact-text__description">Name</label>
+                <input class="contact-form__initials" type="text" id="name">
+            </div>
+            <div class="form-style form-style__half">
+                <label class="contact-text__description">Email Address</label>
+                <input class="contact-form__initials" type="email" id="_email">
+            </div>
+            <div class="form-style form-style__last">
+                <label class="contact-text__description">Message</label>
+                <input class="contact-form__text" type="text" id="message">
+            </div>
+            <input class="btn primary--dark contact_btn primary--no-interaction" type="submit" value="Send">
+        </div>
+    </form>
 
 </section>
+
+
         
 <footer class="footer-section">
-    <h3 class="footer-section__title">Social Links</h3>
+    <h3 class="footer-section__title">Social Media</h3>
     <ul class="footer-section__social">
         <li class="social-item">
-            <a href="#" class="social-item__link">
+            <a href="https://www.facebook.com/praguephotographers/" class="social-item__link">
             <i class="fab fa-facebook-f social-icon"></i>
             </a>
         </li>
         <li class="social-item">
-        <a href="#" class="social-item__link">
+        <a href="https://www.instagram.com/praguephotographers/" class="social-item__link">
             <i class="fab fa-instagram social-icon"></i>
         </a>
         </li>
     </ul>
     <p class="footer-section__copy">&copy; 2018 - Prague Photographers</p>
     </footer>
-    <script src="./js/custom.js"></script>
+    <script src="./js/custom.min.js"></script>
 </body>
 </html>
