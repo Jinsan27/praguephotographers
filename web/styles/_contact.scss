@@ -42,7 +42,12 @@
 .contact-form {
     font-size: 1.5rem;
 
-    &__initials {
+    &__name {
+        height: 3rem;
+        border: 1px solid gainsboro;
+    }
+
+    &__email {
         height: 3rem;
         border: 1px solid gainsboro;
     }
