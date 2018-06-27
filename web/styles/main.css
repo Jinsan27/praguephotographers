@@ -866,4 +866,9 @@ img {
     height: 8rem;
     border: 1px solid gainsboro; }
 
+.billing-info {
+  max-width: 18rem;
+  margin-left: auto;
+  margin-right: auto; }
+
 /*# sourceMappingURL=main.css.map */
