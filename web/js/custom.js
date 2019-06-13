@@ -1,5 +1,10 @@
 var menu = document.getElementById('js-menu');
 var trigger = document.querySelector('.js-trigger');
+var btnScroll = document.querySelector('.smooth-scroll-top');
+
+document.addEventListener('DOMContentLoaded', function() {
+  new Accordion('.accordion-container')
+})
 
 menu.addEventListener('click', function () {
     trigger.classList.toggle('is-open');
@@ -241,8 +246,8 @@ function smoothScroll(target, duration) {
     requestAnimationFrame(animation);
 }
 
-var btnScroll = document.querySelector('.smooth-scroll-top');
-
-btnScroll.addEventListener('click', function() {
-    smoothScroll('.smooth-scroll', 1500);
-});
+if (btnScroll) {
+  btnScroll.addEventListener('click', function() {
+      smoothScroll('.smooth-scroll', 1500);
+  });
+}
