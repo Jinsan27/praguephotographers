@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="The official website of PraguePhotographers">
   <meta name="author" content="Nguyen Ngoc Tu, Nguyen Huy">
+  <meta name="robots" content="index,follow">
   
   <!-- FB Meta tags for sharing -->
   <meta property="og:title" content="Prague Photographers">
@@ -18,18 +19,29 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
 
   <!-- Custom Stylesheet -->
-  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="css/main/main.css">
   
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,700|Roboto+Condensed:400,700" rel="stylesheet">
   
   <title>Prague Photographers</title>
   <link rel="shortcut icon" type="images/favicon.jpeg" href="images/favicon.jpeg">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139834712-1"></script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-139834712-1');
+  </script>
 </head>
 
 <body>
   <header class="nav-wrapper">
-    <a href="index.html"><img class="logo" src="./images/logo.jpeg" alt="Logo Icon"></a>
+    <a href="index.html"><img class="logo" src="/images/logo.jpeg" alt="Logo Icon"></a>
     <button class="btn btn--menu" id="js-menu">
       <span class="menu-line"></span>
       <span class="menu-line"></span>
@@ -42,19 +54,25 @@
       <li class="site-nav__items"><a href="story.html">Our Story</a></li>
       <li class="site-nav__items"><a href="gallery.html">Gallery</a></li>
       <li class="site-nav__items"><a href="https://praguephotographers.rezgo.com/details/158099/catch-the-best-photos-of-prague">Book Us</a></li>
-      <li class="site-nav__items"><a href="faq.html">FAQ</a></li>
       <li class="site-nav__items"><a href="contact.html">Contact Us</a></li>
     </ul>
   </nav>
   <section class="homepage-banner flex-wrapper">
     <div class="homepage-wrapper layout-wrapper layout-wrapper--small">
-      <div class="overlay"></div>
-
-      <h1 class="homepage-banner__title">
-        <a href="#top" class="smooth-scroll">Prague Photographers</a>
-      </h1>
       
-      <a href="https://praguephotographers.rezgo.com/details/158099/catch-the-best-photos-of-prague" class="btn btn--primary" role="button">Book Us</a>
+      <div class="hero-banner__img-wrapper">
+        <div class="hero-banner__box-1"><img src="images/box-yellow.svg" alt=""></div>
+        <div class="hero-banner__box-2"><img src="images/box-yellow.svg" alt=""></div>
+        <div class="hero-banner__line"><img src="images/line.svg" alt=""></div>
+        <img src="images/hero-img.jpg" alt="hero banner main img">
+        <div class="hero-banner__btn-wrapper">
+          <a
+                  href="https://praguephotographers.rezgo.com/details/158099/catch-the-best-photos-of-prague"
+                  class="btn btn--primary"
+                  role="button">Book Us
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -110,6 +128,7 @@
       </div>
       
       <a href="#top" class="btn btn--scroll-top smooth-scroll-top" title="Top">
+
         <i class="fas fa-chevron-up"></i>
       </a>
     </div>
@@ -151,6 +170,6 @@
       <p class="footer-section__copy">Icons by <a href="https://www.flaticon.com/"><em>Flaticon</em></a></p>
     </div>
   </footer>
-  <script src="./js/custom.min.js"></script>
+  <script src="js/custom.min.js"></script>
 </body>
 </html>

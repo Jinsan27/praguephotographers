@@ -9,7 +9,7 @@
 
 .homepage-banner {
   position: relative;
-  background: url(../images/intro-bg.jpg) no-repeat center center;
+  // background: url(/images/intro-bg.jpg) no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 85vh;
@@ -21,7 +21,7 @@
   &--second-banner {
     display: flex;
     justify-content: center;
-    background: url(../images/photographers.jpg) no-repeat center center;
+    background: url(/images/photographers.jpg) no-repeat center center;
     background-size: cover;
 
     @media screen and (min-width: 1023px) {

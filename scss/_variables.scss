@@ -1,0 +1,31 @@
+//==================
+//=== #VARIABLES ===
+//==================
+
+// Media query
+
+/* Small devices (tablets, 768px and up) */
+$sm-min: "only screen and (min-width: 768px)";
+/* Medium devices (desktops, 992px and up) */
+$md-min: "only screen and (min-width: 992px)";
+/* Large devices (large desktops, 1200px and up) */
+$lg-min: "only screen and (min-width: 1200px)";
+
+$xs-up: "only screen and (min-width: 500px)";
+$sm-up: "only screen and (min-width: 768px)";
+
+
+//Colors
+$white: #fff;
+$yellow: #F8BC6D;
+$blackish: #333;
+$fb-purple: #3b5998;
+$instagram-pink: #c32aa3;
+
+// Spacings
+$spacing-unit-small: 10px;
+
+// Fonts
+$font-family-playfair: "Playfair Display", sans-serif;
+$font-family-josefin: "Josefin Slab", sans-serif;
+$font-family-roboto: "Roboto Condensed", serif;

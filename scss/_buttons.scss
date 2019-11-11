@@ -52,16 +52,17 @@
     font-size: 1.8rem;
     letter-spacing: 1px;
     text-transform: uppercase;
+    background-color: $white;
     text-align: center;
-    color: darken($white, 5%);
-    border: 2px solid currentColor;
+    color: darken($yellow, 5%);
+    border: 3px solid $yellow;
     padding: (1.5 * $spacing-unit-small) (2 * $spacing-unit-small);
     transition: all ease-in 200ms;
 
     &:hover {
-      background-color: darken($white, 5%);
+      background-color: darken($yellow, 5%);
       color: $blackish;
-      border-color: darken($white, 5%);
+      border-color: darken($yellow, 5%);
       box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, .25);
       transform: scale(.98);
     }
