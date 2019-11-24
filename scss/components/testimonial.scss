@@ -1,0 +1,40 @@
+.c-testimonial {
+  &__item {
+    text-align: center;
+
+    @media screen and (min-width: 992px) {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  }
+
+  &__quote {
+    img {
+      margin: 0 100px 0 auto;
+      max-width: 50px;
+      height: auto;
+    }
+  }
+
+  &__content {
+    .p-nw {
+      margin-bottom: 60px;
+      font-size: 16px;
+      line-height: 24px;
+      font-family: $font-family-roboto;
+    }
+  }
+
+  &__name {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: bold;
+    font-family: $font-family-roboto;
+  }
+
+  &__location {
+    font-size: 13px;
+    line-height: 20px;
+    font-family: $font-family-roboto;
+  }
+}

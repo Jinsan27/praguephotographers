@@ -532,10 +532,14 @@ img {
   background-color: rgba(0, 0, 0, 0.35); }
 
 .logo {
-  height: auto; }
+  height: auto;
+  max-width: 250px; }
   @media screen and (min-width: 600px) {
     .logo {
       height: 100px;
+      max-width: 100%; } }
+  @media screen and (min-width: 992px) {
+    .logo {
       padding-left: 30%; } }
 
 .site-nav {
@@ -577,7 +581,7 @@ img {
     .site-nav {
       display: -webkit-box;
       display: flex;
-      padding-left: 30%; } }
+      padding-left: 60px; } }
 
 .footer-section {
   font-size: 1.8rem;
@@ -1071,3 +1075,35 @@ img {
       bottom: -65px; } }
   .hero-banner__btn-wrapper .btn--primary {
     width: 100%; }
+
+.c-testimonial__item {
+  text-align: center; }
+  @media screen and (min-width: 992px) {
+    .c-testimonial__item {
+      max-width: 300px;
+      margin: 0 auto; } }
+
+.c-testimonial__quote img {
+  margin: 0 100px 0 auto;
+  max-width: 50px;
+  height: auto; }
+
+.c-testimonial__content .p-nw {
+  margin-bottom: 60px;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Roboto Condensed", serif; }
+
+.c-testimonial__name {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: bold;
+  font-family: "Roboto Condensed", serif; }
+
+.c-testimonial__location {
+  font-size: 13px;
+  line-height: 20px;
+  font-family: "Roboto Condensed", serif; }
+
+.l-global-wrapper {
+  margin-bottom: 96px; }

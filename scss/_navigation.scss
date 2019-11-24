@@ -4,9 +4,14 @@
 
 .logo {
   height: auto;
+  max-width: 250px;
   
   @media screen and (min-width: 600px) {
     height: 100px;
+    max-width: 100%;
+  }
+
+  @media screen and (min-width: 992px) {
     padding-left: 30%;
   }
 }
@@ -64,6 +69,6 @@
 
   @media screen and (min-width: 992px) {
     display: flex;
-    padding-left: 30%;
+    padding-left: 60px;
   }
 }
