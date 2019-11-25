@@ -1,10 +1,13 @@
 .c-testimonial {
+  position: relative;
+
   &__item {
     text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
 
-    @media screen and (min-width: 992px) {
-      max-width: 300px;
-      margin: 0 auto;
+    @media screen and (min-width: 1400px){
+      max-width: 400px;
     }
   }
 
@@ -36,5 +39,32 @@
     font-size: 13px;
     line-height: 20px;
     font-family: $font-family-roboto;
+  }
+
+  .nav-btn{
+    height: 47px;
+    position: absolute;
+    width: 26px;
+    cursor: pointer;
+    bottom: 0;
+
+    @media screen and (min-width: 1080px) {
+      bottom: 150px !important;
+    }
+  }
+
+  .owl-prev.disabled,
+  .owl-next.disabled {
+    pointer-events: none;
+    opacity: 0.2;
+  }
+
+  .prev-slide {
+    background: url(/images/nav-icon.png) no-repeat 0 0;
+    left: 30px;
+  }
+  .next-slide {
+    background: url(/images/nav-icon.png) no-repeat -24px 0px;
+    right: 30px;
   }
 }

@@ -1,0 +1,32 @@
+.heading-nw {
+  position: relative;
+  margin: 0 auto 80px;
+  width: 100%;
+  text-align: center;
+  font-family: $font-family-roboto;
+  font-weight: 100;
+
+  &--2 {
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: 1px;
+    max-width: 300px;
+
+    @media (min-width: 768px) {
+      max-width: 100%;
+    }
+
+    &:before {
+      position: absolute;
+      content: "";
+      bottom: -32px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 100px;
+      height: 4px;
+      background: #f7b155;
+    }
+  }
+
+}

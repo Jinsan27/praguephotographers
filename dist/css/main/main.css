@@ -480,7 +480,7 @@ img {
       .homepage-description__title {
         font-size: 6rem; } }
   .homepage-description__text {
-    font-family: "Roboto Condensed", serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.8rem;
     font-weight: 400; }
     @media screen and (min-width: 767px) {
@@ -499,7 +499,7 @@ img {
   text-align: center;
   padding: 18px;
   box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.25);
-  font-family: "Roboto Condensed", serif; }
+  font-family: "Roboto", sans-serif; }
   .home-card:nth-of-type(2) {
     margin-top: 40px;
     margin-bottom: 40px; }
@@ -545,7 +545,7 @@ img {
 .site-nav {
   width: 100%;
   font-size: 1.4rem;
-  font-family: "Roboto Condensed", serif;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   position: absolute;
   top: 0;
@@ -585,7 +585,7 @@ img {
 
 .footer-section {
   font-size: 1.8rem;
-  font-family: "Roboto Condensed", serif;
+  font-family: "Roboto", sans-serif;
   text-align: center; }
   .footer-section__title {
     font-weight: 400; }
@@ -647,7 +647,7 @@ img {
     max-width: 35rem;
     margin-left: auto;
     margin-right: auto;
-    font-family: "Roboto Condensed", serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.8rem;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -678,7 +678,7 @@ img {
     z-index: 1;
     display: block;
     width: 90%;
-    font-family: "Roboto Condensed", serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.8rem;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -698,7 +698,7 @@ img {
               transform: scale(0.98); }
   .btn--scroll-top {
     position: absolute;
-    bottom: 205px;
+    bottom: 180px;
     display: -webkit-box;
     display: flex;
     -webkit-box-align: center;
@@ -733,7 +733,7 @@ img {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  font-family: "Roboto Condensed", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.8rem;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -880,7 +880,7 @@ img {
         font-size: 3.2rem; } }
   .about-us-banner__text {
     padding: 0 15px;
-    font-family: "Roboto Condensed", serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.8rem; }
     @media screen and (min-width: 767px) {
       .about-us-banner__text {
@@ -911,7 +911,7 @@ img {
   -webkit-box-direction: normal;
           flex-direction: column;
   text-align: left;
-  font-family: "Roboto Condensed", serif;
+  font-family: "Roboto", sans-serif;
   width: 75%;
   max-width: 55rem;
   margin: 1rem auto; }
@@ -1045,7 +1045,7 @@ img {
     line-height: 43px;
     letter-spacing: 2px;
     font-weight: 100;
-    font-family: "Roboto Condensed", serif;
+    font-family: "Roboto", sans-serif;
     text-align: center; }
     @media only screen and (min-width: 768px) {
       .hero-banner__text-wrapper h1 {
@@ -1076,34 +1076,78 @@ img {
   .hero-banner__btn-wrapper .btn--primary {
     width: 100%; }
 
-.c-testimonial__item {
-  text-align: center; }
-  @media screen and (min-width: 992px) {
-    .c-testimonial__item {
-      max-width: 300px;
-      margin: 0 auto; } }
-
-.c-testimonial__quote img {
-  margin: 0 100px 0 auto;
-  max-width: 50px;
-  height: auto; }
-
-.c-testimonial__content .p-nw {
-  margin-bottom: 60px;
-  font-size: 16px;
-  line-height: 24px;
-  font-family: "Roboto Condensed", serif; }
-
-.c-testimonial__name {
-  font-size: 13px;
-  line-height: 20px;
-  font-weight: bold;
-  font-family: "Roboto Condensed", serif; }
-
-.c-testimonial__location {
-  font-size: 13px;
-  line-height: 20px;
-  font-family: "Roboto Condensed", serif; }
+.c-testimonial {
+  position: relative; }
+  .c-testimonial__item {
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto; }
+    @media screen and (min-width: 1400px) {
+      .c-testimonial__item {
+        max-width: 400px; } }
+  .c-testimonial__quote img {
+    margin: 0 100px 0 auto;
+    max-width: 50px;
+    height: auto; }
+  .c-testimonial__content .p-nw {
+    margin-bottom: 60px;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Roboto", sans-serif; }
+  .c-testimonial__name {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif; }
+  .c-testimonial__location {
+    font-size: 13px;
+    line-height: 20px;
+    font-family: "Roboto", sans-serif; }
+  .c-testimonial .nav-btn {
+    height: 47px;
+    position: absolute;
+    width: 26px;
+    cursor: pointer;
+    bottom: 0; }
+    @media screen and (min-width: 1080px) {
+      .c-testimonial .nav-btn {
+        bottom: 150px !important; } }
+  .c-testimonial .owl-prev.disabled,
+  .c-testimonial .owl-next.disabled {
+    pointer-events: none;
+    opacity: 0.2; }
+  .c-testimonial .prev-slide {
+    background: url(/images/nav-icon.png) no-repeat 0 0;
+    left: 30px; }
+  .c-testimonial .next-slide {
+    background: url(/images/nav-icon.png) no-repeat -24px 0px;
+    right: 30px; }
 
 .l-global-wrapper {
   margin-bottom: 96px; }
+
+.heading-nw {
+  position: relative;
+  margin: 0 auto 80px;
+  width: 100%;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100; }
+  .heading-nw--2 {
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: 1px;
+    max-width: 300px; }
+    @media (min-width: 768px) {
+      .heading-nw--2 {
+        max-width: 100%; } }
+    .heading-nw--2:before {
+      position: absolute;
+      content: "";
+      bottom: -32px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 100px;
+      height: 4px;
+      background: #f7b155; }

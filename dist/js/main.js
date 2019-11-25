@@ -1,6 +1,6 @@
 // Carousel for testimonial section
 
-let $carouselTestimonial = $('.carousel-testimonial');
+let $carouselTestimonial = $('.c-testimonial');
 
 if ($carouselTestimonial.length > 0) {
 
