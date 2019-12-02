@@ -583,18 +583,45 @@ img {
       display: flex;
       padding-left: 60px; } }
 
-.footer-section {
+.footer {
   font-size: 1.8rem;
-  font-family: "Roboto", sans-serif;
-  text-align: center; }
-  .footer-section__title {
+  font-family: "Roboto", sans-serif; }
+  .footer__inner {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+            align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 32px;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .footer__inner {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+                flex-direction: row;
+        text-align: left; } }
+    @media (min-width: 1200px) {
+      .footer__inner {
+        padding: 0; } }
+  .footer__item {
+    margin-bottom: 24px; }
+    @media (min-width: 768px) {
+      .footer__item {
+        margin-bottom: 0; } }
+  .footer__title {
     font-weight: 400; }
-  .footer-section__social {
+  .footer__social {
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: center;
             justify-content: center; }
-  .footer-section__copy {
+  .footer__copy {
     margin: 0;
     padding: 0 15px 15px 15px; }
 

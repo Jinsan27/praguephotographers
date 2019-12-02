@@ -2,10 +2,37 @@
 //=== #FOOTER ===
 //===============
 
-.footer-section {
+.footer {
   font-size: 1.8rem;
   font-family: $font-family-roboto;
-  text-align: center;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 32px;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      text-align: left;
+    }
+
+    @media (min-width: 1200px) {
+      padding: 0;
+    }
+  }
+
+  &__item {
+    margin-bottom: 24px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
 
   &__title {
     font-weight: 400;
