@@ -1,0 +1,47 @@
+.counter {
+  display: flex;
+  margin: 0 auto 48px;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 64px;
+  }
+
+  @media (min-width: 992px) {
+    margin-bottom: 64px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 96px;
+    justify-content: space-around;
+  }
+
+  &__item {
+    font-family: $font-family-roboto;
+    margin-bottom: 32px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__number {
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 18px;
+
+    @media (min-width: 992px) {
+      font-size: 64px;
+      line-height: 1;
+    }
+  }
+
+  &__label {
+    font-size: 20px;
+    line-height: 1;
+  }
+}
