@@ -15,10 +15,13 @@
 @import "components/hero-banner";
 @import "components/testimonial";
 @import "components/counter";
+@import "components/pricing-box";
 
 // Layout
 @import "layout/global-wrapper";
 @import "layout/container";
+@import "layout/section";
 
 // UI KIT
 @import "ui/heading";
+@import "ui/paragraph";

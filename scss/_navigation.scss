@@ -40,24 +40,14 @@
       a {
         position: relative;
         font-size: 1.8rem;
-
-        &::after {
-          content: "";
-          position: absolute;
-          bottom: -4px;
-          left: 0;
-          width: 0;
-          height: 2px;
-          background-color: transparent;
-          transition: all ease-in-out 300ms;
-        }
+        transition: all 0.3s ease-in-out;
   
         &:hover {
-  
-          &::after {
-            background-color: $blackish;
-            width: 100%;
-          }
+          color: #F29471;
+        }
+
+        &.active {
+          color: #F29471;
         }
       }
 

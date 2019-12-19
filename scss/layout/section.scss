@@ -1,0 +1,9 @@
+.section {
+  &--with-padding-top {
+    padding-top: 32px;
+
+    @media (min-width: 992px) {
+      padding-top: 144px;
+    }
+  }
+}

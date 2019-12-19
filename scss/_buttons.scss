@@ -103,6 +103,27 @@
     }
   }
 
+  &--cta {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    font-family: $font-family-roboto;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    text-align: center;
+    color: black;
+    border: 2px solid black;
+    padding: 12px 32px;
+    transition: all ease-in 200ms;
+    margin: 0 auto;
+
+    &:hover {
+      color: white;
+      background: black;
+    }
+  }
+
   &--scroll-top {
     position: absolute;
     bottom: 18 * $spacing-unit-small;

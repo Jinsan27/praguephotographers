@@ -29,4 +29,14 @@
     }
   }
 
+  &--3 {
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: 1px;
+    max-width: 300px;
+
+    @media (min-width: 768px) {
+      max-width: 100%;
+    }
+  }
 }

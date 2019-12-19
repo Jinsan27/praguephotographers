@@ -45,16 +45,16 @@ if ($carouselTestimonial.length > 0) {
     });
 }
 
-let waipointWrapper = '.waipoint-wrapper-js';
+let $waipointWrapper = $('.waipoint-wrapper-js');
 
-if(waipointWrapper.length > 0) {
+if ($waipointWrapper.length > 0) {
 
     var counter1 = new CountUp("counter1", 0, 726, 0, 2, {
         useEasing: true,
         useGrouping: true,
     });
 
-    var counter2 = new CountUp("counter2", 0, 600, 0, 2, {
+    var counter2 = new CountUp("counter2", 0, 135493, 0, 2, {
         useEasing: false,
         useGrouping: true,
     });
@@ -88,3 +88,12 @@ if(waipointWrapper.length > 0) {
         offset: '80%'
     });
 }
+
+$(function() {
+    var pgurl = window.location.href.substr(window.location.href.lastIndexOf("/") + 1);
+
+    $(".site-nav li a").each(function() {
+        if ($(this).attr("href") == pgurl || $(this).attr("href") == '')
+            $(this).addClass("active");
+    })
+});
