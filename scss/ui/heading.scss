@@ -39,4 +39,16 @@
       max-width: 100%;
     }
   }
+
+  &--hero {
+    font-size: 42px;
+    line-height: 1;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    @media (min-width: 768px) {
+      font-size: 70px;
+    }
+  }
 }
