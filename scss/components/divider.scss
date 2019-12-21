@@ -1,0 +1,14 @@
+.divider {
+  width: 40px;
+  height: 4px;
+  background: $brand-orange;
+  margin: 40px auto;
+
+  @media (min-width: 992px) {
+    margin: 40px 0;
+  }
+
+  &--white {
+    background: $white;
+  }
+}

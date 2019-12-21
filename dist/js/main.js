@@ -97,3 +97,25 @@ $(function() {
             $(this).addClass("active");
     })
 });
+
+let $scrollToJs = $('.scroll-to-js');
+
+if ($scrollToJs.length > 0) {
+// SCROLL TO FUNCTION
+    var scrollTo = function (scrollFrom, scrollTo) {
+        scrollFrom.click(function (e) {
+            e.preventDefault();
+
+            $('html, body').stop().animate({
+                'scrollTop': scrollTo.offset().top
+            }, 1000);
+        });
+    };
+
+    // SCROLL TO FUNCTION INIT
+    var $scrollFrom = $('[data-scroll-from]');
+    var $scrollTo = $('[data-scroll-to]');
+    if ($scrollFrom && $scrollTo) {
+        scrollTo($scrollFrom, $scrollTo);
+    }
+}

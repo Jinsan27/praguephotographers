@@ -77,3 +77,41 @@
   transition: all 0.2s ease;
   font-size: 2rem;
 }
+
+.footer-links {
+  &__link {
+    z-index: 4;
+    position: relative;
+    color: red;
+    overflow: hidden;
+    padding: 0 4px;
+    height: 15px;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1;
+
+    &:hover {
+      outline: none;
+    }
+
+    span {
+      position: relative;
+      display: inline-block;
+      transition: transform 0.3s;
+
+      &:hover{
+        transform: translateY(-100%);
+      }
+
+      &:before {
+        position: absolute;
+        top: 100%;
+        content: attr(data-hover);
+        font-weight: 700;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+    }
+  }
+}
