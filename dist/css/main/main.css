@@ -601,15 +601,58 @@ img {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
                 flex-direction: row;
-        text-align: left; } }
+        text-align: left;
+        flex-wrap: wrap; } }
     @media (min-width: 1200px) {
       .footer__inner {
         padding: 0; } }
+  .footer__nav {
+    display: block;
+    margin: 48px auto;
+    text-align: center; }
+    .footer__nav li {
+      display: inline-block;
+      margin-right: 32px; }
+      .footer__nav li a {
+        display: inline-block; }
+  .footer__link {
+    z-index: 4;
+    position: relative;
+    overflow: hidden;
+    padding: 0 4px;
+    height: 15px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 700; }
+    .footer__link:hover {
+      outline: none; }
+    .footer__link span {
+      position: relative;
+      display: inline-block;
+      -webkit-transition: -webkit-transform 0.3s;
+      transition: -webkit-transform 0.3s;
+      transition: transform 0.3s;
+      transition: transform 0.3s, -webkit-transform 0.3s; }
+      .footer__link span:hover {
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%); }
+      .footer__link span:before {
+        position: absolute;
+        top: 100%;
+        content: attr(data-hover);
+        text-transform: uppercase;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        color: #F29471; }
   .footer__item {
     margin-bottom: 24px; }
     @media (min-width: 768px) {
       .footer__item {
         margin-bottom: 0; } }
+    .footer__item--full-width {
+      width: 100%; }
   .footer__title {
     font-weight: 400; }
   .footer__social {
@@ -640,36 +683,6 @@ img {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   font-size: 2rem; }
-
-.footer-links__link {
-  z-index: 4;
-  position: relative;
-  color: red;
-  overflow: hidden;
-  padding: 0 4px;
-  height: 15px;
-  display: inline-block;
-  font-size: 16px;
-  line-height: 1; }
-  .footer-links__link:hover {
-    outline: none; }
-  .footer-links__link span {
-    position: relative;
-    display: inline-block;
-    -webkit-transition: -webkit-transform 0.3s;
-    transition: -webkit-transform 0.3s;
-    transition: transform 0.3s;
-    transition: transform 0.3s, -webkit-transform 0.3s; }
-    .footer-links__link span:hover {
-      -webkit-transform: translateY(-100%);
-              transform: translateY(-100%); }
-    .footer-links__link span:before {
-      position: absolute;
-      top: 100%;
-      content: attr(data-hover);
-      font-weight: 700;
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0); }
 
 .btn {
   outline: 0;
@@ -762,21 +775,14 @@ img {
     text-align: center;
     color: black;
     border: 2px solid #000;
+    border-radius: 2px;
     padding: 12px 32px;
     -webkit-transition: all ease-in 200ms;
-    transition: all ease-in 200ms; }
+    transition: all ease-in 200ms;
+    max-width: 250px; }
     .btn--cta:hover {
       color: white;
       background: black; }
-    .btn--cta-orange {
-      border: 2px solid #fff;
-      color: #fff; }
-      @media (min-width: 992px) {
-        .btn--cta-orange {
-          max-width: 240px; } }
-      .btn--cta-orange:hover {
-        background: #fff;
-        color: #F8BC6D; }
   .btn--scroll-top {
     position: absolute;
     bottom: 180px;
@@ -1174,13 +1180,14 @@ img {
 .counter {
   display: -webkit-box;
   display: flex;
-  margin: 0 auto 48px;
+  margin: 0 auto;
   text-align: center;
   -webkit-box-pack: center;
           justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-          flex-direction: column; }
+          flex-direction: column;
+  padding: 32px 0; }
   @media (min-width: 768px) {
     .counter {
       -webkit-box-orient: horizontal;
@@ -1188,28 +1195,35 @@ img {
               flex-direction: row;
       -webkit-box-pack: justify;
               justify-content: space-between;
-      margin-bottom: 64px; } }
-  @media (min-width: 992px) {
-    .counter {
-      margin-bottom: 64px; } }
+      padding: 48px 0; } }
   @media (min-width: 1200px) {
     .counter {
-      margin-bottom: 96px;
-      justify-content: space-around; } }
+      justify-content: space-around;
+      padding: 64px 0; } }
   .counter__item {
     font-family: "Roboto", sans-serif;
-    margin-bottom: 32px; }
+    margin-bottom: 32px;
+    padding: 0 32px; }
     @media (min-width: 768px) {
       .counter__item {
-        margin-bottom: 0; } }
+        margin-bottom: 0;
+        border-right: 1px solid #dededf; }
+        .counter__item:last-child {
+          border-right: 0; } }
+    @media (min-width: 992px) {
+      .counter__item {
+        padding: 0 48px; } }
   .counter__number {
     font-size: 48px;
     line-height: 1;
-    margin-bottom: 18px; }
+    margin: 0 0 18px; }
     @media (min-width: 992px) {
       .counter__number {
         font-size: 64px;
         line-height: 1; } }
+    @media (min-width: 1200px) {
+      .counter__number {
+        font-size: 96px; } }
   .counter__label {
     font-size: 20px;
     line-height: 1; }
@@ -1322,7 +1336,11 @@ img {
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
-          align-items: center; }
+          align-items: center;
+  margin-bottom: 32px; }
+  @media (min-width: 768px) {
+    .cta-banner {
+      margin-bottom: 48px; } }
   .cta-banner__inner {
     position: relative;
     max-width: 1200px;
@@ -1381,6 +1399,26 @@ img {
       height: 100%; }
   .cta-banner--orange {
     background: #F8BC6D; }
+    .cta-banner--orange .btn--cta {
+      border: 2px solid #fff;
+      color: #fff; }
+      @media (min-width: 992px) {
+        .cta-banner--orange .btn--cta {
+          max-width: 240px; } }
+      .cta-banner--orange .btn--cta:hover {
+        background: #fff;
+        color: #F8BC6D; }
+  .cta-banner--green {
+    background: #D2DE7C; }
+    .cta-banner--green .btn--cta {
+      border: 2px solid #fff;
+      color: #fff; }
+      @media (min-width: 992px) {
+        .cta-banner--green .btn--cta {
+          max-width: 240px; } }
+      .cta-banner--green .btn--cta:hover {
+        background: #fff;
+        color: #D2DE7C; }
 
 .divider {
   width: 40px;

@@ -3,6 +3,12 @@
   min-height: 600px;
   display: flex;
   align-items: center;
+  margin-bottom: 32px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 48px;
+  }
+
 
   &__inner {
     position: relative;
@@ -66,5 +72,37 @@
 
   &--orange {
     background: $brand-orange;
+
+    .btn--cta {
+      border: 2px solid $white;
+      color: $white;
+
+      @media (min-width: 992px) {
+        max-width: 240px;
+      }
+
+      &:hover {
+        background: $white;
+        color: $brand-orange;
+      }
+    }
+  }
+
+  &--green {
+    background: $brand-green;
+
+    .btn--cta {
+      border: 2px solid $white;
+      color: $white;
+
+      @media (min-width: 992px) {
+        max-width: 240px;
+      }
+
+      &:hover {
+        background: $white;
+        color: $brand-green;
+      }
+    }
   }
 }

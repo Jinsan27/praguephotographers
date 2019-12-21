@@ -1,42 +1,53 @@
 .counter {
   display: flex;
-  margin: 0 auto 48px;
+  margin: 0 auto;
   text-align: center;
   justify-content: center;
   flex-direction: column;
+  padding: 32px 0;
 
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 64px;
-  }
-
-  @media (min-width: 992px) {
-    margin-bottom: 64px;
+    padding: 48px 0;
   }
 
   @media (min-width: 1200px) {
-    margin-bottom: 96px;
     justify-content: space-around;
+    padding: 64px 0;
   }
 
   &__item {
     font-family: $font-family-roboto;
     margin-bottom: 32px;
+    padding: 0 32px;
 
     @media (min-width: 768px) {
       margin-bottom: 0;
+      border-right: 1px solid #dededf;
+
+      &:last-child {
+        border-right: 0;
+      }
+    }
+
+    @media (min-width: 992px) {
+      padding: 0 48px;
     }
   }
 
   &__number {
     font-size: 48px;
     line-height: 1;
-    margin-bottom: 18px;
+    margin: 0 0 18px;
 
     @media (min-width: 992px) {
       font-size: 64px;
       line-height: 1;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 96px;
     }
   }
 

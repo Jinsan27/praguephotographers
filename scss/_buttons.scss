@@ -111,26 +111,14 @@
     text-align: center;
     color: black;
     border: 2px solid $black;
+    border-radius: 2px;
     padding: 12px 32px;
     transition: all ease-in 200ms;
+    max-width: 250px;
 
     &:hover {
       color: white;
       background: black;
-    }
-
-    &-orange {
-      border: 2px solid $white;
-      color: $white;
-
-      @media (min-width: 992px) {
-        max-width: 240px;
-      }
-
-      &:hover {
-        background: $white;
-        color: $brand-orange;
-      }
     }
   }
 
