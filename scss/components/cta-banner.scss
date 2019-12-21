@@ -35,25 +35,26 @@
   }
 
   &__img-wrapper {
-    position: relative;
-    max-width: 300px;
+    position: absolute;
     margin: 0 auto;
     display: none;
+    top: 0;
+    bottom: 0;
 
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
+      display: block;
       max-width: 500px;
+      right: -50px;
     }
 
     @media (min-width: 1200px) {
-      display: block;
-      position: absolute;
       width: 640px;
       height: 550px;
       transform: translateX(-45px);
       margin: auto;
       top: 0;
       bottom: 0;
-      left: 50%;
+      right: 0;
     }
 
     img {
