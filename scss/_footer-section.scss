@@ -5,6 +5,8 @@
 .footer {
   font-size: 1.8rem;
   font-family: $font-family-roboto;
+  background: $black;
+  color: $white;
 
   &__inner {
     display: flex;
@@ -59,7 +61,7 @@
     text-align: center;
     line-height: 32px;
     border-radius: 100%;
-    border: 1px solid $black;
+    color: $brand-grey;
   }
 
   &:hover {

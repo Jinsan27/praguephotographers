@@ -1,0 +1,23 @@
+.card-grid {
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    margin-bottom: 32px;
+
+    @media (min-width: 768px) {
+      max-width: 300px;
+    }
+  }
+}
