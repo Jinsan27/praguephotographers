@@ -1462,7 +1462,7 @@ img {
       max-width: 1200px; } }
 
 .section {
-  padding: 48px; }
+  padding: 48px 0; }
   @media (min-width: 768px) {
     .section {
       padding: 64px 0; } }
