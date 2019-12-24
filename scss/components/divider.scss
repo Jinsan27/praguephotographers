@@ -11,4 +11,8 @@
   &--white {
     background: $white;
   }
+
+  &--centered {
+    margin: 40px auto;
+  }
 }

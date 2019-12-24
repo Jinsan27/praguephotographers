@@ -580,7 +580,7 @@ img {
 .footer {
   font-size: 1.8rem;
   font-family: "Roboto", sans-serif;
-  background: #000;
+  background: #111517;
   color: #fff; }
   .footer__inner {
     display: -webkit-box;
@@ -783,6 +783,24 @@ img {
     .btn--cta:hover {
       color: white;
       background: black; }
+  .btn--contact {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    border: 0;
+    color: #fff;
+    background: #F29471;
+    padding: 24px 0;
+    -webkit-transition: all ease-in 200ms;
+    transition: all ease-in 200ms; }
+    .btn--contact:hover {
+      background: #c5785b; }
   .btn--scroll-top {
     position: absolute;
     bottom: 180px;
@@ -812,28 +830,6 @@ img {
   margin-right: auto; }
   @media screen and (min-width: 1199px) {
     .primary--small {
-      margin-left: auto;
-      margin-right: auto; } }
-
-.contact_btn {
-  display: block;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.8rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-align: center;
-  color: #f2f2f2;
-  border: 2px solid currentColor;
-  padding: 15px 20px;
-  -webkit-transition: all ease-in 200ms;
-  transition: all ease-in 200ms;
-  margin-left: auto;
-  margin-right: auto; }
-  @media screen and (min-width: 767px) {
-    .contact_btn {
       margin-left: auto;
       margin-right: auto; } }
 
@@ -977,21 +973,14 @@ img {
 .about-us-card {
   text-align: center; }
 
-.contact-text {
-  text-align: center;
-  font-size: 2.1rem; }
-  .contact-text__header {
-    font-family: "Josefin Slab", sans-serif;
-    font-size: 4rem; }
-    @media screen and (min-width: 1199px) {
-      .contact-text__header {
-        padding-top: 10%; } }
-  .contact-text__description {
-    font-size: 1.3rem;
-    font-weight: bold;
-    text-transform: capitalize; }
+.section-contact {
+  text-align: center; }
+  .section-contact .heading-nw--hero {
+    color: #000; }
 
-.form-style {
+.form-style__wrapper {
+  max-width: 55rem;
+  margin: 0 auto 48px;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
@@ -999,22 +988,38 @@ img {
           flex-direction: column;
   text-align: left;
   font-family: "Roboto", sans-serif;
-  width: 75%;
-  max-width: 55rem;
-  margin: 1rem auto; }
-  .form-style__half {
-    width: 100%; }
-  .form-style__last {
-    width: 100%; }
-
-.contact-form {
   font-size: 1.5rem; }
-  .contact-form__initials {
-    height: 3rem;
-    border: 1px solid gainsboro; }
-  .contact-form__text {
-    height: 8rem;
-    border: 1px solid gainsboro; }
+  @media (min-width: 992px) {
+    .form-style__wrapper {
+      margin: 0 auto 64px; } }
+  @media (min-width: 1200px) {
+    .form-style__wrapper {
+      margin: 0 auto 96px; } }
+
+.form-style__input-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  margin-bottom: 24px; }
+
+.form-style__input-nw {
+  height: 64px;
+  border: 1px solid rgba(0, 0, 0, 0.2); }
+
+.form-style__label-nw {
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-transform: uppercase; }
+
+.form-style__input-text {
+  height: 160px;
+  border: 1px solid rgba(0, 0, 0, 0.2); }
 
 .ac {
   margin-top: 10px;
@@ -1134,29 +1139,30 @@ img {
   position: relative; }
   .c-testimonial__item {
     text-align: center;
-    max-width: 300px;
+    max-width: 600px;
     margin: 0 auto; }
-    @media screen and (min-width: 1400px) {
+    @media screen and (min-width: 992px) {
       .c-testimonial__item {
-        max-width: 400px; } }
-  .c-testimonial__quote img {
-    margin: 0 100px 0 auto;
-    max-width: 50px;
-    height: auto; }
+        max-width: 1000px; } }
   .c-testimonial__content .p-nw {
     margin-bottom: 60px;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 24px;
+    line-height: 32px;
     font-family: "Roboto", sans-serif; }
   .c-testimonial__name {
-    font-size: 13px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 24px;
     font-weight: bold;
-    font-family: "Roboto", sans-serif; }
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase; }
   .c-testimonial__location {
-    font-size: 13px;
-    line-height: 20px;
-    font-family: "Roboto", sans-serif; }
+    font-size: 16px;
+    line-height: 24px;
+    color: #111517;
+    opacity: 0.3;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase; }
   .c-testimonial .nav-btn {
     height: 47px;
     position: absolute;
@@ -1430,6 +1436,8 @@ img {
       margin: 40px 0; } }
   .divider--white {
     background: #fff; }
+  .divider--centered {
+    margin: 40px auto; }
 
 .l-global-wrapper {
   margin-bottom: 96px; }
@@ -1453,11 +1461,18 @@ img {
     .container {
       max-width: 1200px; } }
 
-.section--with-padding-top {
-  padding-top: 32px; }
-  @media (min-width: 992px) {
-    .section--with-padding-top {
-      padding-top: 144px; } }
+.section {
+  padding: 48px; }
+  @media (min-width: 768px) {
+    .section {
+      padding: 64px 0; } }
+  .section--with-padding-top {
+    padding-top: 32px; }
+    @media (min-width: 992px) {
+      .section--with-padding-top {
+        padding-top: 144px; } }
+  .section--grey {
+    background: #f5f5f5; }
 
 .card-grid__inner {
   display: -webkit-box;
@@ -1487,29 +1502,20 @@ img {
 
 .heading-nw {
   position: relative;
-  margin: 0 auto 80px;
+  margin: 0 auto 48px;
   width: 100%;
   font-family: "Roboto", sans-serif;
   font-weight: 100; }
   .heading-nw--2 {
     font-size: 36px;
     line-height: 45px;
-    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
     max-width: 300px;
     text-align: center; }
     @media (min-width: 768px) {
       .heading-nw--2 {
         max-width: 100%; } }
-    .heading-nw--2:before {
-      position: absolute;
-      content: "";
-      bottom: -32px;
-      left: 0;
-      right: 0;
-      margin: auto;
-      width: 100px;
-      height: 4px;
-      background: #f7b155; }
   .heading-nw--3 {
     font-size: 36px;
     line-height: 45px;

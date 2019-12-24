@@ -3,42 +3,39 @@
 
   &__item {
     text-align: center;
-    max-width: 300px;
+    max-width: 600px;
     margin: 0 auto;
 
-    @media screen and (min-width: 1400px){
-      max-width: 400px;
-    }
-  }
-
-  &__quote {
-    img {
-      margin: 0 100px 0 auto;
-      max-width: 50px;
-      height: auto;
+    @media screen and (min-width: 992px){
+      max-width: 1000px;
     }
   }
 
   &__content {
     .p-nw {
       margin-bottom: 60px;
-      font-size: 16px;
-      line-height: 24px;
+      font-size: 24px;
+      line-height: 32px;
       font-family: $font-family-roboto;
     }
   }
 
   &__name {
-    font-size: 13px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 24px;
     font-weight: bold;
     font-family: $font-family-roboto;
+    text-transform: uppercase;
   }
 
   &__location {
-    font-size: 13px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #111517;
+    opacity: 0.3;
+    font-weight: bold;
     font-family: $font-family-roboto;
+    text-transform: uppercase;
   }
 
   .nav-btn{

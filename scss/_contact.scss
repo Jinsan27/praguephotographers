@@ -2,53 +2,56 @@
 //=== #CONTACT ===
 //=================
 
-.contact-text {
+.section-contact {
     text-align: center;
-    font-size: 2.1rem;
-    
-    &__header {
-        font-family: $font-family-josefin;
-        font-size: 4rem;
 
-        @media screen and (min-width: 1199px) {
-            padding-top: 10%;
-        }
+    .heading-nw--hero {
+        color: $black;
     }
 
-    &__description {
-        font-size: 1.3rem;
-        font-weight: bold;
-        text-transform: capitalize;
-    }
 }
 
 .form-style {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    font-family: $font-family-roboto;
-    width: 75%;
-    max-width: 55rem;
-    margin: 1rem auto;
+    &__wrapper {
+        max-width: 55rem;
+        margin: 0 auto 48px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        font-family: $font-family-roboto;
+        font-size: 1.5rem;
 
-    &__half {
+        @media (min-width: 992px) {
+            margin: 0 auto 64px;
+        }
+
+        @media (min-width: 1200px) {
+            margin: 0 auto 96px;
+        }
+    }
+
+    &__input-wrapper {
         width: 100%;
-    }
-    &__last {
-        width: 100%;
-    }
-}
-
-.contact-form {
-    font-size: 1.5rem;
-
-    &__initials {
-        height: 3rem;
-        border: 1px solid gainsboro;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 24px;
     }
 
-    &__text {
-        height: 8rem;
-        border: 1px solid gainsboro;
+    &__input-nw {
+        height: 64px;
+        border: 1px solid rgba(0,0,0,.2);
+    }
+
+    &__label-nw {
+        color: $black;
+        font-weight: bold;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+    }
+
+    &__input-text {
+        height: 160px;
+        border: 1px solid rgba(0,0,0,.2);
     }
 }

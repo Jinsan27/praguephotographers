@@ -1,6 +1,6 @@
 .heading-nw {
   position: relative;
-  margin: 0 auto 80px;
+  margin: 0 auto 48px;
   width: 100%;
   font-family: $font-family-roboto;
   font-weight: 100;
@@ -8,24 +8,13 @@
   &--2 {
     font-size: 36px;
     line-height: 45px;
-    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
     max-width: 300px;
     text-align: center;
 
     @media (min-width: 768px) {
       max-width: 100%;
-    }
-
-    &:before {
-      position: absolute;
-      content: "";
-      bottom: -32px;
-      left: 0;
-      right: 0;
-      margin: auto;
-      width: 100px;
-      height: 4px;
-      background: #f7b155;
     }
   }
 
