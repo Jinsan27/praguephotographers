@@ -4,8 +4,16 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
+
+    @media (min-width: 1200px) {
+      max-width: 1300px;
+    }
+
+    @media (min-width: 1450px) {
+      max-width: 1400px;
+    }
   }
 
   &__logo {
