@@ -1,0 +1,20 @@
+.headroom {
+  height: 90px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-color: $white;
+  transition: transform 200ms linear;
+  backface-visibility: hidden;
+  z-index: 100;
+  padding: 0;
+
+  &--pinned {
+    transform: translateY(0%);
+  }
+
+  &--unpinned {
+    transform: translateY(-100%);
+  }
+}

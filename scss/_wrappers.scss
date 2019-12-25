@@ -14,22 +14,6 @@
   }
 }
 
-.menu-wrapper {
-  display: none;
-  position: relative;
-
-  &.is-open {
-    display: block;
-  }
-
-  @media screen and (min-width: 992px) {
-    display: block;
-    float: right;
-    width: 50%;
-    margin-top: 3%;
-  }
-}
-
 //=====================
 //=== #FLEX WRAPPER ===
 //=====================
@@ -40,7 +24,6 @@
   justify-content: center;
 
   &--row {
-    
     @media screen and (min-width: 767px) {
       flex-direction: row;
     }
@@ -74,7 +57,7 @@
 
 .homepage-wrapper {
   padding: 0 1.5 * $spacing-unit-small;
-  
+
   &--flex {
     height: 100%;
     display: flex;
@@ -98,7 +81,6 @@
   }
 
   &--small {
-    
     @media screen and (min-width: 767px) and (max-width: 1024px) {
       max-width: 80%;
       margin-left: auto;
@@ -107,7 +89,6 @@
   }
 
   &--space-top {
-
     @media screen and (min-width: 768px) {
       padding-top: 10%;
     }
@@ -123,7 +104,6 @@
 }
 
 .heading-wrapper {
-  
   @media screen and (min-width: 1199px) {
     padding-top: 15%;
     text-align: center;

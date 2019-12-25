@@ -1,126 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<meta name="description" content="The official website of PraguePhotographers" />
+		<meta name="robots" content="index,follow" />
+		<!-- Font Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
+			integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+			crossorigin="anonymous"
+		/>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="The official website of PraguePhotographers">
-  <meta name="robots" content="index,follow">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+		<!-- Custom Stylesheet -->
+		<link rel="stylesheet" href="css/main.css" />
 
-  <!-- Custom Stylesheet -->
-  <link rel="stylesheet" href="css/main/main.css">
-  
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,700|Roboto+Condensed:400,700" rel="stylesheet" />
 
-  <title>Contact Us | Prague Photographers</title>
-  <link rel="shortcut icon" type="images/favicon.jpeg" href="images/favicon.jpeg">
+		<title>Contact Us | Prague Photographers</title>
+		<link rel="shortcut icon" type="images/favicon.jpeg" href="images/favicon.jpeg" />
 
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+		<script>
+			window.dataLayer = window.dataLayer || []
+			function gtag() {
+				dataLayer.push(arguments)
+			}
+			gtag('js', new Date())
 
-        gtag('config', 'UA-139834712-1');
-    </script>
-</head>
-  
-<body>
-    <header class="nav-wrapper">
-        <a href="index.html"><img class="logo" src="images/logo.jpeg" alt="Logo Icon"></a>
-        <button class="btn btn--menu" id="js-menu">
-          <span class="menu-line"></span>
-          <span class="menu-line"></span>
-          <span class="menu-line"></span>
-        </button>
-      </header>
-      
-      <nav class="menu-wrapper js-trigger">
-        <ul class="site-nav">
-            <li class="site-nav__items"><a href="gallery.html">Our Work</a></li>
-            <li class="site-nav__items"><a href="pricing.html">Pricing</a></li>
-            <li class="site-nav__items"><a href="story.html">About Us</a></li>
-            <li class="site-nav__items"><a href="https://praguephotographers.rezgo.com">Book Us</a></li>
-            <li class="site-nav__items"><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
+			gtag('config', 'UA-139834712-1')
+		</script>
+	</head>
 
-        <title>Contact Us</title>
-        <link rel="shortcut icon" type="images/favicon.jpeg" href="images/favicon.jpeg">
-    </head>
+	<body>
+		<header class="header">
+			<div class="header__inner">
+				<a href="/">
+					<img class="header__logo" src="/images/logo.jpeg" alt="Logo Icon" />
+				</a>
+				<button class="btn btn--menu" id="js-menu">
+					<span class="menu-line"></span>
+					<span class="menu-line"></span>
+					<span class="menu-line"></span>
+				</button>
 
-    <section class="section-contact section--with-padding-top">
-        <div class="container">
-            <h1 class="heading-nw heading-nw--hero">Let's make it<br> together<div class="divider divider--centered"></div></h1>
+				<nav class="menu-wrapper js-trigger">
+					<ul class="site-nav">
+						<li class="site-nav__items"><a href="/gallery">Our Work</a></li>
+						<li class="site-nav__items"><a href="/pricing">Pricing</a></li>
+						<li class="site-nav__items"><a href="/story">About Us</a></li>
+						<li class="site-nav__items"><a href="https://praguephotographers.rezgo.com">Book Us</a></li>
+						<li class="site-nav__items"><a href="/contact">Contact Us</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
 
-            <form class="contact-form" action="https://formspree.io/martin@praguephotographers.com"
-                method="POST">
-                <div class="form-style__wrapper">
-                    <div class="form-style__input-wrapper">
-                        <label class="form-style__label-nw">Name</label>
-                        <input class="form-style__input-nw" type="text" id="name">
-                    </div>
-                    <div class="form-style__input-wrapper">
-                        <label class="form-style__label-nw">Email Address</label>
-                        <input class="form-style__input-nw" type="email" id="_email">
-                    </div>
-                    <div class="form-style__input-wrapper">
-                        <label class="form-style__label-nw">Message</label>
-                        <input class="form-style__input-text" type="text" id="message">
-                    </div>
-                    <input class="btn btn--contact" type="submit" value="Send">
-                </div>
-            </form>
-        </div>
-    </section>
+		<title>Contact Us</title>
+		<link rel="shortcut icon" type="images/favicon.jpeg" href="images/favicon.jpeg" />
 
-    <footer class="footer">
-        <div class="footer__inner">
-            <div class="footer__item footer__item--full-width">
-                <ul class="footer__nav">
-                    <li>
-                        <a class="footer__link" href="gallery.html"><span data-hover="our work">our work</span></a>
-                    </li>
-                    <li>
-                        <a class="footer__link" href="/pricing.html"><span data-hover="pricing">pricing</span></a>
-                    </li>
-                    <li>
-                        <a class="footer__link" href="story.html"><span data-hover="about us">about us</span></a>
-                    </li>
-                    <li>
-                        <a class="footer__link" href="https://praguephotographers.rezgo.com/"><span data-hover="book us">book us</span></a>
-                    </li>
-                    <li>
-                        <a class="footer__link" href="contact.html"><span data-hover="contact us">contact us</span></a>
-                    </li>
-                </ul>
-            </div>
+		<section class="section-contact section--with-padding-top">
+			<div class="container">
+				<h1 class="heading-nw heading-nw--hero">
+					Let's make it<br />
+					together
+					<div class="divider divider--centered"></div>
+				</h1>
 
-            <div class="footer__item">
-                <p class="footer__date">&copy; <script>document.write(new Date().getFullYear());</script> - Prague Photographers</p>
-            </div>
+				<form class="contact-form" action="https://formspree.io/martin@praguephotographers.com" method="POST">
+					<div class="form-style__wrapper">
+						<div class="form-style__input-wrapper">
+							<label class="form-style__label-nw">Name</label>
+							<input class="form-style__input-nw" type="text" id="name" />
+						</div>
+						<div class="form-style__input-wrapper">
+							<label class="form-style__label-nw">Email Address</label>
+							<input class="form-style__input-nw" type="email" id="_email" />
+						</div>
+						<div class="form-style__input-wrapper">
+							<label class="form-style__label-nw">Message</label>
+							<input class="form-style__input-text" type="text" id="message" />
+						</div>
+						<input class="btn btn--contact" type="submit" value="Send" />
+					</div>
+				</form>
+			</div>
+		</section>
 
-            <div class="footer__item">
-                <ul class="footer__social">
-                    <li class="social-item">
-                        <a href="https://www.facebook.com/praguephotographers/" class="social-item__link">
-                            <i class="fab fa-facebook-f social-icon"></i>
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a href="https://www.instagram.com/praguephotographers/" class="social-item__link">
-                            <i class="fab fa-instagram social-icon"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+		<footer class="footer">
+			<div class="footer__inner">
+				<div class="footer__item footer__item--full-width">
+					<ul class="footer__nav">
+						<li>
+							<a class="footer__link" href="/gallery"><span data-hover="our work">our work</span></a>
+						</li>
+						<li>
+							<a class="footer__link" href="/pricing"><span data-hover="pricing">pricing</span></a>
+						</li>
+						<li>
+							<a class="footer__link" href="/story"><span data-hover="about us">about us</span></a>
+						</li>
+						<li>
+							<a class="footer__link" href="https://praguephotographers.rezgo.com/"><span data-hover="book us">book us</span></a>
+						</li>
+						<li>
+							<a class="footer__link" href="/contact"><span data-hover="contact us">contact us</span></a>
+						</li>
+					</ul>
+				</div>
 
-    <script type="text/javascript" src="js/vendor/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="js/custom.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-</body>
+				<div class="footer__item">
+					<p class="footer__date">
+						&copy;
+						<script>
+							document.write(new Date().getFullYear())
+						</script>
+						- Prague Photographers
+					</p>
+				</div>
+
+				<div class="footer__item">
+					<ul class="footer__social">
+						<li class="social-item">
+							<a href="https://www.facebook.com/praguephotographers/" class="social-item__link">
+								<i class="fab fa-facebook-f social-icon"></i>
+							</a>
+						</li>
+						<li class="social-item">
+							<a href="https://www.instagram.com/praguephotographers/" class="social-item__link">
+								<i class="fab fa-instagram social-icon"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+		<script type="text/javascript" src="js/vendor/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="js/custom.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
 </html>

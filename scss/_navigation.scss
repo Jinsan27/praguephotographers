@@ -5,7 +5,7 @@
 .logo {
   height: auto;
   max-width: 250px;
-  
+
   @media screen and (min-width: 600px) {
     height: 100px;
     max-width: 100%;
@@ -17,37 +17,56 @@
 }
 
 .site-nav {
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
   font-size: 1.4rem;
   font-family: $font-family-roboto;
   text-transform: uppercase;
-  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   top: 0;
   z-index: 20;
   background-color: $white;
+
+  @media (min-width: 992px) {
+    flex-direction: row;
+    margin-left: auto;
+    justify-content: flex-end;
+    width: 100%;
+    height: auto;
+    background: transparent;
+    color: $black;
+  }
 
   &__items {
     padding: $spacing-unit-small * 1.5;
     text-align: center;
 
-    &:hover {
-      background-color: lighten($blackish, 75%);
+    a {
+      font-size: 16px;
+      font-weight: 700;
+
+      &:hover {
+        color: $brand-red;
+      }
     }
-    
+
     @media screen and (min-width: 992px) {
       padding: 0 1.5 * $spacing-unit-small;
-      
+
       a {
         position: relative;
-        font-size: 1.8rem;
+        font-size: 16px;
         transition: all 0.3s ease-in-out;
-  
+        font-weight: normal;
+
         &:hover {
-          color: #F29471;
+          color: #f29471;
         }
 
         &.active {
-          color: #F29471;
+          color: #f29471;
         }
       }
 
@@ -60,5 +79,21 @@
   @media screen and (min-width: 992px) {
     display: flex;
     padding-left: 60px;
+  }
+}
+
+.menu-wrapper {
+  display: none;
+  position: absolute;
+  top: 0;
+
+  &.is-open {
+    display: block;
+  }
+
+  @media screen and (min-width: 992px) {
+    display: block;
+    width: 100%;
+    position: relative;
   }
 }

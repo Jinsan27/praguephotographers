@@ -346,18 +346,6 @@ img {
       height: 106px;
       width: 50%; } }
 
-.menu-wrapper {
-  display: none;
-  position: relative; }
-  .menu-wrapper.is-open {
-    display: block; }
-  @media screen and (min-width: 992px) {
-    .menu-wrapper {
-      display: block;
-      float: right;
-      width: 50%;
-      margin-top: 3%; } }
-
 .flex-wrapper {
   display: -webkit-box;
   display: flex;
@@ -544,31 +532,54 @@ img {
       padding-left: 30%; } }
 
 .site-nav {
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
   font-size: 1.4rem;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
-  position: absolute;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
   top: 0;
   z-index: 20;
   background-color: #fff; }
+  @media (min-width: 992px) {
+    .site-nav {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+              flex-direction: row;
+      margin-left: auto;
+      -webkit-box-pack: end;
+              justify-content: flex-end;
+      width: 100%;
+      height: auto;
+      background: transparent;
+      color: #000; } }
   .site-nav__items {
     padding: 15px;
     text-align: center; }
-    .site-nav__items:hover {
-      background-color: #f2f2f2; }
+    .site-nav__items a {
+      font-size: 16px;
+      font-weight: 700; }
+      .site-nav__items a:hover {
+        color: #F29471; }
     @media screen and (min-width: 992px) {
       .site-nav__items {
         padding: 0 15px; }
         .site-nav__items a {
           position: relative;
-          font-size: 1.8rem;
+          font-size: 16px;
           -webkit-transition: all 0.3s ease-in-out;
-          transition: all 0.3s ease-in-out; }
+          transition: all 0.3s ease-in-out;
+          font-weight: normal; }
           .site-nav__items a:hover {
-            color: #F29471; }
+            color: #f29471; }
           .site-nav__items a.active {
-            color: #F29471; }
+            color: #f29471; }
         .site-nav__items:hover {
           background-color: transparent; } }
   @media screen and (min-width: 992px) {
@@ -576,6 +587,18 @@ img {
       display: -webkit-box;
       display: flex;
       padding-left: 60px; } }
+
+.menu-wrapper {
+  display: none;
+  position: absolute;
+  top: 0; }
+  .menu-wrapper.is-open {
+    display: block; }
+  @media screen and (min-width: 992px) {
+    .menu-wrapper {
+      display: block;
+      width: 100%;
+      position: relative; } }
 
 .footer {
   font-size: 1.8rem;
@@ -1094,7 +1117,8 @@ img {
     @media (min-width: 1200px) {
       .hero__inner {
         max-width: 1200px;
-        width: 100%; } }
+        width: 100%;
+        padding: 0; } }
   .hero__img-wrapper {
     position: absolute;
     left: 0;
@@ -1439,6 +1463,28 @@ img {
   .divider--centered {
     margin: 40px auto; }
 
+.headroom {
+  height: 90px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  -webkit-transition: -webkit-transform 200ms linear;
+  transition: -webkit-transform 200ms linear;
+  transition: transform 200ms linear;
+  transition: transform 200ms linear, -webkit-transform 200ms linear;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  z-index: 100;
+  padding: 0; }
+  .headroom--pinned {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%); }
+  .headroom--unpinned {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); }
+
 .l-global-wrapper {
   margin-bottom: 96px; }
 
@@ -1499,6 +1545,22 @@ img {
   @media (min-width: 768px) {
     .card-grid__item {
       max-width: 300px; } }
+
+.header__inner {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+  max-width: 1400px;
+  margin: 0 auto; }
+
+.header__logo {
+  max-width: 210px; }
 
 .heading-nw {
   position: relative;

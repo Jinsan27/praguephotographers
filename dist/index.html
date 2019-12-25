@@ -1,308 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<meta name="description" content="The official website of PraguePhotographers" />
+		<meta name="author" content="Nguyen Ngoc Tu, Nguyen Huy" />
+		<meta name="robots" content="index,follow" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="The official website of PraguePhotographers">
-  <meta name="author" content="Nguyen Ngoc Tu, Nguyen Huy">
-  <meta name="robots" content="index,follow">
-  
-  <!-- FB Meta tags for sharing -->
-  <meta property="og:title" content="Prague Photographers">
-  <meta property="og:description" content="Service providing tours with professional photographers.">
-  <meta property="og:url" content=""> <!-- Put index.html once the site is online -->
-  <meta property="og:image" content=""> <!-- Put thumbnail image path, thumbnail size - 1200x1200 -->
-  <meta property="og:site_name" content="Prague Photographers">
-  
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+		<!-- FB Meta tags for sharing -->
+		<meta property="og:title" content="Prague Photographers" />
+		<meta property="og:description" content="Service providing tours with professional photographers." />
+		<meta property="og:url" content="" />
+		<!-- Put index.html once the site is online -->
+		<meta property="og:image" content="" />
+		<!-- Put thumbnail image path, thumbnail size - 1200x1200 -->
+		<meta property="og:site_name" content="Prague Photographers" />
 
-  <!-- Custom Stylesheet -->
-  <link rel="stylesheet" href="css/main.css">
+		<!-- Font Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
+			integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+			crossorigin="anonymous"
+		/>
 
-  <!-- Owl Carousel -->
-  <link rel="stylesheet" href="css/vendor/owl-carousel.css">
+		<!-- Custom Stylesheet -->
+		<link rel="stylesheet" href="css/main.css" />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,700|Roboto+Condensed:400,700" rel="stylesheet">
-  
-  <title>Prague Photographers</title>
-  <link rel="shortcut icon" type="images/favicon.jpeg" href="images/favicon.jpeg">
+		<!-- Owl Carousel -->
+		<link rel="stylesheet" href="css/vendor/owl-carousel.css" />
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139834712-1"></script>
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,700|Roboto+Condensed:400,700" rel="stylesheet" />
 
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+		<title>Prague Photographers</title>
+		<link rel="shortcut icon" type="images/favicon.jpeg" href="images/favicon.jpeg" />
 
-    gtag('config', 'UA-139834712-1');
-  </script>
-</head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139834712-1"></script>
 
-<body>
-  <header class="nav-wrapper">
-    <a href="/"><img class="logo" src="/images/logo.jpeg" alt="Logo Icon"></a>
-    <button class="btn btn--menu" id="js-menu">
-      <span class="menu-line"></span>
-      <span class="menu-line"></span>
-      <span class="menu-line"></span>
-    </button>
-  </header>
-  
-  <nav class="menu-wrapper js-trigger">
-    <ul class="site-nav">
-      <li class="site-nav__items"><a href="gallery.html">Our Work</a></li>
-      <li class="site-nav__items"><a href="pricing.html">Pricing</a></li>
-      <li class="site-nav__items"><a href="story.html">About Us</a></li>
-      <li class="site-nav__items"><a href="https://praguephotographers.rezgo.com">Book Us</a></li>
-      <li class="site-nav__items"><a href="contact.html">Contact Us</a></li>
-    </ul>
-  </nav>
+		<script>
+			window.dataLayer = window.dataLayer || []
+			function gtag() {
+				dataLayer.push(arguments)
+			}
+			gtag('js', new Date())
 
-  <section>
-      <div class="hero">
-        <div class="hero__inner">
-         <!-- <img class="hero__img-wrapper" src="images/hero-img.jpg" alt="hero banner main img"> -->
-          <video
-                  preload="true"
-                  muted="true"
-                  loop="true"
-                  class="hero__img-wrapper"
-                  autoplay="true">
-            <source src="videos/hero-intro-video.mp4" type="video/mp4" poster="">
-          </video>
-          <div class="hero__item">
-            <h1 class="heading-nw heading-nw--hero">
-              Don't visit Prague,<br>
-              Experience it!
-            </h1>
-            <div class="divider"></div>
-            <p class="paragraph paragraph--lg">We would like you to have a great experience from Prague, beautiful photos that you can take home with you. :-)</p>
-            <a href="https://praguephotographers.rezgo.com/" class="btn btn--primary">Book Us</a>
-          </div>
+			gtag('config', 'UA-139834712-1')
+		</script>
+	</head>
 
-          <a href="#" class="arrow-icon bounce-animation scroll-to-js" data-scroll-from><img src="images/arrow-down.png" alt="arrow down icon"></a>
-        </div>
-      </div>
-  </section>
+	<body>
+		<header class="header">
+			<div class="header__inner">
+				<a href="/">
+					<img class="header__logo" src="/images/logo.jpeg" alt="Logo Icon" />
+				</a>
+				<button class="btn btn--menu" id="js-menu">
+					<span class="menu-line"></span>
+					<span class="menu-line"></span>
+					<span class="menu-line"></span>
+				</button>
 
-  <section>
-    <div class="container">
-      <div class="waipoint-wrapper-js counter" data-scroll-to>
-        <div class="counter__item" id="waypoint1">
-          <h1 class="counter__number" id='counter1'>0</h1>
-          <div class="counter__label">Happy Customers</div>
-        </div>
-        <div class="counter__item" id="waypoint2">
-          <h1 class="counter__number" id='counter2'>0</h1>
-          <div class="counter__label">Photos Taken</div>
-        </div>
-        <div class="counter__item" id="waypoint3">
-          <h1 class="counter__number" id='counter3'>0</h1>
-          <div class="counter__label">Photos sent</div>
-        </div>
-      </div>
-    </div>
-  </section>
+				<nav class="menu-wrapper js-trigger">
+					<ul class="site-nav">
+						<li class="site-nav__items"><a href="/gallery">Our Work</a></li>
+						<li class="site-nav__items"><a href="/pricing">Pricing</a></li>
+						<li class="site-nav__items"><a href="/story">About Us</a></li>
+						<li class="site-nav__items"><a href="https://praguephotographers.rezgo.com">Book Us</a></li>
+						<li class="site-nav__items"><a href="/contact">Contact Us</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
 
- <section class="cta-banner cta-banner--orange">
-   <div class="cta-banner__inner">
-    <div class="cta-banner__item">
-      <h2 class="heading-nw heading-nw--section-title">Meet Prague Photographers</h2>
-      <div class="divider divider--white"></div>
-      <p class="paragraph paragraph--lg paragraph--white">
-          Love, passion, work, FUN
-          We love what we are doing.
-          We always work on 100% with 100% FUN.</p>
-      <a href="/contact.html" class="btn btn--cta btn--cta-orange" href="">Meet Us</a>
-    </div>
-     <div class="cta-banner__img-wrapper">
-       <img src="images/camera-img.png" alt="">
-     </div>
-   </div>
-  </section>
+		<section>
+			<div class="hero">
+				<div class="hero__inner">
+					<!-- <img class="hero__img-wrapper" src="images/hero-img.jpg" alt="hero banner main img"> -->
+					<video preload="true" muted="true" loop="true" class="hero__img-wrapper" autoplay="true">
+						<source src="videos/hero-intro-video.mp4" type="video/mp4" poster="" />
+					</video>
+					<div class="hero__item">
+						<h1 class="heading-nw heading-nw--hero">
+							Don't visit Prague,<br />
+							Experience it!
+						</h1>
+						<div class="divider"></div>
+						<p class="paragraph paragraph--lg">
+							We would like you to have a great experience from Prague, beautiful photos that you can take home with you. :-)
+						</p>
+						<a href="https://praguephotographers.rezgo.com/" class="btn btn--primary">Book Us</a>
+					</div>
 
-  <section class="homepage-description homepage-description--medium-size">
-      <div class="card-grid">
-        <div class="card-grid__inner">
-          <div class="card-grid__item">
-            <img class="homepage-description__image" src="images/champagne.svg" alt="Champagne">
-            <p class="homepage-description__text">You will meet locals.</p>
-          </div>
+					<a href="#" class="arrow-icon bounce-animation scroll-to-js" data-scroll-from><img src="images/arrow-down.png" alt="arrow down icon"/></a>
+				</div>
+			</div>
+		</section>
 
-          <div class="card-grid__item">
-            <img class="homepage-description__image" src="images/map.svg" alt="Map">
-            <p class="homepage-description__text">You will get to know the city.</p>
-          </div>
+		<section>
+			<div class="container">
+				<div class="waipoint-wrapper-js counter" data-scroll-to>
+					<div class="counter__item" id="waypoint1">
+						<h1 class="counter__number" id="counter1">0</h1>
+						<div class="counter__label">Happy Customers</div>
+					</div>
+					<div class="counter__item" id="waypoint2">
+						<h1 class="counter__number" id="counter2">0</h1>
+						<div class="counter__label">Photos Taken</div>
+					</div>
+					<div class="counter__item" id="waypoint3">
+						<h1 class="counter__number" id="counter3">0</h1>
+						<div class="counter__label">Photos sent</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-          <div class="card-grid__item">
-            <img class="homepage-description__image" src="images/photographer.svg" alt="Photographer">
-            <p class="homepage-description__text">You will get professional pictures.</p>
-          </div>
+		<section class="cta-banner cta-banner--orange">
+			<div class="cta-banner__inner">
+				<div class="cta-banner__item">
+					<h2 class="heading-nw heading-nw--section-title">Meet Prague Photographers</h2>
+					<div class="divider divider--white"></div>
+					<p class="paragraph paragraph--lg paragraph--white">
+						Love, passion, work, FUN We love what we are doing. We always work on 100% with 100% FUN.
+					</p>
+					<a href="/contact.html" class="btn btn--cta btn--cta-orange" href="">Meet Us</a>
+				</div>
+				<div class="cta-banner__img-wrapper">
+					<img src="images/camera-img.png" alt="" />
+				</div>
+			</div>
+		</section>
 
-          <div class="card-grid__item">
-            <img class="homepage-description__image" src="images/happy.svg" alt="Smiley Emoji">
-            <p class="homepage-description__text">You will have 100% fun.</p>
-          </div>
-        </div>
-      </div>
-  </section>
+		<section class="homepage-description homepage-description--medium-size">
+			<div class="card-grid">
+				<div class="card-grid__inner">
+					<div class="card-grid__item">
+						<img class="homepage-description__image" src="images/champagne.svg" alt="Champagne" />
+						<p class="homepage-description__text">You will meet locals.</p>
+					</div>
 
-  <section class="cta-banner cta-banner--green">
-    <div class="cta-banner__inner">
-      <div class="cta-banner__item">
-        <h2 class="heading-nw heading-nw--section-title">Our work</h2>
-        <div class="divider divider--white"></div>
-        <p class="paragraph paragraph--lg paragraph--white">
-          We would like to create a truly local platform for photographers to meet with tourists.
-          The platform where the principle WIN - WIN always win.
-          We are also striving to become #1 Photo-Tours in the Czech Republic.</p>
-        <a href="/gallery.html" class="btn btn--cta btn--cta-orange" href="">See Our Work</a>
-      </div>
-      <div class="cta-banner__img-wrapper">
-        <img src="images/camera-lens.png" alt="">
-      </div>
-    </div>
-  </section>
+					<div class="card-grid__item">
+						<img class="homepage-description__image" src="images/map.svg" alt="Map" />
+						<p class="homepage-description__text">You will get to know the city.</p>
+					</div>
 
-  <section class="homepage-description">
-    <div class="card-grid">
-      <div class="card-grid__inner">
-        <div class="card-grid__item">
-          <img class="homepage-description__image" src="images/skyline.svg" alt="skyline">
-          <p class="homepage-description__text">Tired of being lost in the new city?</p>
-        </div>
+					<div class="card-grid__item">
+						<img class="homepage-description__image" src="images/photographer.svg" alt="Photographer" />
+						<p class="homepage-description__text">You will get professional pictures.</p>
+					</div>
 
-        <div class="card-grid__item">
-          <img class="homepage-description__image" src="images/photo-camera.svg" alt="Photo camera">
-          <p class="homepage-description__text">Tired of poor photography equipement?</p>
-        </div>
+					<div class="card-grid__item">
+						<img class="homepage-description__image" src="images/happy.svg" alt="Smiley Emoji" />
+						<p class="homepage-description__text">You will have 100% fun.</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
-        <div class="card-grid__item">
-          <img class="homepage-description__image" src="images/tour.svg" alt="Tour">
-          <p class="homepage-description__text">Tired of classic city tours?</p>
-        </div>
-      </div>
-    </div>
-  </section>
+		<section class="cta-banner cta-banner--green">
+			<div class="cta-banner__inner">
+				<div class="cta-banner__item">
+					<h2 class="heading-nw heading-nw--section-title">Our work</h2>
+					<div class="divider divider--white"></div>
+					<p class="paragraph paragraph--lg paragraph--white">
+						We would like to create a truly local platform for photographers to meet with tourists. The platform where the principle WIN - WIN
+						always win. We are also striving to become #1 Photo-Tours in the Czech Republic.
+					</p>
+					<a href="/gallery.html" class="btn btn--cta btn--cta-orange" href="">See Our Work</a>
+				</div>
+				<div class="cta-banner__img-wrapper">
+					<img src="images/camera-lens.png" alt="" />
+				</div>
+			</div>
+		</section>
 
-  <section class="section section--grey">
-    <h2 class="heading-nw heading-nw--2">What our clients say</h2>
-      <div class="c-testimonial owl-carousel">
-          <div class="c-testimonial__item">
-              <div class="c-testimonial__content">
-                <p class="p-nw">
-                  “I highly recommend this experience! It was my first time to go on a solo trip abroad and since no one will take photos of me, I thought of having a professional take my photos. It was more than I expected! David was so nice and accommodating and the photos came out really nice! I liked that the shoot was personal. It incorporated a walking tour and with a coffee stopover along the way. I can’t stop sharing my experience with my friends and colleagues right after the trip!”
-                </p>
-                <span class="c-testimonial__name">Catherine</span><br>
-                <span class="c-testimonial__location">Lives in Manila, Philippines</span>
-              </div>
-          </div>
+		<section class="homepage-description">
+			<div class="card-grid">
+				<div class="card-grid__inner">
+					<div class="card-grid__item">
+						<img class="homepage-description__image" src="images/skyline.svg" alt="skyline" />
+						<p class="homepage-description__text">Tired of being lost in the new city?</p>
+					</div>
 
-        <div class="c-testimonial__item">
-          <div class="c-testimonial__content">
-            <p class="p-nw">
-              “I became friends with Inna, and I'm sure we'll be forever friends. This sentence alone is enough to describe her professionalism and friendliness. This is the most meaningful experience of my trip.”
-            </p>
-            <span class="c-testimonial__name">Da</span><br>
-            <span class="c-testimonial__location">Lives in Shenyang, China</span>
-          </div>
-        </div>
+					<div class="card-grid__item">
+						<img class="homepage-description__image" src="images/photo-camera.svg" alt="Photo camera" />
+						<p class="homepage-description__text">Tired of poor photography equipement?</p>
+					</div>
 
-        <div class="c-testimonial__item">
-          <div class="c-testimonial__content">
-            <p class="p-nw">
-              “It was so so so much fun and I really had a wonderful time in Prague. I am so happy to have such an amazing experience! 3 hours passed so quickly like you can not imagine! It is so worth to join this!;) I really recommend this one!”
-            </p>
-            <span class="c-testimonial__name">Misaki</span><br>
-            <span class="c-testimonial__location">Lives in Kagoshima Prefecture, Japan</span>
-          </div>
-        </div>
+					<div class="card-grid__item">
+						<img class="homepage-description__image" src="images/tour.svg" alt="Tour" />
+						<p class="homepage-description__text">Tired of classic city tours?</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
-        <div class="c-testimonial__item">
-          <div class="c-testimonial__content">
-            <p class="p-nw">
-              “AMAZING!!! It was not only a photoshooting, we also had lots of fun together! I felt like I am hanging out with my own friends! They were really cool and also here and there taking random photos which I really liked they are indeed professional photographers and they know what they do!!!! They made my trip to Europe amazing, i really liked it and would highly recommend it many thanks and wish to see u guys again.”
-            </p>
-            <span class="c-testimonial__name">Nazanin</span><br>
-            <span class="c-testimonial__location">Lives in Vancouver, Canada</span>
-          </div>
-        </div>
+		<section class="section section--grey">
+			<h2 class="heading-nw heading-nw--2">What our clients say</h2>
+			<div class="c-testimonial owl-carousel">
+				<div class="c-testimonial__item">
+					<div class="c-testimonial__content">
+						<p class="p-nw">
+							“I highly recommend this experience! It was my first time to go on a solo trip abroad and since no one will take photos of me, I
+							thought of having a professional take my photos. It was more than I expected! David was so nice and accommodating and the photos
+							came out really nice! I liked that the shoot was personal. It incorporated a walking tour and with a coffee stopover along the way.
+							I can’t stop sharing my experience with my friends and colleagues right after the trip!”
+						</p>
+						<span class="c-testimonial__name">Catherine</span><br />
+						<span class="c-testimonial__location">Lives in Manila, Philippines</span>
+					</div>
+				</div>
 
-        <div class="c-testimonial__item">
-          <div class="c-testimonial__content">
-            <p class="p-nw">
-              “As a solo traveller, this is one of the best decisions I've taken on my trip. David Took me to all of the spots I was interested in, inquired about my expectations prior, had great general knowledge, with fun facts about Prague and the discussion on several topics became fluid. In consequence, making the process of posing in front of a camera-less daunting and more entertaining. He truly captured my true "Awe" essence in the photo album! FAST turnaround time! I would recommend to anyone in a heartbeat!”
-            </p>
-            <span class="c-testimonial__name">Christine</span><br>
-            <span class="c-testimonial__location">Lives in Montreal, Canada</span>
-          </div>
-        </div>
+				<div class="c-testimonial__item">
+					<div class="c-testimonial__content">
+						<p class="p-nw">
+							“I became friends with Inna, and I'm sure we'll be forever friends. This sentence alone is enough to describe her professionalism
+							and friendliness. This is the most meaningful experience of my trip.”
+						</p>
+						<span class="c-testimonial__name">Da</span><br />
+						<span class="c-testimonial__location">Lives in Shenyang, China</span>
+					</div>
+				</div>
 
-        <div class="c-testimonial__item">
-          <div class="c-testimonial__content">
-            <p class="p-nw">
-              “My personal experience with David and Marketa was really the BEST thing I did while in Prague. They showed me amazing and unknown places in the city while taking perfect pictures. They really understood my type of pics and they let me have the best experience:)! Thank you and I hope I’ll get to see u guys again.”
-            </p>
-            <span class="c-testimonial__name">Nour</span><br>
-            <span class="c-testimonial__location">Lives in Ballouneh, Lebanon</span>
-          </div>
-        </div>
-      </div>
-  </section>
+				<div class="c-testimonial__item">
+					<div class="c-testimonial__content">
+						<p class="p-nw">
+							“It was so so so much fun and I really had a wonderful time in Prague. I am so happy to have such an amazing experience! 3 hours
+							passed so quickly like you can not imagine! It is so worth to join this!;) I really recommend this one!”
+						</p>
+						<span class="c-testimonial__name">Misaki</span><br />
+						<span class="c-testimonial__location">Lives in Kagoshima Prefecture, Japan</span>
+					</div>
+				</div>
 
-  <footer class="footer">
-    <div class="footer__inner">
-      <div class="footer__item footer__item--full-width">
-      <ul class="footer__nav">
-        <li>
-          <a class="footer__link" href="gallery.html"><span data-hover="our work">our work</span></a>
-        </li>
-        <li>
-          <a class="footer__link" href="/pricing.html"><span data-hover="pricing">pricing</span></a>
-        </li>
-        <li>
-          <a class="footer__link" href="story.html"><span data-hover="about us">about us</span></a>
-        </li>
-        <li>
-          <a class="footer__link" href="https://praguephotographers.rezgo.com/"><span data-hover="book us">book us</span></a>
-        </li>
-        <li>
-          <a class="footer__link" href="contact.html"><span data-hover="contact us">contact us</span></a>
-        </li>
-      </ul>
-      </div>
+				<div class="c-testimonial__item">
+					<div class="c-testimonial__content">
+						<p class="p-nw">
+							“AMAZING!!! It was not only a photoshooting, we also had lots of fun together! I felt like I am hanging out with my own friends!
+							They were really cool and also here and there taking random photos which I really liked they are indeed professional photographers
+							and they know what they do!!!! They made my trip to Europe amazing, i really liked it and would highly recommend it many thanks and
+							wish to see u guys again.”
+						</p>
+						<span class="c-testimonial__name">Nazanin</span><br />
+						<span class="c-testimonial__location">Lives in Vancouver, Canada</span>
+					</div>
+				</div>
 
-      <div class="footer__item">
-        <p class="footer__date">&copy; <script>document.write(new Date().getFullYear());</script> - Prague Photographers</p>
-      </div>
+				<div class="c-testimonial__item">
+					<div class="c-testimonial__content">
+						<p class="p-nw">
+							“As a solo traveller, this is one of the best decisions I've taken on my trip. David Took me to all of the spots I was interested
+							in, inquired about my expectations prior, had great general knowledge, with fun facts about Prague and the discussion on several
+							topics became fluid. In consequence, making the process of posing in front of a camera-less daunting and more entertaining. He truly
+							captured my true "Awe" essence in the photo album! FAST turnaround time! I would recommend to anyone in a heartbeat!”
+						</p>
+						<span class="c-testimonial__name">Christine</span><br />
+						<span class="c-testimonial__location">Lives in Montreal, Canada</span>
+					</div>
+				</div>
 
-      <div class="footer__item">
-        <ul class="footer__social">
-          <li class="social-item">
-              <a href="https://www.facebook.com/praguephotographers/" class="social-item__link">
-                <i class="fab fa-facebook-f social-icon"></i>
-              </a>
-          </li>
-          <li class="social-item">
-            <a href="https://www.instagram.com/praguephotographers/" class="social-item__link">
-                <i class="fab fa-instagram social-icon"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </footer>
+				<div class="c-testimonial__item">
+					<div class="c-testimonial__content">
+						<p class="p-nw">
+							“My personal experience with David and Marketa was really the BEST thing I did while in Prague. They showed me amazing and unknown
+							places in the city while taking perfect pictures. They really understood my type of pics and they let me have the best experience:)!
+							Thank you and I hope I’ll get to see u guys again.”
+						</p>
+						<span class="c-testimonial__name">Nour</span><br />
+						<span class="c-testimonial__location">Lives in Ballouneh, Lebanon</span>
+					</div>
+				</div>
+			</div>
+		</section>
 
-  <script type="text/javascript" src="js/vendor/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/vendor/jquery.waypoints.min.js"></script>
-  <script type="text/javascript" src="js/vendor/countUp.min.js"></script>
-  <script type="text/javascript" src="js/custom.min.js"></script>
-  <script type="text/javascript" src="js/vendor/owl.carousel.min.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+		<footer class="footer">
+			<div class="footer__inner">
+				<div class="footer__item footer__item--full-width">
+					<ul class="footer__nav">
+						<li>
+							<a class="footer__link" href="/gallery"><span data-hover="our work">our work</span></a>
+						</li>
+						<li>
+							<a class="footer__link" href="/pricing"><span data-hover="pricing">pricing</span></a>
+						</li>
+						<li>
+							<a class="footer__link" href="/story"><span data-hover="about us">about us</span></a>
+						</li>
+						<li>
+							<a class="footer__link" href="https://praguephotographers.rezgo.com/"><span data-hover="book us">book us</span></a>
+						</li>
+						<li>
+							<a class="footer__link" href="/contact"><span data-hover="contact us">contact us</span></a>
+						</li>
+					</ul>
+				</div>
 
-</body>
+				<div class="footer__item">
+					<p class="footer__date">
+						&copy;
+						<script>
+							document.write(new Date().getFullYear())
+						</script>
+						- Prague Photographers
+					</p>
+				</div>
+
+				<div class="footer__item">
+					<ul class="footer__social">
+						<li class="social-item">
+							<a href="https://www.facebook.com/praguephotographers/" class="social-item__link">
+								<i class="fab fa-facebook-f social-icon"></i>
+							</a>
+						</li>
+						<li class="social-item">
+							<a href="https://www.instagram.com/praguephotographers/" class="social-item__link">
+								<i class="fab fa-instagram social-icon"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+		<script type="text/javascript" src="js/vendor/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="js/vendor/jquery.waypoints.min.js"></script>
+		<script type="text/javascript" src="js/vendor/countUp.min.js"></script>
+		<script type="text/javascript" src="js/vendor/owl.carousel.min.js"></script>
+		<script type="text/javascript" src="js/vendor/headroom.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
 </html>

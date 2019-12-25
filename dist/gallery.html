@@ -1,275 +1,286 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<meta name="description" content="The official website of PraguePhotographers" />
+		<meta name="robots" content="index,follow" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="The official website of PraguePhotographers">
-  <meta name="robots" content="index,follow">
-  
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+		<!-- Font Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
+			integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+			crossorigin="anonymous"
+		/>
 
-  <!-- Photoswipe -->
-  <link rel="stylesheet" href="../scss/photoswipe.min.css">
-  <link rel="stylesheet" href="../scss/default-skin/default-skin.min.css">
+		<!-- Photoswipe -->
+		<link rel="stylesheet" href="../scss/photoswipe.min.css" />
+		<link rel="stylesheet" href="../scss/default-skin/default-skin.min.css" />
 
-  <!-- Custom Stylesheet -->
-  <link rel="stylesheet" href="css/main.css">
-  
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+		<!-- Custom Stylesheet -->
+		<link rel="stylesheet" href="css/main.css" />
 
-  <title>Our Gallery | Prague Photographers</title>
-  <link rel="shortcut icon" type="images/favicon.jpeg" href="images/favicon.jpeg">
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto+Condensed:400,700" rel="stylesheet" />
 
-    gtag('config', 'UA-139834712-1');
-  </script>
-</head>
-  
-<body>
-    <header class="nav-wrapper">
-        <a href="index.html"><img class="logo" src="images/logo.jpeg" alt="Logo Icon"></a>
-        <button class="btn btn--menu" id="js-menu">
-          <span class="menu-line"></span>
-          <span class="menu-line"></span>
-          <span class="menu-line"></span>
-        </button>
-      </header>
-      
-      <nav class="menu-wrapper js-trigger">
-        <ul class="site-nav">
-          <li class="site-nav__items"><a href="gallery.html">Our Work</a></li>
-          <li class="site-nav__items"><a href="pricing.html">Pricing</a></li>
-          <li class="site-nav__items"><a href="story.html">About Us</a></li>
-          <li class="site-nav__items"><a href="https://praguephotographers.rezgo.com">Book Us</a></li>
-          <li class="site-nav__items"><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
-    
-      <section class="section section--with-padding-top">
-          <h1 class="heading-nw heading-nw--2">Our gallery</h1>
-          <div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
+		<title>Our Gallery | Prague Photographers</title>
+		<link rel="shortcut icon" type="images/favicon.jpeg" href="images/favicon.jpeg" />
+		<script>
+			window.dataLayer = window.dataLayer || []
+			function gtag() {
+				dataLayer.push(arguments)
+			}
+			gtag('js', new Date())
 
-            <figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a href="images/gallery/alex-dark.jpg" itemprop="contentUrl" data-size="1365x2048">
-                <img src="images/gallery/alex-dark-small.jpg" itemprop="thumbnail" alt="Image description" />
-              </a>
-              <figcaption class="gallery-item__caption" itemprop="caption description">Alex</figcaption>                             
-            </figure>
+			gtag('config', 'UA-139834712-1')
+		</script>
+	</head>
 
-            <figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a href="images/gallery/amalia-portrait.jpg" itemprop="contentUrl" data-size="1365x2048">
-                <img src="images/gallery/amalia-portrait-small.jpg" itemprop="thumbnail" alt="Image description" />
-              </a>
-              <figcaption class="gallery-item__caption" itemprop="caption description">Amelia</figcaption>                             
-            </figure>
+	<body>
+		<header class="header">
+			<div class="header__inner">
+				<a href="/">
+					<img class="header__logo" src="/images/logo.jpeg" alt="Logo Icon" />
+				</a>
+				<button class="btn btn--menu" id="js-menu">
+					<span class="menu-line"></span>
+					<span class="menu-line"></span>
+					<span class="menu-line"></span>
+				</button>
 
-            <figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a href="images/gallery/bryan-swans.jpg" itemprop="contentUrl" data-size="2048x1365">
-                <img src="images/gallery/bryan-swans-small.jpg" itemprop="thumbnail" alt="Image description" />
-              </a>
-              <figcaption class="gallery-item__caption" itemprop="caption description">Bryan</figcaption>                             
-            </figure>
+				<nav class="menu-wrapper js-trigger">
+					<ul class="site-nav">
+						<li class="site-nav__items"><a href="/gallery">Our Work</a></li>
+						<li class="site-nav__items"><a href="/pricing">Pricing</a></li>
+						<li class="site-nav__items"><a href="/story">About Us</a></li>
+						<li class="site-nav__items"><a href="https://praguephotographers.rezgo.com">Book Us</a></li>
+						<li class="site-nav__items"><a href="/contact">Contact Us</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section class="section section--with-padding-top">
+			<h1 class="heading-nw heading-nw--2">Our gallery</h1>
+			<div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
+				<figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="images/gallery/alex-dark.jpg" itemprop="contentUrl" data-size="1365x2048">
+						<img src="images/gallery/alex-dark-small.jpg" itemprop="thumbnail" alt="Image description" />
+					</a>
+					<figcaption class="gallery-item__caption" itemprop="caption description">Alex</figcaption>
+				</figure>
 
-            <figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a href="images/gallery/cat-mad.jpg" itemprop="contentUrl" data-size="2048x1365">
-                <img src="images/gallery/cat-mad-small.jpg" itemprop="thumbnail" alt="Image description" />
-              </a>
-              <figcaption class="gallery-item__caption" itemprop="caption description">Cat</figcaption>                             
-            </figure>
+				<figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="images/gallery/amalia-portrait.jpg" itemprop="contentUrl" data-size="1365x2048">
+						<img src="images/gallery/amalia-portrait-small.jpg" itemprop="thumbnail" alt="Image description" />
+					</a>
+					<figcaption class="gallery-item__caption" itemprop="caption description">Amelia</figcaption>
+				</figure>
 
-            <figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a href="images/gallery/clara-dancing.jpg" itemprop="contentUrl" data-size="2048x1365">
-                <img src="images/gallery/clara-dancing-small.jpg" itemprop="thumbnail" alt="Image description" />
-              </a>
-              <figcaption class="gallery-item__caption" itemprop="caption description">Clara</figcaption>
-            </figure>
+				<figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="images/gallery/bryan-swans.jpg" itemprop="contentUrl" data-size="2048x1365">
+						<img src="images/gallery/bryan-swans-small.jpg" itemprop="thumbnail" alt="Image description" />
+					</a>
+					<figcaption class="gallery-item__caption" itemprop="caption description">Bryan</figcaption>
+				</figure>
 
-            <figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a href="images/gallery/eriko-trees.jpg" itemprop="contentUrl" data-size="2048x1365">
-                <img src="images/gallery/eriko-trees-small.jpg" itemprop="thumbnail" alt="Image description" />
-              </a>
-              <figcaption class="gallery-item__caption" itemprop="caption description">Eriko</figcaption>                     
-            </figure>
+				<figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="images/gallery/cat-mad.jpg" itemprop="contentUrl" data-size="2048x1365">
+						<img src="images/gallery/cat-mad-small.jpg" itemprop="thumbnail" alt="Image description" />
+					</a>
+					<figcaption class="gallery-item__caption" itemprop="caption description">Cat</figcaption>
+				</figure>
 
-            <figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a href="images/gallery/helen-bridge.jpg" itemprop="contentUrl" data-size="2048x1365">
-                <img src="images/gallery/helen-bridge-small.jpg" itemprop="thumbnail" alt="Image description" />
-              </a>
-              <figcaption class="gallery-item__caption" itemprop="caption description">Helen</figcaption>                     
-            </figure>
+				<figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="images/gallery/clara-dancing.jpg" itemprop="contentUrl" data-size="2048x1365">
+						<img src="images/gallery/clara-dancing-small.jpg" itemprop="thumbnail" alt="Image description" />
+					</a>
+					<figcaption class="gallery-item__caption" itemprop="caption description">Clara</figcaption>
+				</figure>
 
-            <figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a href="images/gallery/kate-bridge.jpg" itemprop="contentUrl" data-size="2048x1365">
-                <img src="images/gallery/kate-bridge-small.jpg" itemprop="thumbnail" alt="Image description" />
-              </a>
-              <figcaption class="gallery-item__caption" itemprop="caption description">Kate</figcaption>                     
-            </figure>
+				<figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="images/gallery/eriko-trees.jpg" itemprop="contentUrl" data-size="2048x1365">
+						<img src="images/gallery/eriko-trees-small.jpg" itemprop="thumbnail" alt="Image description" />
+					</a>
+					<figcaption class="gallery-item__caption" itemprop="caption description">Eriko</figcaption>
+				</figure>
 
-            <figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a href="images/gallery/keli-portrait.jpg" itemprop="contentUrl" data-size="2048x1365">
-                <img src="images/gallery/keli-portrait-small.jpg" itemprop="thumbnail" alt="Image description" />
-              </a>
-              <figcaption class="gallery-item__caption" itemprop="caption description">Keli</figcaption>                     
-            </figure>
-            
-            <figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a href="images/gallery/loesmax-jump.jpg" itemprop="contentUrl" data-size="2048x1365">
-                <img src="images/gallery/loesmax-jump-small.jpg" itemprop="thumbnail" alt="Image description" />
-              </a>
-              <figcaption class="gallery-item__caption" itemprop="caption description">Loesmax</figcaption>                     
-            </figure>
+				<figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="images/gallery/helen-bridge.jpg" itemprop="contentUrl" data-size="2048x1365">
+						<img src="images/gallery/helen-bridge-small.jpg" itemprop="thumbnail" alt="Image description" />
+					</a>
+					<figcaption class="gallery-item__caption" itemprop="caption description">Helen</figcaption>
+				</figure>
 
-            <figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a href="images/gallery/lukas-umbrella.jpg" itemprop="contentUrl" data-size="2048x1365">
-                <img src="images/gallery/lukas-umbrella-small.jpg" itemprop="thumbnail" alt="Image description" />
-              </a>
-              <figcaption class="gallery-item__caption" itemprop="caption description">Lukas</figcaption>                     
-            </figure>
+				<figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="images/gallery/kate-bridge.jpg" itemprop="contentUrl" data-size="2048x1365">
+						<img src="images/gallery/kate-bridge-small.jpg" itemprop="thumbnail" alt="Image description" />
+					</a>
+					<figcaption class="gallery-item__caption" itemprop="caption description">Kate</figcaption>
+				</figure>
 
-            <figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a href="images/gallery/katecage.jpg" itemprop="contentUrl" data-size="2048x1365">
-                <img src="images/gallery/katecage-small.jpg" itemprop="thumbnail" alt="Image description" />
-              </a>
-              <figcaption class="gallery-item__caption" itemprop="caption description">Kate</figcaption>                     
-            </figure>
+				<figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="images/gallery/keli-portrait.jpg" itemprop="contentUrl" data-size="2048x1365">
+						<img src="images/gallery/keli-portrait-small.jpg" itemprop="thumbnail" alt="Image description" />
+					</a>
+					<figcaption class="gallery-item__caption" itemprop="caption description">Keli</figcaption>
+				</figure>
 
-            <figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a href="images/gallery/steff-church.jpg" itemprop="contentUrl" data-size="1365x2048">
-                <img src="images/gallery/steff-church-small.jpg" itemprop="thumbnail" alt="Image description" />
-              </a>
-              <figcaption class="gallery-item__caption" itemprop="caption description">Steff</figcaption>                     
-            </figure>
+				<figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="images/gallery/loesmax-jump.jpg" itemprop="contentUrl" data-size="2048x1365">
+						<img src="images/gallery/loesmax-jump-small.jpg" itemprop="thumbnail" alt="Image description" />
+					</a>
+					<figcaption class="gallery-item__caption" itemprop="caption description">Loesmax</figcaption>
+				</figure>
 
-            <figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a href="images/gallery/step-crazy.jpg" itemprop="contentUrl" data-size="1365x2048">
-                <img src="images/gallery/step-crazy-small.jpg" itemprop="thumbnail" alt="Image description" />
-              </a>
-              <figcaption class="gallery-item__caption" itemprop="caption description">Step</figcaption>                     
-            </figure>
+				<figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="images/gallery/lukas-umbrella.jpg" itemprop="contentUrl" data-size="2048x1365">
+						<img src="images/gallery/lukas-umbrella-small.jpg" itemprop="thumbnail" alt="Image description" />
+					</a>
+					<figcaption class="gallery-item__caption" itemprop="caption description">Lukas</figcaption>
+				</figure>
 
-            <figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-              <a href="images/gallery/vanessa-spray.jpg" itemprop="contentUrl" data-size="2048x1365">
-                <img src="images/gallery/vanessa-spray-small.jpg" itemprop="thumbnail" alt="Image description" />
-              </a>
-              <figcaption class="gallery-item__caption" itemprop="caption description">Vanessa</figcaption>                     
-            </figure>
-          </div>
+				<figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="images/gallery/katecage.jpg" itemprop="contentUrl" data-size="2048x1365">
+						<img src="images/gallery/katecage-small.jpg" itemprop="thumbnail" alt="Image description" />
+					</a>
+					<figcaption class="gallery-item__caption" itemprop="caption description">Kate</figcaption>
+				</figure>
 
-      <!-- Root element of PhotoSwipe. Must have class pswp. -->
-        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+				<figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="images/gallery/steff-church.jpg" itemprop="contentUrl" data-size="1365x2048">
+						<img src="images/gallery/steff-church-small.jpg" itemprop="thumbnail" alt="Image description" />
+					</a>
+					<figcaption class="gallery-item__caption" itemprop="caption description">Steff</figcaption>
+				</figure>
 
-          <!-- Background of PhotoSwipe. It's a separate element, as animating opacity is faster than rgba(). -->
-          <div class="pswp__bg"></div>
+				<figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="images/gallery/step-crazy.jpg" itemprop="contentUrl" data-size="1365x2048">
+						<img src="images/gallery/step-crazy-small.jpg" itemprop="thumbnail" alt="Image description" />
+					</a>
+					<figcaption class="gallery-item__caption" itemprop="caption description">Step</figcaption>
+				</figure>
 
-            <!-- Slides wrapper with overflow:hidden. -->
-            <div class="pswp__scroll-wrap">
+				<figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="images/gallery/vanessa-spray.jpg" itemprop="contentUrl" data-size="2048x1365">
+						<img src="images/gallery/vanessa-spray-small.jpg" itemprop="thumbnail" alt="Image description" />
+					</a>
+					<figcaption class="gallery-item__caption" itemprop="caption description">Vanessa</figcaption>
+				</figure>
+			</div>
 
-              <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
-              <!-- don't modify these 3 pswp__item elements, data is added later on. -->
-              <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-              </div>
+			<!-- Root element of PhotoSwipe. Must have class pswp. -->
+			<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+				<!-- Background of PhotoSwipe. It's a separate element, as animating opacity is faster than rgba(). -->
+				<div class="pswp__bg"></div>
 
-              <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-              <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                  
-                  <!--  Controls are self-explanatory. Order can be changed. -->
-                  <div class="pswp__counter"></div>
+				<!-- Slides wrapper with overflow:hidden. -->
+				<div class="pswp__scroll-wrap">
+					<!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+					<!-- don't modify these 3 pswp__item elements, data is added later on. -->
+					<div class="pswp__container">
+						<div class="pswp__item"></div>
+						<div class="pswp__item"></div>
+						<div class="pswp__item"></div>
+					</div>
 
-                  <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+					<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+					<div class="pswp__ui pswp__ui--hidden">
+						<div class="pswp__top-bar">
+							<!--  Controls are self-explanatory. Order can be changed. -->
+							<div class="pswp__counter"></div>
 
-                  <button class="pswp__button pswp__button--share" title="Share"></button>
+							<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
 
-                  <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+							<button class="pswp__button pswp__button--share" title="Share"></button>
 
-                  <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+							<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
 
-                  <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
-                  <!-- element will get class pswp__preloader--active when preloader is running -->
-                  <div class="pswp__preloader">
-                      <div class="pswp__preloader__icn">
-                        <div class="pswp__preloader__cut">
-                          <div class="pswp__preloader__donut"></div>
-                        </div>
-                      </div>
-                  </div>
-                </div>
+							<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
 
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                  <div class="pswp__share-tooltip"></div> 
-                </div>
+							<!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+							<!-- element will get class pswp__preloader--active when preloader is running -->
+							<div class="pswp__preloader">
+								<div class="pswp__preloader__icn">
+									<div class="pswp__preloader__cut">
+										<div class="pswp__preloader__donut"></div>
+									</div>
+								</div>
+							</div>
+						</div>
 
-                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-                </button>
+						<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+							<div class="pswp__share-tooltip"></div>
+						</div>
 
-                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-                </button>
+						<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
 
-                <div class="pswp__caption">
-                  <div class="pswp__caption__center"></div>
-                </div>
+						<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
 
-              </div><!-- pswp__ui -->
-          </div><!-- pswp__scroll-wrap -->
-        </div><!-- pswp -->
-      </section>
+						<div class="pswp__caption">
+							<div class="pswp__caption__center"></div>
+						</div>
+					</div>
+					<!-- pswp__ui -->
+				</div>
+				<!-- pswp__scroll-wrap -->
+			</div>
+			<!-- pswp -->
+		</section>
 
-    <footer class="footer">
-      <div class="footer__inner">
-        <div class="footer__item footer__item--full-width">
-          <ul class="footer__nav">
-            <li>
-              <a class="footer__link" href="gallery.html"><span data-hover="our work">our work</span></a>
-            </li>
-            <li>
-              <a class="footer__link" href="/pricing.html"><span data-hover="pricing">pricing</span></a>
-            </li>
-            <li>
-              <a class="footer__link" href="story.html"><span data-hover="about us">about us</span></a>
-            </li>
-            <li>
-              <a class="footer__link" href="https://praguephotographers.rezgo.com/"><span data-hover="book us">book us</span></a>
-            </li>
-            <li>
-              <a class="footer__link" href="contact.html"><span data-hover="contact us">contact us</span></a>
-            </li>
-          </ul>
-        </div>
+		<footer class="footer">
+			<div class="footer__inner">
+				<div class="footer__item footer__item--full-width">
+					<ul class="footer__nav">
+						<li>
+							<a class="footer__link" href="/gallery"><span data-hover="our work">our work</span></a>
+						</li>
+						<li>
+							<a class="footer__link" href="/pricing"><span data-hover="pricing">pricing</span></a>
+						</li>
+						<li>
+							<a class="footer__link" href="/story"><span data-hover="about us">about us</span></a>
+						</li>
+						<li>
+							<a class="footer__link" href="https://praguephotographers.rezgo.com/"><span data-hover="book us">book us</span></a>
+						</li>
+						<li>
+							<a class="footer__link" href="/contact"><span data-hover="contact us">contact us</span></a>
+						</li>
+					</ul>
+				</div>
 
-        <div class="footer__item">
-          <p class="footer__date">&copy; <script>document.write(new Date().getFullYear());</script> - Prague Photographers</p>
-        </div>
+				<div class="footer__item">
+					<p class="footer__date">
+						&copy;
+						<script>
+							document.write(new Date().getFullYear())
+						</script>
+						- Prague Photographers
+					</p>
+				</div>
 
-        <div class="footer__item">
-          <ul class="footer__social">
-            <li class="social-item">
-              <a href="https://www.facebook.com/praguephotographers/" class="social-item__link">
-                <i class="fab fa-facebook-f social-icon"></i>
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="https://www.instagram.com/praguephotographers/" class="social-item__link">
-                <i class="fab fa-instagram social-icon"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </footer>
+				<div class="footer__item">
+					<ul class="footer__social">
+						<li class="social-item">
+							<a href="https://www.facebook.com/praguephotographers/" class="social-item__link">
+								<i class="fab fa-facebook-f social-icon"></i>
+							</a>
+						</li>
+						<li class="social-item">
+							<a href="https://www.instagram.com/praguephotographers/" class="social-item__link">
+								<i class="fab fa-instagram social-icon"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
 
-    <script src="js/photoswipe.min.js"></script>
-    <script src="js/photoswipe-ui-default.min.js"></script>
-    <script type="text/javascript" src="js/vendor/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="js/custom.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-</body>
+		<script src="js/photoswipe.min.js"></script>
+		<script src="js/photoswipe-ui-default.min.js"></script>
+		<script type="text/javascript" src="js/vendor/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="js/custom.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
 </html>
