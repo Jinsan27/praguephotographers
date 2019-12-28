@@ -22,6 +22,10 @@
 
 		<title>Our Gallery | Prague Photographers</title>
 		<link rel="shortcut icon" type="images/favicon.jpeg" href="images/favicon.jpeg" />
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139834712-1"></script>
+
 		<script>
 			window.dataLayer = window.dataLayer || []
 			function gtag() {
@@ -50,7 +54,7 @@
 						<li class="site-nav__items"><a href="/gallery">Our Work</a></li>
 						<li class="site-nav__items"><a href="/pricing">Pricing</a></li>
 						<li class="site-nav__items"><a href="/story">About Us</a></li>
-						<li class="site-nav__items"><a href="https://praguephotographers.rezgo.com">Book Us</a></li>
+						<li class="site-nav__items"><a href="https://praguephotographers.rezgo.com" onClick="gtag('event', 'Link Book Us', {'event_category' : 'Click Book Us', 'event_label' : 'In Header Link Our Work'});">Book Us</a></li>
 						<li class="site-nav__items"><a href="/contact">Contact Us</a></li>
 					</ul>
 				</nav>
@@ -151,6 +155,15 @@
 			</div>
 		</section>
 
+		<section class="cta-banner cta-banner--no-img">
+			<div class="cta-banner__inner">
+				<div class="cta-banner__item">
+					<h2 class="heading-nw heading-nw--section-title">Meet Prague Photographers</h2>
+					<a href="/contact" class="btn btn--cta" onClick="gtag('event', 'CTA Meet Us', {'event_category' : 'Click Meet Us', 'event_label' : 'In CTA Banner Our Work'});">Meet Us</a>
+				</div>
+			</div>
+		</section>
+
 		<footer class="footer">
 			<div class="footer__inner">
 				<div class="footer__item footer__item--full-width">
@@ -165,7 +178,7 @@
 							<a class="footer__link" href="/story"><span data-hover="about us">about us</span></a>
 						</li>
 						<li>
-							<a class="footer__link" href="https://praguephotographers.rezgo.com/"><span data-hover="book us">book us</span></a>
+							<a class="footer__link" href="https://praguephotographers.rezgo.com/" onClick="gtag('event', 'Link Book Us', {'event_category' : 'Click Book Us', 'event_label' : 'In Footer link Our Work'});"><span data-hover="book us">book us</span></a>
 						</li>
 						<li>
 							<a class="footer__link" href="/contact"><span data-hover="contact us">contact us</span></a>

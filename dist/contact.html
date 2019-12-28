@@ -22,6 +22,9 @@
 		<title>Contact Us | Prague Photographers</title>
 		<link rel="shortcut icon" type="images/favicon.jpeg" href="images/favicon.jpeg" />
 
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139834712-1"></script>
+
 		<script>
 			window.dataLayer = window.dataLayer || []
 			function gtag() {
@@ -50,7 +53,7 @@
 						<li class="site-nav__items"><a href="/gallery">Our Work</a></li>
 						<li class="site-nav__items"><a href="/pricing">Pricing</a></li>
 						<li class="site-nav__items"><a href="/story">About Us</a></li>
-						<li class="site-nav__items"><a href="https://praguephotographers.rezgo.com">Book Us</a></li>
+						<li class="site-nav__items"><a href="https://praguephotographers.rezgo.com" onClick="gtag('event', 'Book Us', {'event_category' : 'Click Book Us', 'event_label' : 'In Header link Contact Us'});">Book Us</a></li>
 						<li class="site-nav__items"><a href="/contact">Contact Us</a></li>
 					</ul>
 				</nav>
@@ -82,7 +85,7 @@
 							<label class="form-style__label-nw">Message</label>
 							<input class="form-style__input-text" type="text" id="message" />
 						</div>
-						<input class="btn btn--contact" type="submit" value="Send" />
+						<input class="btn btn--contact" type="submit" value="Send" onClick="gtag('event', 'Contact Form Sent', {'event_category' : 'Form Sent', 'event_label' : 'Contact Us Form'});"/>
 					</div>
 				</form>
 			</div>
@@ -102,7 +105,7 @@
 							<a class="footer__link" href="/story"><span data-hover="about us">about us</span></a>
 						</li>
 						<li>
-							<a class="footer__link" href="https://praguephotographers.rezgo.com/"><span data-hover="book us">book us</span></a>
+							<a class="footer__link" href="https://praguephotographers.rezgo.com/" onClick="gtag('event', 'Book Us', {'event_category' : 'Click Book Us', 'event_label' : 'In Footer link Contact Us'});"><span data-hover="book us">book us</span></a>
 						</li>
 						<li>
 							<a class="footer__link" href="/contact"><span data-hover="contact us">contact us</span></a>

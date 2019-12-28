@@ -72,13 +72,8 @@
 
 .layout-wrapper {
   max-width: 1200px;
-  min-height: 500px;
   margin-left: auto;
   margin-right: auto;
-
-  @media (min-width: 768px) {
-    min-height: auto;
-  }
 
   &--small {
     @media screen and (min-width: 767px) and (max-width: 1024px) {
@@ -100,7 +95,11 @@
 //=========================
 
 .about-us-banner-wrapper {
-  padding: 4 * $spacing-unit-small 0;
+  padding: 0 0 64px;
+}
+
+.hero-banner-wrapper {
+  margin-bottom: 96px;
 }
 
 .heading-wrapper {

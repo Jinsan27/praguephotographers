@@ -33,28 +33,29 @@
 		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,700|Roboto+Condensed:400,700" rel="stylesheet" />
 
-		<title>Prague Photographers</title>
+		<title>Photographers in Prague | Prague Photographers</title>
 		<link rel="shortcut icon" type="images/favicon.jpeg" href="images/favicon.jpeg" />
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139834712-1"></script>
 
 		<script>
-			window.dataLayer = window.dataLayer || []
+			window.dataLayer = window.dataLayer || [];
 			function gtag() {
 				dataLayer.push(arguments)
 			}
-			gtag('js', new Date())
+			gtag('js', new Date());
 
 			gtag('config', 'UA-139834712-1')
 		</script>
+
 	</head>
 
 	<body>
 		<header class="header">
 			<div class="header__inner">
 				<a href="/">
-					<img class="header__logo" src="/images/logo.jpeg" alt="Logo Icon" />
+					<img class="header__logo" src="/images/logo.jpeg" alt="Prague photographers logo" />
 				</a>
 				<button class="btn btn--menu" id="js-menu">
 					<span class="menu-line"></span>
@@ -67,7 +68,7 @@
 						<li class="site-nav__items"><a href="/gallery">Our Work</a></li>
 						<li class="site-nav__items"><a href="/pricing">Pricing</a></li>
 						<li class="site-nav__items"><a href="/story">About Us</a></li>
-						<li class="site-nav__items"><a href="https://praguephotographers.rezgo.com">Book Us</a></li>
+						<li class="site-nav__items"><a href="https://praguephotographers.rezgo.com" onClick="gtag('event', 'Link Book Us', {'event_category' : 'Click Book Us', 'event_label' : 'In Header Nav HP'});">Book Us</a></li>
 						<li class="site-nav__items"><a href="/contact">Contact Us</a></li>
 					</ul>
 				</nav>
@@ -90,7 +91,7 @@
 						<p class="paragraph paragraph--lg">
 							We would like you to have a great experience from Prague, beautiful photos that you can take home with you. :-)
 						</p>
-						<a href="https://praguephotographers.rezgo.com/" class="btn btn--primary">Book Us</a>
+						<a href="https://praguephotographers.rezgo.com/" class="btn btn--primary" onClick="gtag('event', 'CTA Book Us', {'event_category' : 'Click Book Us', 'event_label' : 'In Hero Banner'});">Book Us</a>
 					</div>
 
 					<a href="#" class="arrow-icon bounce-animation scroll-to-js" data-scroll-from><img src="images/arrow-down.png" alt="arrow down icon"/></a>
@@ -125,10 +126,10 @@
 					<p class="paragraph paragraph--lg paragraph--white">
 						Love, passion, work, FUN We love what we are doing. We always work on 100% with 100% FUN.
 					</p>
-					<a href="/contact.html" class="btn btn--cta btn--cta-orange" href="">Meet Us</a>
+					<a href="/contact" class="btn btn--cta btn--cta-orange" onClick="gtag('event', 'CTA Meet Us', {'event_category' : 'Click Meet Us', 'event_label' : 'In CTA Banner HP'});">Meet Us</a>
 				</div>
 				<div class="cta-banner__img-wrapper">
-					<img src="images/camera-img.png" alt="" />
+					<img src="images/camera-img.png" alt="Prague photographers camera img" />
 				</div>
 			</div>
 		</section>
@@ -168,10 +169,10 @@
 						We would like to create a truly local platform for photographers to meet with tourists. The platform where the principle WIN - WIN
 						always win. We are also striving to become #1 Photo-Tours in the Czech Republic.
 					</p>
-					<a href="/gallery.html" class="btn btn--cta btn--cta-orange" href="">See Our Work</a>
+					<a href="/gallery" class="btn btn--cta btn--cta-orange" onClick="gtag('event', 'CTA See Our Work', {'event_category' : 'Click See Our Work', 'event_label' : 'In CTA Banner HP'});">See Our Work</a>
 				</div>
 				<div class="cta-banner__img-wrapper">
-					<img src="images/camera-lens.png" alt="" />
+					<img src="images/camera-lens.png" alt="Prague photographers camera lens img" />
 				</div>
 			</div>
 		</section>
@@ -289,7 +290,7 @@
 							<a class="footer__link" href="/story"><span data-hover="about us">about us</span></a>
 						</li>
 						<li>
-							<a class="footer__link" href="https://praguephotographers.rezgo.com/"><span data-hover="book us">book us</span></a>
+							<a class="footer__link" href="https://praguephotographers.rezgo.com/" onClick="gtag('event', 'Link Book Us', {'event_category' : 'Click Book Us', 'event_label' : 'In Footer link HP'});"><span data-hover="book us">book us</span></a>
 						</li>
 						<li>
 							<a class="footer__link" href="/contact"><span data-hover="contact us">contact us</span></a>

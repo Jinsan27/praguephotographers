@@ -20,14 +20,18 @@
 		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,700|Roboto+Condensed:400,700" rel="stylesheet" />
 
-		<title>Our Story</title>
+		<title>Our Story | Prague Photographers</title>
 		<link rel="shortcut icon" type="images/favicon.jpeg" href="images/favicon.jpeg" />
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139834712-1"></script>
+
 		<script>
-			window.dataLayer = window.dataLayer || []
+			window.dataLayer = window.dataLayer || [];
 			function gtag() {
 				dataLayer.push(arguments)
 			}
-			gtag('js', new Date())
+			gtag('js', new Date());
 
 			gtag('config', 'UA-139834712-1')
 		</script>
@@ -37,7 +41,7 @@
 		<header class="header">
 			<div class="header__inner">
 				<a href="/">
-					<img class="header__logo" src="/images/logo.jpeg" alt="Logo Icon" />
+					<img class="header__logo" src="/images/logo.jpeg" alt="Prague photographers Logo Icon" />
 				</a>
 				<button class="btn btn--menu" id="js-menu">
 					<span class="menu-line"></span>
@@ -50,29 +54,38 @@
 						<li class="site-nav__items"><a href="/gallery">Our Work</a></li>
 						<li class="site-nav__items"><a href="/pricing">Pricing</a></li>
 						<li class="site-nav__items"><a href="/story">About Us</a></li>
-						<li class="site-nav__items"><a href="https://praguephotographers.rezgo.com">Book Us</a></li>
+						<li class="site-nav__items"><a href="https://praguephotographers.rezgo.com" onClick="gtag('event', 'Book Us', {'event_category' : 'Click Book Us', 'event_label' : 'In Header link About us'});">Book Us</a></li>
 						<li class="site-nav__items"><a href="/contact">Contact Us</a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
 
-		<section class="about-us-banner">
-			<div class="overlay"></div>
+		<section class="hero-banner-wrapper">
+			<div class="hero">
+				<div class="hero__inner">
+					<img class="hero__img-wrapper" src="images/about-prague-photographers.jpg" alt="Prague photographers hero banner about us" />
 
-			<h1 class="about-us-banner__title">Once upon a time...</h1>
+					<div class="hero__item">
+						<h1 class="heading-nw heading-nw--hero">
+							Who are<br />
+							Prague Photographers?
+						</h1>
+						<div class="divider"></div>
+						<p class="paragraph paragraph--lg">
+							Our story began in 2011, when we both started to work in International Students Club in Brno, where we were helping incomming
+							students from abroad to settle in and get used to the city.
+						</p>
+					</div>
+				</div>
+			</div>
 		</section>
-
 		<section class="about-us-card">
-			<h2 class="about-us-banner__sub-title">...Jan met Martin</h2>
+			<h2 data-num="01" class="heading-nw heading-nw--with-number">Jan met Martin</h2>
 			<div class="layout-wrapper layout-wrapper--small">
 				<div class="about-us-banner-wrapper">
 					<p class="about-us-banner__text">
-						Our story began in 2011, when we both started to work in International Students Club in Brno, where we were helping incomming students
-						from abroad to settle in and get used to the city.
-					</p>
-					<p class="about-us-banner__text">
-						We were also studying abroad, so we truly understand how do you feel in the new country or city.
+						We were studying abroad, so we truly understand how do you feel in the new country or city.
 					</p>
 					<p class="about-us-banner__text">
 						After school we have moved to Prague, we were working with foreigners, Martin in the relocation agency and Jan in the HR sector.
@@ -86,22 +99,32 @@
 		</section>
 
 		<section class="about-us-card">
-			<h2 class="about-us-banner__sub-title about-us-banner__sub-title--number-one" data-number="1">Our Mission</h2>
+			<h2 data-num="02" class="heading-nw heading-nw--with-number">Our Mission</h2>
 			<div class="layout-wrapper layout-wrapper--small">
 				<div class="about-us-banner-wrapper">
 					<p class="about-us-banner__text">
-						We would like you to have a great experience from Prague, beautiful photos that you can take home with you. :-)
+						We would like you to have a great experience from Prague, <a href="/our-work"><strong>beautiful photos</strong></a> that you can take
+						home with you. :-)
 					</p>
 				</div>
 			</div>
 		</section>
 
+		<section class="cta-banner cta-banner--no-img">
+			<div class="cta-banner__inner">
+				<div class="cta-banner__item">
+					<h2 class="heading-nw heading-nw--section-title">Meet Prague Photographers</h2>
+					<a href="/contact" class="btn btn--cta" onClick="gtag('event', 'CTA Meet Us', {'event_category' : 'Click Meet Us', 'event_label' : 'In CTA Banner About Us'});">Meet Us</a>
+				</div>
+			</div>
+		</section>
+
 		<section class="about-us-card">
-			<h2 class="about-us-banner__sub-title about-us-banner__sub-title--number-two" data-number="2">Our Vision</h2>
+			<h2 data-num="04" class="heading-nw heading-nw--with-number">Our Vision</h2>
 			<div class="layout-wrapper layout-wrapper--small">
 				<div class="about-us-banner-wrapper">
 					<p class="about-us-banner__text">
-						We would like to create a truly local platform for photographers to meet with tourists.
+						We would like to create a truly local <a href="/pricing"><strong>platform for photographers</strong></a> to meet with tourists.
 					</p>
 					<p class="about-us-banner__text">The platform where the principle WIN - WIN always win.</p>
 					<p class="about-us-banner__text">We are also striving to become <strong>#1 Photo-Tours</strong> in the Czech Republic.</p>
@@ -110,7 +133,7 @@
 		</section>
 
 		<section class="about-us-card">
-			<h2 class="about-us-banner__sub-title about-us-banner__sub-title--number-three" data-number="3">Our Promise</h2>
+			<h2 data-num="05" class="heading-nw heading-nw--with-number">Our Promise</h2>
 			<div class="layout-wrapper layout-wrapper--small">
 				<div class="about-us-banner-wrapper">
 					<p class="about-us-banner__text">Love, passion, work, FUN</p>
@@ -134,7 +157,7 @@
 							<a class="footer__link" href="/story"><span data-hover="about us">about us</span></a>
 						</li>
 						<li>
-							<a class="footer__link" href="https://praguephotographers.rezgo.com/"><span data-hover="book us">book us</span></a>
+							<a class="footer__link" href="https://praguephotographers.rezgo.com/" onClick="gtag('event', 'Book Us', {'event_category' : 'Click Book Us', 'event_label' : 'In Footer link About Us'});"><span data-hover="book us">book us</span></a>
 						</li>
 						<li>
 							<a class="footer__link" href="/contact"><span data-hover="contact us">contact us</span></a>
@@ -170,7 +193,8 @@
 		</footer>
 
 		<script type="text/javascript" src="js/vendor/jquery-3.4.1.min.js"></script>
-        <script type="text/javascript" src="js/vendor/headroom.min.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>>
+		<script type="text/javascript" src="js/vendor/headroom.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		>
 	</body>
 </html>
