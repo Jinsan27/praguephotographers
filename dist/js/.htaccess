@@ -1,0 +1,13 @@
+RewriteEngine on
+RewriteBase /
+RewriteCond %{https://praguephotographers.com/} !(\.[^./]+)$
+RewriteCond %{REQUEST_fileNAME} !-d
+RewriteCond %{REQUEST_fileNAME} !-f
+RewriteRule (.*) /$1.html [L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP
+RewriteRule ^([^.]+)\.html$ https://praguephotographers.com/$1 [R=301,L]
+
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP_HOST} ^(www\.)?(.*)$
+RewriteRule ^ https://%2 [L,R=301]
