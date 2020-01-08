@@ -112,8 +112,12 @@
 
     .heading-nw--section-title {
       color: $black;
-      font-size: 36px;
+      font-size: 30px;
       margin-bottom: 48px;
+
+      @media (min-width: 768px) {
+        font-size: 36px;
+      }
     }
 
     .btn--cta {
