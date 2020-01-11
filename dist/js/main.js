@@ -35,17 +35,17 @@ if ($carouselTestimonial.length > 0) {
 let $waipointWrapper = $('.waipoint-wrapper-js')
 
 if ($waipointWrapper.length > 0) {
-	var counter1 = new CountUp('counter1', 0, 726, 0, 2, {
+	var counter1 = new CountUp('counter1', 0, 1513, 0, 2, {
 		useEasing: true,
 		useGrouping: true,
 	})
 
-	var counter2 = new CountUp('counter2', 0, 135493, 0, 2, {
+	var counter2 = new CountUp('counter2', 0, 1135493, 0, 2, {
 		useEasing: false,
 		useGrouping: true,
 	})
 
-	var counter3 = new CountUp('counter3', 0, 3155, 0, 2, {
+	var counter3 = new CountUp('counter3', 0, 64534, 0, 2, {
 		useEasing: false,
 		useGrouping: true,
 	})
