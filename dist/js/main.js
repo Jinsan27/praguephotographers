@@ -76,12 +76,12 @@ if ($waipointWrapper.length > 0) {
 }
 
 $(function() {
-	var pgurl = window.location.href.substr(window.location.href.lastIndexOf('/') + 1)
-
+	var pgurl = window.location.href.substr(window.location.href.lastIndexOf('/'));
 	$('.site-nav li a').each(function() {
-		if ($(this).attr('href') == pgurl || $(this).attr('href') == '') $(this).addClass('active')
+		if ($(this).attr('href') == pgurl || $(this).attr('href') == '')
+		$(this).addClass('active');
 	})
-})
+});
 
 let $scrollToJs = $('.scroll-to-js')
 
