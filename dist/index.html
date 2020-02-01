@@ -40,57 +40,82 @@
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139834712-1"></script>
 
 		<script>
-			window.dataLayer = window.dataLayer || [];
+			window.dataLayer = window.dataLayer || []
 			function gtag() {
 				dataLayer.push(arguments)
 			}
-			gtag('js', new Date());
+			gtag('js', new Date())
 
 			gtag('config', 'UA-139834712-1')
 		</script>
 
 		<!-- Facebook Pixel Code -->
 		<script>
-			!function(f,b,e,v,n,t,s)
-			{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-			n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-			if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-			n.queue=[];t=b.createElement(e);t.async=!0;
-			t.src=v;s=b.getElementsByTagName(e)[0];
-			s.parentNode.insertBefore(t,s)}(window, document,'script',
-			'https://connect.facebook.net/en_US/fbevents.js');
-			fbq('init', '265248350799754');
-			fbq('track', 'PageView');
+			!(function(f, b, e, v, n, t, s) {
+				if (f.fbq) return
+				n = f.fbq = function() {
+					n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+				}
+				if (!f._fbq) f._fbq = n
+				n.push = n
+				n.loaded = !0
+				n.version = '2.0'
+				n.queue = []
+				t = b.createElement(e)
+				t.async = !0
+				t.src = v
+				s = b.getElementsByTagName(e)[0]
+				s.parentNode.insertBefore(t, s)
+			})(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js')
+			fbq('init', '265248350799754')
+			fbq('track', 'PageView')
 		</script>
-		<noscript><img height="1" width="1" style="display:none"
-			src="https://www.facebook.com/tr?id=265248350799754&ev=PageView&noscript=1"
-		/></noscript>
-  		<!-- End Facebook Pixel Code -->
+		<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=265248350799754&ev=PageView&noscript=1"/></noscript>
+		<!-- End Facebook Pixel Code -->
 	</head>
 
 	<body>
-
 		<!-- Load Facebook SDK for JavaScript -->
 		<div id="fb-root"></div>
 		<script>
 			window.fbAsyncInit = function() {
 				FB.init({
-					xfbml : true,
-					version : 'v5.0'
-				});
-			};
+					xfbml: true,
+					version: 'v5.0',
+				})
+			}
+			;(function(d, s, id) {
+				var js,
+					fjs = d.getElementsByTagName(s)[0]
+				if (d.getElementById(id)) return
+				js = d.createElement(s)
+				js.id = id
+				js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js'
+				fjs.parentNode.insertBefore(js, fjs)
+			})(document, 'script', 'facebook-jssdk')
+		</script>
 
-			(function(d, s, id) {
-				var js, fjs = d.getElementsByTagName(s)[0];
-				if (d.getElementById(id)) return;
-				js = d.createElement(s); js.id = id;
-				js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-				fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));</script>
+		<div class="fb-customerchat" attribution="setup_tool" page_id="548460292182211"></div>
 
-		<div class="fb-customerchat"
-			 attribution=setup_tool
-			 page_id="548460292182211">
+		<div class="top-bar">
+			<a
+				target="_blank"
+				href="http://eepurl.com/gRHq0v"
+				onClick="gtag('event', 'Click on btn download E-book', {'event_category' : 'Download E-book', 'event_label' : 'Top Bar Homepage'});"
+			>
+				<p class="paragraph paragraph--sm paragraph--white">Enjoy Prague as Locals - See E-book</p>
+			</a>
+			<a href="#" class="top-bar__close">
+				<?xml version="1.0" encoding="UTF-8"?>
+				<svg version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+					<g>
+						<g transform="translate(12 12) rotate(-45) translate(-11 -11)">
+							<rect id="a" x="-2.2737e-13" y="10" width="22" height="2" />
+							<rect transform="translate(11 11) rotate(-90) translate(-11 -11)" y="10" width="22" height="2" />
+						</g>
+					</g>
+				</svg>
+			</a>
 		</div>
 
 		<header class="header">
@@ -109,7 +134,13 @@
 						<li class="site-nav__items"><a href="/gallery">Our Work</a></li>
 						<li class="site-nav__items"><a href="/pricing">Pricing</a></li>
 						<li class="site-nav__items"><a href="/story">About Us</a></li>
-						<li class="site-nav__items"><a href="https://praguephotographers.rezgo.com" onClick="gtag('event', 'Link Book Us', {'event_category' : 'Click Book Us', 'event_label' : 'In Header Nav HP'});">Book Us</a></li>
+						<li class="site-nav__items">
+							<a
+								href="https://praguephotographers.rezgo.com"
+								onClick="gtag('event', 'Link Book Us', {'event_category' : 'Click Book Us', 'event_label' : 'In Header Nav HP'});"
+								>Book Us</a
+							>
+						</li>
 						<li class="site-nav__items"><a href="/contact">Contact Us</a></li>
 					</ul>
 				</nav>
@@ -132,7 +163,12 @@
 						<p class="paragraph paragraph--lg">
 							Hire a proffessional photographer to capture every moment of your vacation in PRAGUE!
 						</p>
-						<a href="https://praguephotographers.rezgo.com/" class="btn btn--primary" onClick="gtag('event', 'CTA Book Us', {'event_category' : 'Click Book Us', 'event_label' : 'In Hero Banner'});">Learn More</a>
+						<a
+							href="https://praguephotographers.rezgo.com/"
+							class="btn btn--primary"
+							onClick="gtag('event', 'CTA Book Us', {'event_category' : 'Click Book Us', 'event_label' : 'In Hero Banner'});"
+							>Learn More</a
+						>
 					</div>
 
 					<a href="#" class="arrow-icon bounce-animation scroll-to-js" data-scroll-from><img src="images/arrow-down.png" alt="arrow down icon"/></a>
@@ -166,11 +202,15 @@
 					<div class="divider divider--white"></div>
 					<p class="paragraph paragraph--lg paragraph--white">
 						<strong>GET A FIRST CLASS TREAT</strong>
-						<br>
+						<br />
 						You are dear to us, and we are ready to go the extra mile for our entire customer to make them smile.
-
 					</p>
-					<a href="/contact" class="btn btn--cta btn--cta-orange" onClick="gtag('event', 'CTA Meet Us', {'event_category' : 'Click Meet Us', 'event_label' : 'In CTA Banner HP'});">Meet Us</a>
+					<a
+						href="/contact"
+						class="btn btn--cta btn--cta-orange"
+						onClick="gtag('event', 'CTA Meet Us', {'event_category' : 'Click Meet Us', 'event_label' : 'In CTA Banner HP'});"
+						>Meet Us</a
+					>
 				</div>
 				<div class="cta-banner__img-wrapper">
 					<img src="images/praguephotographers-team.png" alt="Prague photographers camera img" />
@@ -210,10 +250,15 @@
 					<h2 class="heading-nw heading-nw--section-title">Our work</h2>
 					<div class="divider divider--white"></div>
 					<p class="paragraph paragraph--lg paragraph--white">
-						We are the people's photographer because we spread joy and create happiness during our shooting period. 
-						We guarantee our tourists an exciting experience from the beginning to the end of their photoshoot.
+						We are the people's photographer because we spread joy and create happiness during our shooting period. We guarantee our tourists an
+						exciting experience from the beginning to the end of their photoshoot.
 					</p>
-					<a href="/gallery" class="btn btn--cta btn--cta-orange" onClick="gtag('event', 'CTA See Our Work', {'event_category' : 'Click See Our Work', 'event_label' : 'In CTA Banner HP'});">See Our Work</a>
+					<a
+						href="/gallery"
+						class="btn btn--cta btn--cta-orange"
+						onClick="gtag('event', 'CTA See Our Work', {'event_category' : 'Click See Our Work', 'event_label' : 'In CTA Banner HP'});"
+						>See Our Work</a
+					>
 				</div>
 				<div class="cta-banner__img-wrapper">
 					<img src="images/praguephotographers-photos.png" alt="Prague photographers camera lens img" />
@@ -334,7 +379,12 @@
 							<a class="footer__link" href="/story"><span data-hover="about us">about us</span></a>
 						</li>
 						<li>
-							<a class="footer__link" href="https://praguephotographers.rezgo.com/" onClick="gtag('event', 'Link Book Us', {'event_category' : 'Click Book Us', 'event_label' : 'In Footer link HP'});"><span data-hover="book us">book us</span></a>
+							<a
+								class="footer__link"
+								href="https://praguephotographers.rezgo.com/"
+								onClick="gtag('event', 'Link Book Us', {'event_category' : 'Click Book Us', 'event_label' : 'In Footer link HP'});"
+								><span data-hover="book us">book us</span></a
+							>
 						</li>
 						<li>
 							<a class="footer__link" href="/contact"><span data-hover="contact us">contact us</span></a>

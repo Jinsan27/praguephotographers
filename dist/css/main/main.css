@@ -2087,6 +2087,79 @@ body.compensate-for-scrollbar {
     padding-left: 12px;
     padding-right: 12px; } }
 
+.top-bar {
+  height: 48px;
+  background: #c32aa3;
+  z-index: 40;
+  position: fixed;
+  cursor: pointer;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  color: white;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.4s ease-in 0s;
+  transition: all 0.4s ease-in 0s; }
+  .top-bar:hover {
+    background: #b32ac3; }
+  .top-bar ~ header {
+    top: 48px; }
+    .top-bar ~ header.headroom--unpinned {
+      -webkit-transform: translateY(-140px);
+              transform: translateY(-140px); }
+  .top-bar.isClosed {
+    display: none; }
+    .top-bar.isClosed ~ header {
+      top: 0; }
+  .top-bar .paragraph {
+    position: relative; }
+    .top-bar .paragraph:before, .top-bar .paragraph:after {
+      position: absolute;
+      width: 2px;
+      height: 5px;
+      content: "";
+      display: inline-block;
+      background-color: white;
+      right: -14px; }
+    .top-bar .paragraph:before {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      top: 6px; }
+    .top-bar .paragraph:after {
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+      top: 9px; }
+  .top-bar__close {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    width: 48px;
+    z-index: 41; }
+    .top-bar__close svg {
+      width: 14px;
+      height: 14px;
+      fill: #fff;
+      -webkit-transition: -webkit-transform 0.6s ease-in-out;
+      transition: -webkit-transform 0.6s ease-in-out;
+      transition: transform 0.6s ease-in-out;
+      transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out; }
+    .top-bar__close:hover svg {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg); }
+
 .l-global-wrapper {
   margin-bottom: 96px; }
 

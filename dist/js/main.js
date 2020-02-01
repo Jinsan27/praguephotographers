@@ -76,12 +76,11 @@ if ($waipointWrapper.length > 0) {
 }
 
 $(function() {
-	var pgurl = window.location.href.substr(window.location.href.lastIndexOf('/'));
+	var pgurl = window.location.href.substr(window.location.href.lastIndexOf('/'))
 	$('.site-nav li a').each(function() {
-		if ($(this).attr('href') == pgurl || $(this).attr('href') == '')
-		$(this).addClass('active');
+		if ($(this).attr('href') == pgurl || $(this).attr('href') == '') $(this).addClass('active')
 	})
-});
+})
 
 let $scrollToJs = $('.scroll-to-js')
 
@@ -144,4 +143,21 @@ $(document).ready(function() {
 			loopAtEnd: false, // true will return to the first image after the last image is reached
 		})
 	}
+})
+
+// TOP BAR
+var closeButton = document.querySelector('.top-bar__close');
+var topBar = document.querySelector('.top-bar')
+
+document.addEventListener("DOMContentLoaded", function() {
+	const showMsg = localStorage.getItem('show');
+
+	if(showMsg === 'false') {
+		topBar.classList.add('isClosed')
+	}
+});
+
+closeButton.addEventListener('click', () => {
+	localStorage.setItem('show', false)
+	topBar.classList.add('isClosed')
 });
