@@ -2165,12 +2165,14 @@ body.compensate-for-scrollbar {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-          flex-direction: column; }
+          flex-direction: column;
+  margin-bottom: 64px; }
   @media (min-width: 992px) {
     .pricing-cards__wrapper {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-              flex-direction: row; } }
+              flex-direction: row;
+      margin-bottom: 96px; } }
 
 .pricing-cards__item {
   text-align: center;
@@ -2179,10 +2181,18 @@ body.compensate-for-scrollbar {
   border-radius: 2px;
   font-family: "Roboto", sans-serif;
   margin-right: 15px;
-  margin-bottom: 32px; }
+  margin-bottom: 32px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center; }
   @media (min-width: 992px) {
     .pricing-cards__item {
-      margin-bottom: 0; } }
+      margin-bottom: 0;
+      display: block; } }
   .pricing-cards__item-main-heading {
     font-size: 18px;
     line-height: 1.5;
@@ -2213,7 +2223,10 @@ body.compensate-for-scrollbar {
 
 .pricing-cards__list {
   list-style: none;
-  margin-bottom: 48px; }
+  margin-bottom: 48px;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto; }
   @media (min-width: 992px) {
     .pricing-cards__list {
       min-height: 225px; } }
