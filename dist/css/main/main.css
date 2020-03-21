@@ -2160,6 +2160,87 @@ body.compensate-for-scrollbar {
       -webkit-transform: rotate(180deg);
               transform: rotate(180deg); }
 
+.pricing-cards__wrapper {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column; }
+  @media (min-width: 992px) {
+    .pricing-cards__wrapper {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+              flex-direction: row; } }
+
+.pricing-cards__item {
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 50px -1px;
+  padding: 30px 15px;
+  border-radius: 2px;
+  font-family: "Roboto", sans-serif;
+  margin-right: 15px;
+  margin-bottom: 32px; }
+  @media (min-width: 992px) {
+    .pricing-cards__item {
+      margin-bottom: 0; } }
+  .pricing-cards__item-main-heading {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: 700;
+    margin: 0 0 24px; }
+    @media (min-width: 992px) {
+      .pricing-cards__item-main-heading {
+        max-width: 250px;
+        min-height: 80px; } }
+  .pricing-cards__item-price {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0; }
+    .pricing-cards__item-price span {
+      font-size: 32px;
+      vertical-align: super;
+      font-weight: 700;
+      text-align: center; }
+  .pricing-cards__item-caption {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: #F29471;
+    margin-bottom: 48px; }
+
+.pricing-cards__list {
+  list-style: none;
+  margin-bottom: 48px; }
+  @media (min-width: 992px) {
+    .pricing-cards__list {
+      min-height: 225px; } }
+  @media (min-width: 1200px) {
+    .pricing-cards__list {
+      min-height: 180px; } }
+  .pricing-cards__list-item {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    margin-bottom: 16px;
+    font-size: 16px; }
+    @media (min-width: 992px) {
+      .pricing-cards__list-item {
+        text-align: left; } }
+    .pricing-cards__list-item:before {
+      flex-shrink: 0;
+      content: "";
+      background-image: url(https://static.buffer.com/marketing/static/icons/check-mark.svg);
+      display: -webkit-inline-box;
+      display: inline-flex;
+      width: 25px;
+      height: 25px;
+      margin-right: 15px;
+      background-repeat: no-repeat; }
+
 .l-global-wrapper {
   margin-bottom: 96px; }
 
