@@ -2344,15 +2344,17 @@ body.compensate-for-scrollbar {
   font-family: "Roboto", sans-serif;
   font-weight: 100; }
   .heading-nw--2 {
-    font-size: 36px;
-    line-height: 45px;
+    font-size: 26px;
+    line-height: 38px;
     text-transform: uppercase;
     font-weight: bold;
     max-width: 300px;
     text-align: center; }
     @media (min-width: 768px) {
       .heading-nw--2 {
-        max-width: 100%; } }
+        max-width: 100%;
+        font-size: 36px;
+        line-height: 52px; } }
   .heading-nw--3 {
     font-size: 36px;
     line-height: 45px;
