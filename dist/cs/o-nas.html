@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -17,51 +17,57 @@
 		<!-- FB Meta tags for sharing -->
 		<meta property="og:title" content="Our Story | Prague Photographers" />
 		<meta property="og:description" content="Service providing professional photographers & videographers." />
-		<meta property="og:url" content="https://praguephotographers.com/story" />
+		<meta property="og:url" content="https://praguephotographers.com/cs/o-nas" />
 		<meta property="og:image" content="https://praguephotographers.com/images/og/og-praguephotographers.jpg" />
 		<meta property="og:site_name" content="Prague Photographers" />
-		<link rel=“canonical“ href=“https://www.praguephotographers.com/story“ />
-		<link rel=“alternate“ hreflang=“cs“ href=“praguephotographers.com/cs/o-nas“ />
-		<link rel="alternate" hreflang="x-default" href="https://www.praguephotographers.com/story" />
+		<link rel=“canonical“ href=“https://www.praguephotographers.com/cs/o-nas“ />
+		<link rel=“alternate“ hreflang=“en-us“ href=“praguephotographers.com/story“ />
+		<link rel="alternate" hreflang="x-default" href="https://www.praguephotographers.com/cs/o-nas" />
 
 		<!-- Custom Stylesheet -->
-		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="../css/main/main.css" />
 
 		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,700|Roboto+Condensed:400,700" rel="stylesheet" />
 
 		<title>Our Story | Prague Photographers</title>
-		<link rel="shortcut icon" type="images/favicon.jpeg" href="images/favicon.jpeg" />
+		<link rel="shortcut icon" type="images/favicon.jpeg" href="../images/favicon.jpeg" />
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139834712-1"></script>
 
 		<script>
-			window.dataLayer = window.dataLayer || [];
+			window.dataLayer = window.dataLayer || []
 			function gtag() {
 				dataLayer.push(arguments)
 			}
-			gtag('js', new Date());
+			gtag('js', new Date())
 
 			gtag('config', 'UA-139834712-1')
 		</script>
 
 		<!-- Facebook Pixel Code -->
 		<script>
-			!function(f,b,e,v,n,t,s)
-			{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-			n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-			if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-			n.queue=[];t=b.createElement(e);t.async=!0;
-			t.src=v;s=b.getElementsByTagName(e)[0];
-			s.parentNode.insertBefore(t,s)}(window, document,'script',
-			'https://connect.facebook.net/en_US/fbevents.js');
-			fbq('init', '265248350799754');
-			fbq('track', 'PageView');
+			!(function(f, b, e, v, n, t, s) {
+				if (f.fbq) return
+				n = f.fbq = function() {
+					n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+				}
+				if (!f._fbq) f._fbq = n
+				n.push = n
+				n.loaded = !0
+				n.version = '2.0'
+				n.queue = []
+				t = b.createElement(e)
+				t.async = !0
+				t.src = v
+				s = b.getElementsByTagName(e)[0]
+				s.parentNode.insertBefore(t, s)
+			})(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js')
+			fbq('init', '265248350799754')
+			fbq('track', 'PageView')
 		</script>
-		<noscript><img height="1" width="1" style="display:none"
-			src="https://www.facebook.com/tr?id=265248350799754&ev=PageView&noscript=1"
-		/></noscript>
+		<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=265248350799754&ev=PageView&noscript=1"/></noscript>
 		<!-- End Facebook Pixel Code -->
 	</head>
 
@@ -71,28 +77,27 @@
 		<script>
 			window.fbAsyncInit = function() {
 				FB.init({
-					xfbml : true,
-					version : 'v5.0'
-				});
-			};
+					xfbml: true,
+					version: 'v5.0',
+				})
+			}
+			;(function(d, s, id) {
+				var js,
+					fjs = d.getElementsByTagName(s)[0]
+				if (d.getElementById(id)) return
+				js = d.createElement(s)
+				js.id = id
+				js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js'
+				fjs.parentNode.insertBefore(js, fjs)
+			})(document, 'script', 'facebook-jssdk')
+		</script>
 
-			(function(d, s, id) {
-				var js, fjs = d.getElementsByTagName(s)[0];
-				if (d.getElementById(id)) return;
-				js = d.createElement(s); js.id = id;
-				js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-				fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));</script>
-
-		<div class="fb-customerchat"
-			 attribution=setup_tool
-			 page_id="548460292182211">
-		</div>
+		<div class="fb-customerchat" attribution="setup_tool" page_id="548460292182211"></div>
 
 		<header class="header">
 			<div class="header__inner">
-				<a href="/">
-					<img class="header__logo" src="/images/logo-praguephotographers.jpeg" alt="Prague photographers Logo Icon" />
+				<a href="/cs">
+					<img class="header__logo" src="../images/logo-praguephotographers.jpeg" alt="Prague photographers Logo Icon" />
 				</a>
 				<button class="btn btn--menu" id="js-menu">
 					<span class="menu-line"></span>
@@ -102,11 +107,9 @@
 
 				<nav class="menu-wrapper js-trigger">
 					<ul class="site-nav">
-						<li class="site-nav__items"><a href="/gallery">Our Work</a></li>
-						<li class="site-nav__items"><a href="/pricing">Pricing</a></li>
-						<li class="site-nav__items"><a href="/story">About Us</a></li>
-						<li class="site-nav__items"><a href="https://praguephotographers.rezgo.com" onClick="gtag('event', 'Book Us', {'event_category' : 'Click Book Us', 'event_label' : 'In Header link About us'});">Book Us</a></li>
-						<li class="site-nav__items"><a href="/contact">Contact Us</a></li>
+						<li class="site-nav__items"><a href="/cs/nase-prace">Naše práce</a></li>
+						<li class="site-nav__items"><a href="/cs/o-nas">O nás</a></li>
+						<li class="site-nav__items"><a href="/cs/kontakt">Kontakt</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -115,7 +118,7 @@
 		<section class="hero-banner-wrapper">
 			<div class="hero">
 				<div class="hero__inner">
-					<img class="hero__img-wrapper" src="images/about-prague-photographers.jpg" alt="Prague photographers hero banner about us" />
+					<img class="hero__img-wrapper" src="../images/about-prague-photographers.jpg" alt="Prague photographers hero banner about us" />
 
 					<div class="hero__item">
 						<h1 class="heading-nw heading-nw--hero">
@@ -139,8 +142,8 @@
 					</p>
 
 					<p class="about-us-banner__text">
-						This passion then yielded a synergism between photography passion and staying in contact with foreigners to establish
-						the PRAGUE PHOTOGRAPHERS COMPANY
+						This passion then yielded a synergism between photography passion and staying in contact with foreigners to establish the PRAGUE
+						PHOTOGRAPHERS COMPANY
 					</p>
 				</div>
 			</div>
@@ -151,9 +154,8 @@
 			<div class="layout-wrapper layout-wrapper--small">
 				<div class="about-us-banner-wrapper">
 					<p class="about-us-banner__text">
-						We desire our entire clientele to have a lifetime experience from Prague and all the moment
-						captured in <a href="/our-work"><strong>beautiful photos</strong></a> that you can keep and
-						trasure forever.
+						We desire our entire clientele to have a lifetime experience from Prague and all the moment captured in
+						<a href="/our-work"><strong>beautiful photos</strong></a> that you can keep and trasure forever.
 					</p>
 				</div>
 			</div>
@@ -163,7 +165,12 @@
 			<div class="cta-banner__inner">
 				<div class="cta-banner__item">
 					<h2 class="heading-nw heading-nw--section-title">Meet Prague Photographers</h2>
-					<a href="/contact" class="btn btn--cta" onClick="gtag('event', 'CTA Meet Us', {'event_category' : 'Click Meet Us', 'event_label' : 'In CTA Banner About Us'});">Meet Us</a>
+					<a
+						href="/cs/contact"
+						class="btn btn--cta"
+						onClick="gtag('event', 'CTA Meet Us', {'event_category' : 'Click Meet Us', 'event_label' : 'In CTA Banner About Us'});"
+						>Meet Us</a
+					>
 				</div>
 			</div>
 		</section>
@@ -173,13 +180,14 @@
 			<div class="layout-wrapper layout-wrapper--small">
 				<div class="about-us-banner-wrapper">
 					<p class="about-us-banner__text">
-						To create a local <a href="/pricing"><strong>platform</strong></a> that will be the #1 Photo-service in the Czech Republic,
-						where photographers can meet with tourists and share beautiful moments.
+						To create a local <a href="/pricing"><strong>platform</strong></a> that will be the #1 Photo-service in the Czech Republic, where
+						photographers can meet with tourists and share beautiful moments.
 					</p>
-					<br>
+					<br />
 					<p class="about-us-banner__text"><strong>WHY PRAGUE PHOTOGRAPHERS</strong></p>
-					<p class="about-us-banner__text">Our photography entails a unique, creative, and fun-filled photo tour style.
-						We are called peoples photographers for a reason, and we make all our customers feel happy and welcomed in our city!
+					<p class="about-us-banner__text">
+						Our photography entails a unique, creative, and fun-filled photo tour style. We are called peoples photographers for a reason, and we
+						make all our customers feel happy and welcomed in our city!
 					</p>
 				</div>
 			</div>
@@ -202,19 +210,13 @@
 				<div class="footer__item footer__item--full-width">
 					<ul class="footer__nav">
 						<li>
-							<a class="footer__link" href="/gallery"><span data-hover="our work">our work</span></a>
+							<a class="footer__link" href="/cs/nase-prace"><span data-hover="our work">our work</span></a>
 						</li>
 						<li>
-							<a class="footer__link" href="/pricing"><span data-hover="pricing">pricing</span></a>
+							<a class="footer__link" href="/cs/o-nas"><span data-hover="about us">about us</span></a>
 						</li>
 						<li>
-							<a class="footer__link" href="/story"><span data-hover="about us">about us</span></a>
-						</li>
-						<li>
-							<a class="footer__link" href="https://praguephotographers.rezgo.com/" onClick="gtag('event', 'Book Us', {'event_category' : 'Click Book Us', 'event_label' : 'In Footer link About Us'});"><span data-hover="book us">book us</span></a>
-						</li>
-						<li>
-							<a class="footer__link" href="/contact"><span data-hover="contact us">contact us</span></a>
+							<a class="footer__link" href="/cs/kontakt"><span data-hover="contact us">contact us</span></a>
 						</li>
 					</ul>
 				</div>
@@ -231,24 +233,23 @@
 
 				<div class="footer__item">
 					<ul class="footer__social">
-						<li class="social-item">
-							<a href="https://www.facebook.com/praguephotographers/" class="social-item__link">
-								<i class="fab fa-facebook-f social-icon"></i>
-							</a>
+						<li>
+							<a class="footer__link" href="/cs/nase-prace"><span data-hover="our work">naše práce</span></a>
 						</li>
-						<li class="social-item">
-							<a href="https://www.instagram.com/praguephotographers/" class="social-item__link">
-								<i class="fab fa-instagram social-icon"></i>
-							</a>
+						<li>
+							<a class="footer__link" href="/cs/o-nas"><span data-hover="about us">o nás</span></a>
+						</li>
+						<li>
+							<a class="footer__link" href="/cs/kontakt"><span data-hover="contact us">kontakt</span></a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</footer>
 
-		<script type="text/javascript" src="js/vendor/jquery-3.4.1.min.js"></script>
-		<script type="text/javascript" src="js/vendor/headroom.min.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="../js/vendor/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="../js/vendor/headroom.min.js"></script>
+		<script type="text/javascript" src="../js/main.js"></script>
 		>
 	</body>
 </html>
