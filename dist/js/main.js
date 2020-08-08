@@ -146,18 +146,27 @@ $(document).ready(function() {
 })
 
 // TOP BAR
-var closeButton = document.querySelector('.top-bar__close');
+var closeButton = document.querySelector('.top-bar__close')
 var topBar = document.querySelector('.top-bar')
 
-document.addEventListener("DOMContentLoaded", function() {
-	const showMsg = localStorage.getItem('show');
+document.addEventListener('DOMContentLoaded', function() {
+	const showMsg = localStorage.getItem('show')
 
-	if(showMsg === 'false') {
+	if (showMsg === 'false') {
 		topBar.classList.add('isClosed')
 	}
-});
+})
 
 closeButton.addEventListener('click', () => {
 	localStorage.setItem('show', false)
 	topBar.classList.add('isClosed')
-});
+})
+
+let getLang = document.documentElement.getAttribute('lang')
+function langSwitcher() {
+	if (getLang === 'cs') {
+		document.body.className = ' xyz'
+	}
+}
+
+langSwitcher()
