@@ -161,12 +161,3 @@ closeButton.addEventListener('click', () => {
 	localStorage.setItem('show', false)
 	topBar.classList.add('isClosed')
 })
-
-let getLang = document.documentElement.getAttribute('lang')
-function langSwitcher() {
-	if (getLang === 'cs') {
-		document.body.className = ' xyz'
-	}
-}
-
-langSwitcher()

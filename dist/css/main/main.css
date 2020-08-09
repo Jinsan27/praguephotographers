@@ -546,6 +546,13 @@ img {
   top: 0;
   z-index: 20;
   background-color: #fff; }
+  .site-nav li:last-child {
+    text-align: center;
+    position: relative;
+    top: 24px; }
+    @media (min-width: 768px) {
+      .site-nav li:last-child {
+        top: auto; } }
   @media (min-width: 992px) {
     .site-nav {
       -webkit-box-orient: horizontal;
@@ -642,7 +649,7 @@ img {
     position: relative;
     overflow: hidden;
     padding: 0 4px;
-    height: 15px;
+    height: 14px;
     text-transform: uppercase;
     display: inline-block;
     font-size: 16px;
@@ -2253,6 +2260,17 @@ body.compensate-for-scrollbar {
       height: 25px;
       margin-right: 15px;
       background-repeat: no-repeat; }
+
+.lang-icon {
+  width: 20px;
+  height: 15px;
+  background-size: cover !important;
+  display: inline-block;
+  vertical-align: middle; }
+  .lang-icon--cs {
+    background: url(/images/cs-flag.svg) no-repeat center center; }
+  .lang-icon--en {
+    background: url(/images/gb-flag.svg) no-repeat center center; }
 
 .l-global-wrapper {
   margin-bottom: 96px; }

@@ -29,6 +29,18 @@
   z-index: 20;
   background-color: $white;
 
+  li {
+    &:last-child {
+      text-align: center;
+      position: relative;
+      top: 24px;
+
+      @media (min-width: 768px) {
+        top: auto;
+      }
+    }
+  }
+
   @media (min-width: 992px) {
     flex-direction: row;
     margin-left: auto;

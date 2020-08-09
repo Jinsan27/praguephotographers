@@ -2,7 +2,7 @@
 //=== #FOOTER ===
 //===============
 
-        .footer {
+.footer {
   font-size: 1.8rem;
   font-family: $font-family-roboto;
   background: #111517;
@@ -49,7 +49,7 @@
     position: relative;
     overflow: hidden;
     padding: 0 4px;
-    height: 15px;
+    height: 14px;
     text-transform: uppercase;
     display: inline-block;
     font-size: 16px;
@@ -65,7 +65,7 @@
       display: inline-block;
       transition: transform 0.3s;
 
-      &:hover{
+      &:hover {
         transform: translateY(-100%);
       }
 
@@ -105,7 +105,8 @@
 
   &__copy {
     margin: 0;
-    padding: 0 1.5 * $spacing-unit-small 1.5 * $spacing-unit-small 1.5 * $spacing-unit-small;
+    padding: 0 1.5 * $spacing-unit-small 1.5 * $spacing-unit-small 1.5 *
+      $spacing-unit-small;
   }
 }
 

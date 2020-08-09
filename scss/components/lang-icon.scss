@@ -1,0 +1,15 @@
+.lang-icon {
+  width: 20px;
+  height: 15px;
+  background-size: cover !important;
+  display: inline-block;
+  vertical-align: middle;
+
+  &--cs {
+    background: url(/images/cs-flag.svg) no-repeat center center;
+  }
+
+  &--en {
+    background: url(/images/gb-flag.svg) no-repeat center center;
+  }
+}
