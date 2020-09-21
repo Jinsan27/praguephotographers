@@ -2272,6 +2272,21 @@ body.compensate-for-scrollbar {
   .lang-icon--en {
     background: url(/images/gb-flag.svg) no-repeat center center; }
 
+.youtube-playlist {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr 1fr; }
+  @media (min-width: 768px) {
+    .youtube-playlist {
+      grid-template-columns: 1fr 1fr; } }
+  @media (min-width: 992px) {
+    .youtube-playlist {
+      grid-template-columns: 1fr 1fr 1fr 1fr; } }
+
+.youtube-gallery-grid {
+  display: grid;
+  gap: 16px 0; }
+
 .l-global-wrapper {
   margin-bottom: 96px; }
 

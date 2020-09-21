@@ -145,19 +145,105 @@ $(document).ready(function() {
 	}
 })
 
-// TOP BAR
-var closeButton = document.querySelector('.top-bar__close')
-var topBar = document.querySelector('.top-bar')
+// // TOP BAR
+// var closeButton = document.querySelector('.top-bar__close')
+// var topBar = document.querySelector('.top-bar')
+//
+// document.addEventListener('DOMContentLoaded', function() {
+// 	const showMsg = localStorage.getItem('show')
+//
+// 	if (showMsg === 'false') {
+// 		topBar.classList.add('isClosed')
+// 	}
+// })
+//
+// closeButton.addEventListener('click', () => {
+// 	localStorage.setItem('show', false)
+// 	topBar.classList.add('isClosed')
+// })
 
+// YT Gallery
 document.addEventListener('DOMContentLoaded', function() {
-	const showMsg = localStorage.getItem('show')
+	const key = 'AIzaSyD98bBrnG3OBQoJ6bhF - PlRHsk0C9V0NOA'
+	const playlistId = 'PL9_Ow11tcoFQcNNF3_xF2o2wqCXL8w0uF'
+	var URL = 'https://www.googleapis.com/youtube/v3/playlistItems'
 
-	if (showMsg === 'false') {
-		topBar.classList.add('isClosed')
+	const options = {
+		playlistId: playlistId,
+		maxResults: 20,
+		key: key,
+		part: 'snippet',
 	}
-})
 
-closeButton.addEventListener('click', () => {
-	localStorage.setItem('show', false)
-	topBar.classList.add('isClosed')
+	/* 
+    HTTP request
+    */
+	URL +=
+		'?' +
+		Object.keys(options)
+			.map((k) => k + '=' + encodeURIComponent(options[k]))
+			.join('&')
+
+	fetch(URL)
+		.then((res) => res.json())
+		.then(function(data) {
+			let mainVideoID
+			mainVideoID = data.items[0].snippet.resourceId.videoId
+			renderPlaylist(data)
+			renderMainVideo(mainVideoID)
+		})
+
+	/*
+    Render main video
+     */
+
+	const mainVideoClass = document.getElementById('youtube_feed')
+
+	function renderMainVideo(mainVideoID) {
+		mainVideoClass.innerHTML = `
+        <iframe width="100%" height="600" src="https://www.youtube.com/embed/${mainVideoID}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+	}
+
+	/*
+    Render Playlist
+    */
+	const getYoutubePlaylistClass = document.querySelector('.youtube-playlist')
+
+	function renderPlaylist(data) {
+		console.log(data.items.length)
+
+		// Loop through the array
+		for (let i = 1; i < data.items.length; i++) {
+			var thumbnail = data.items[i].snippet.thumbnails.medium.url
+			var title = data.items[i].snippet.title.substring(0, 50)
+			var videoID = data.items[i].snippet.resourceId.videoId
+
+			getYoutubePlaylistClass.innerHTML += `
+			<div class="individual_list_item" data-key = "${videoID}">
+				<img src="${thumbnail}" alt="video_thumbnail_placeholder" class="thumbnails">
+				<p class="playlist_titles">${title}</p>
+			</div>
+      `
+		}
+	}
+
+	/*
+    Call back function for the click event
+    */
+
+	/* every time if click on the video, you want to get the videoID of that specific video */
+	console.log(getYoutubePlaylistClass)
+
+	getYoutubePlaylistClass.addEventListener('click', function(event) {
+		const target = event.target
+
+		let mainVideoID_forclick
+		if (event.target.dataset.key) {
+			mainVideoID_forclick = event.target.dataset.key
+			renderMainVideo(mainVideoID_forclick)
+		} else {
+			mainVideoID_forclick = event.target.parentElement.dataset.key
+			renderMainVideo(mainVideoID_forclick)
+		}
+	})
 })
