@@ -25,6 +25,7 @@
 @import "components/pricing-cards";
 @import "components/lang-icon";
 @import "components/youtube-grid";
+@import "components/timeline";
 
 // Layout
 @import "layout/global-wrapper";
@@ -32,6 +33,9 @@
 @import "layout/section";
 @import "layout/card-grid";
 @import "layout/header";
+
+// Pages
+@import "pages/about";
 
 // UI KIT
 @import "ui/heading";

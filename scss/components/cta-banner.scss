@@ -105,6 +105,30 @@
     }
   }
 
+  &--white {
+    background: $white;
+
+    .heading-nw--section-title {
+      color: $black;
+      text-align: center;
+    }
+
+    .divider {
+      @include md {
+        margin: 40px auto;
+      }
+    }
+
+    .list-reason {
+      li {
+        color: black $i;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 8px;
+      }
+    }
+  }
+
   &--no-img {
     background: $grey;
     min-height: 320px;
@@ -149,6 +173,15 @@
         flex-direction: column;
         margin: 0 auto;
       }
+    }
+  }
+
+  .list-reason {
+    li {
+      color: $white;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 8px;
     }
   }
 }

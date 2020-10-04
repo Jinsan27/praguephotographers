@@ -3,34 +3,46 @@
 //==================
 
 // Media query
+$sm-min: 768px;
+$md-min: 992px;
+$lg-min: 1200px;
+$xs-up: 500px;
+$sm-up: 768px;
 
-/* Small devices (tablets, 768px and up) */
-$sm-min: "only screen and (min-width: 768px)";
-/* Medium devices (desktops, 992px and up) */
-$md-min: "only screen and (min-width: 992px)";
-/* Large devices (large desktops, 1200px and up) */
-$lg-min: "only screen and (min-width: 1200px)";
+@mixin sm {
+  @media (min-width: #{$sm-min}) {
+    @content;
+  }
+}
 
-$xs-up: "only screen and (min-width: 500px)";
-$sm-up: "only screen and (min-width: 768px)";
+@mixin md {
+  @media (min-width: #{$md-min}) {
+    @content;
+  }
+}
 
+@mixin lg {
+  @media (min-width: #{$lg-min}) {
+    @content;
+  }
+}
 
 //Colors
 $white: #fff;
 $black: #000;
 $grey: #f5f5f5;
-$yellow: #F8BC6D;
+$yellow: #f8bc6d;
 $blackish: #333;
 $fb-purple: #3b5998;
 $instagram-pink: #c32aa3;
 
 // Brand Colors
-$brand-yellow: #F7EDA8;
-$brand-orange: #F8BC6D;
-$brand-red: #F29471;
-$brand-green: #D2DE7C;
-$brand-purple: #B496C0;
-$brand-grey: #DEDEDD;
+$brand-yellow: #f7eda8;
+$brand-orange: #f8bc6d;
+$brand-red: #f29471;
+$brand-green: #d2de7c;
+$brand-purple: #b496c0;
+$brand-grey: #dededd;
 
 // Spacings
 $spacing-unit-small: 10px;
@@ -38,4 +50,7 @@ $spacing-unit-small: 10px;
 // Fonts
 $font-family-playfair: "Playfair Display", sans-serif;
 $font-family-josefin: "Josefin Slab", sans-serif;
-$font-family-roboto:  'Roboto', sans-serif;
+$font-family-roboto: "Roboto", sans-serif;
+
+// Utils
+$i: !important;

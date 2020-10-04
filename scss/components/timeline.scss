@@ -1,0 +1,73 @@
+.timeline {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-left: 2px solid #c32aa2;
+  list-style: none;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 0;
+  margin-left: 25px;
+
+  @include sm {
+    border-top: 2px solid #c32aa2;
+    border-left: 0;
+    flex-direction: row;
+    padding-top: 0;
+    margin-left: 0;
+    margin-top: 96px;
+  }
+
+  li {
+    position: relative;
+    width: 75%;
+
+    @include sm {
+      width: 25%;
+    }
+  }
+
+  &__circled-num {
+    background: $white;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    box-shadow: 0 0 0 0 #fff;
+    border: 2px solid #c32aa2;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    margin-left: -25px;
+    font-size: 24px;
+    color: $black;
+    font-weight: bold;
+    text-align: center;
+    line-height: 46px;
+
+    @include sm {
+      left: 50%;
+      top: -25px;
+    }
+  }
+
+  &__text-wrapper {
+    margin-left: 48px;
+    margin-bottom: 32px;
+    max-width: 400px;
+
+    &--last {
+      margin-bottom: 0;
+    }
+
+    @include sm {
+      margin: 48px auto 0;
+      max-width: 200px;
+      padding: 0 8px;
+      text-align: center;
+    }
+
+    @include md {
+      padding: 0;
+    }
+  }
+}

@@ -10,6 +10,71 @@
   @media (min-width: 992px) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
+  img {
+    cursor: pointer;
+  }
+
+  &__item {
+    position: relative;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transition: border-color 300ms;
+      z-index: 1;
+    }
+
+    &:before {
+      width: 40px;
+      height: 40px;
+      margin: -45px 0 0 -20px;
+      border: 4px solid $white;
+      border-radius: 100%;
+
+      @include sm {
+        width: 60px;
+        height: 60px;
+        margin: -45px 0 0 -30px;
+      }
+    }
+
+    &:after {
+      width: 0;
+      height: 0;
+      border-left: 15px solid $white;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      margin: -35px 0 0 -5px;
+
+      @include sm {
+        margin: -30px 0 0 -7px;
+        border-left: 20px solid $white;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+      }
+    }
+
+    &:hover {
+      &:before,
+      &:after {
+        display: none;
+      }
+
+      img {
+        opacity: 1;
+      }
+    }
+
+    img {
+      margin-bottom: 8px;
+      opacity: 0.6;
+      transition: opacity 250ms ease;
+    }
+  }
 }
 
 .youtube-gallery-grid {

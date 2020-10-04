@@ -219,9 +219,9 @@ document.addEventListener('DOMContentLoaded', function() {
 			var videoID = data.items[i].snippet.resourceId.videoId
 
 			getYoutubePlaylistClass.innerHTML += `
-			<div class="individual_list_item" data-key = "${videoID}">
+			<div class="youtube-playlist__item" data-key = "${videoID}">
 				<img src="${thumbnail}" alt="video_thumbnail_placeholder" class="thumbnails">
-				<p class="playlist_titles">${title}</p>
+				<p class="paragraph paragraph--sm"><strong>${title}</strong></p>
 			</div>
       `
 		}

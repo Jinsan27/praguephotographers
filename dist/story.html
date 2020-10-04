@@ -20,8 +20,8 @@
 		<meta property="og:url" content="https://praguephotographers.com/story" />
 		<meta property="og:image" content="https://praguephotographers.com/images/og/og-praguephotographers.jpg" />
 		<meta property="og:site_name" content="Prague Photographers" />
-		<link rel=“canonical“ href=“https://www.praguephotographers.com/story“ />
-		<link rel=“alternate“ hreflang=“cs“ href=“https://www.praguephotographers.com/cs/o-nas“ />
+		<link rel=“canonical“ href=“https://www.praguephotographers.com/story“ /> <link rel=“alternate“ hreflang=“cs“
+		href=“https://www.praguephotographers.com/cs/o-nas“ />
 		<link rel="alternate" hreflang="x-default" href="https://www.praguephotographers.com/story" />
 
 		<!-- Custom Stylesheet -->
@@ -37,31 +37,37 @@
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139834712-1"></script>
 
 		<script>
-			window.dataLayer = window.dataLayer || [];
+			window.dataLayer = window.dataLayer || []
 			function gtag() {
 				dataLayer.push(arguments)
 			}
-			gtag('js', new Date());
+			gtag('js', new Date())
 
 			gtag('config', 'UA-139834712-1')
 		</script>
 
 		<!-- Facebook Pixel Code -->
 		<script>
-			!function(f,b,e,v,n,t,s)
-			{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-			n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-			if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-			n.queue=[];t=b.createElement(e);t.async=!0;
-			t.src=v;s=b.getElementsByTagName(e)[0];
-			s.parentNode.insertBefore(t,s)}(window, document,'script',
-			'https://connect.facebook.net/en_US/fbevents.js');
-			fbq('init', '265248350799754');
-			fbq('track', 'PageView');
+			!(function(f, b, e, v, n, t, s) {
+				if (f.fbq) return
+				n = f.fbq = function() {
+					n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+				}
+				if (!f._fbq) f._fbq = n
+				n.push = n
+				n.loaded = !0
+				n.version = '2.0'
+				n.queue = []
+				t = b.createElement(e)
+				t.async = !0
+				t.src = v
+				s = b.getElementsByTagName(e)[0]
+				s.parentNode.insertBefore(t, s)
+			})(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js')
+			fbq('init', '265248350799754')
+			fbq('track', 'PageView')
 		</script>
-		<noscript><img height="1" width="1" style="display:none"
-			src="https://www.facebook.com/tr?id=265248350799754&ev=PageView&noscript=1"
-		/></noscript>
+		<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=265248350799754&ev=PageView&noscript=1"/></noscript>
 		<!-- End Facebook Pixel Code -->
 	</head>
 
@@ -71,23 +77,22 @@
 		<script>
 			window.fbAsyncInit = function() {
 				FB.init({
-					xfbml : true,
-					version : 'v5.0'
-				});
-			};
+					xfbml: true,
+					version: 'v5.0',
+				})
+			}
+			;(function(d, s, id) {
+				var js,
+					fjs = d.getElementsByTagName(s)[0]
+				if (d.getElementById(id)) return
+				js = d.createElement(s)
+				js.id = id
+				js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js'
+				fjs.parentNode.insertBefore(js, fjs)
+			})(document, 'script', 'facebook-jssdk')
+		</script>
 
-			(function(d, s, id) {
-				var js, fjs = d.getElementsByTagName(s)[0];
-				if (d.getElementById(id)) return;
-				js = d.createElement(s); js.id = id;
-				js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-				fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));</script>
-
-		<div class="fb-customerchat"
-			 attribution=setup_tool
-			 page_id="548460292182211">
-		</div>
+		<div class="fb-customerchat" attribution="setup_tool" page_id="548460292182211"></div>
 
 		<header class="header">
 			<div class="header__inner">
@@ -105,7 +110,13 @@
 						<li class="site-nav__items"><a href="/gallery">Our Work</a></li>
 						<li class="site-nav__items"><a href="/pricing">Pricing</a></li>
 						<li class="site-nav__items"><a href="/story">About Us</a></li>
-						<li class="site-nav__items"><a href="https://praguephotographers.rezgo.com" onClick="gtag('event', 'Book Us', {'event_category' : 'Click Book Us', 'event_label' : 'In Header link About us'});">Book Us</a></li>
+						<li class="site-nav__items">
+							<a
+								href="https://praguephotographers.rezgo.com"
+								onClick="gtag('event', 'Book Us', {'event_category' : 'Click Book Us', 'event_label' : 'In Header link About us'});"
+								>Book Us</a
+							>
+						</li>
 						<li class="site-nav__items"><a href="/contact">Contact Us</a></li>
 						<li class="site-nav__items">
 							<a href="/cs/o-nas" class="lang-icon lang-icon--cs"></a>
@@ -133,70 +144,23 @@
 				</div>
 			</div>
 		</section>
-		<section class="about-us-card">
-			<h2 data-num="01" class="heading-nw heading-nw--with-number">When innovation meets passion</h2>
-			<div class="layout-wrapper layout-wrapper--small">
-				<div class="about-us-banner-wrapper">
-					<p class="about-us-banner__text">
-						We had the love and the skill for photography and a growing interest to help people settle and tour the city.
-					</p>
 
-					<p class="about-us-banner__text">
-						This passion then yielded a synergism between photography passion and staying in contact with foreigners to establish
-						the PRAGUE PHOTOGRAPHERS COMPANY
-					</p>
-				</div>
-			</div>
-		</section>
-
-		<section class="about-us-card">
-			<h2 data-num="02" class="heading-nw heading-nw--with-number">Our Mission</h2>
-			<div class="layout-wrapper layout-wrapper--small">
-				<div class="about-us-banner-wrapper">
-					<p class="about-us-banner__text">
-						We desire our entire clientele to have a lifetime experience from Prague and all the moment
-						captured in <a href="/our-work"><strong>beautiful photos</strong></a> that you can keep and
-						trasure forever.
-					</p>
-				</div>
-			</div>
-		</section>
-
-		<section class="cta-banner cta-banner--no-img">
-			<div class="cta-banner__inner">
-				<div class="cta-banner__item">
-					<h2 class="heading-nw heading-nw--section-title">Meet Prague Photographers</h2>
-					<a href="/contact" class="btn btn--cta" onClick="gtag('event', 'CTA Meet Us', {'event_category' : 'Click Meet Us', 'event_label' : 'In CTA Banner About Us'});">Meet Us</a>
-				</div>
-			</div>
-		</section>
-
-		<section class="about-us-card">
-			<h2 data-num="03" class="heading-nw heading-nw--with-number">Our Vision</h2>
-			<div class="layout-wrapper layout-wrapper--small">
-				<div class="about-us-banner-wrapper">
-					<p class="about-us-banner__text">
-						To create a local <a href="/pricing"><strong>platform</strong></a> that will be the #1 Photo-service in the Czech Republic,
-						where photographers can meet with tourists and share beautiful moments.
-					</p>
-					<br>
-					<p class="about-us-banner__text"><strong>WHY PRAGUE PHOTOGRAPHERS</strong></p>
-					<p class="about-us-banner__text">Our photography entails a unique, creative, and fun-filled photo tour style.
-						We are called peoples photographers for a reason, and we make all our customers feel happy and welcomed in our city!
-					</p>
-				</div>
-			</div>
-		</section>
-
-		<section class="about-us-card">
-			<h2 data-num="04" class="heading-nw heading-nw--with-number">Our Promise</h2>
-			<div class="layout-wrapper layout-wrapper--small">
-				<div class="about-us-banner-wrapper">
-					<p class="about-us-banner__text">Friendly professionals</p>
-					<p class="about-us-banner__text">Quality photos</p>
-					<p class="about-us-banner__text">Excellent customer service</p>
-					<p class="about-us-banner__text">Elegance and creativity</p>
-				</div>
+		<section class="about">
+			<div class="container">
+				<p class="paragraph">It Started As A Passion And Became A Mission.</p>
+				<p class="paragraph">
+					We are passionate about photography, and we care about people - that's what makes us Prague Photographers. Instead of offering regular
+					photoshoots, we focus on delivering exciting photo experiences.
+				</p>
+				<p class="paragraph">
+					It all started in 2017, when we decided to combine our creative photography skills with openness and love for people. The Prague
+					Photographers agency was born out of our desire to help you make wonderful memories, and then capture them in beautiful pictures. Our aim is
+					not only to create visual souvenirs from your journey, but also to make your time in Prague unforgettable.
+				</p>
+				<p class="paragraph">
+					What connects our team is creativity, professionalism, and care for people. At the same time, each of our photographers has their unique
+					aesthetics and original ideas, and is ready to help you embrace your own style.
+				</p>
 			</div>
 		</section>
 
@@ -214,7 +178,12 @@
 							<a class="footer__link" href="/story"><span data-hover="about us">about us</span></a>
 						</li>
 						<li>
-							<a class="footer__link" href="https://praguephotographers.rezgo.com/" onClick="gtag('event', 'Book Us', {'event_category' : 'Click Book Us', 'event_label' : 'In Footer link About Us'});"><span data-hover="book us">book us</span></a>
+							<a
+								class="footer__link"
+								href="https://praguephotographers.rezgo.com/"
+								onClick="gtag('event', 'Book Us', {'event_category' : 'Click Book Us', 'event_label' : 'In Footer link About Us'});"
+								><span data-hover="book us">book us</span></a
+							>
 						</li>
 						<li>
 							<a class="footer__link" href="/contact"><span data-hover="contact us">contact us</span></a>

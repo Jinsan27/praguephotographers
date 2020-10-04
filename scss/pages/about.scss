@@ -1,0 +1,17 @@
+.about {
+  .paragraph {
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 48px;
+
+      @media screen and (min-width: 768px){
+        margin-bottom: 64px;
+      }
+
+      @media screen and (min-width: 1200px){
+        margin-bottom: 96px;
+      }
+    }
+  }
+}
