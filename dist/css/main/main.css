@@ -1114,12 +1114,17 @@ img {
         text-align: left; } }
     @media (min-width: 1200px) {
       .hero__item {
-        max-width: 550px; } }
+        max-width: 850px; } }
     .hero__item h1 {
       margin-bottom: 16px; }
       @media (min-width: 768px) {
         .hero__item h1 {
-          margin-bottom: 24px; } }
+          margin-bottom: 24px;
+          font-size: 55px;
+          line-height: 60px; } }
+    @media (min-width: 992px) {
+      .hero__item p {
+        max-width: 550px; } }
     .hero__item h2 {
       color: #fff; }
     .hero__item .heading-nw br {
