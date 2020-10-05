@@ -35,17 +35,17 @@ if ($carouselTestimonial.length > 0) {
 let $waipointWrapper = $('.waipoint-wrapper-js')
 
 if ($waipointWrapper.length > 0) {
-	var counter1 = new CountUp('counter1', 0, 1513, 0, 2, {
+	var counter1 = new CountUp('counter1', 0, 78, 0, 2, {
 		useEasing: true,
 		useGrouping: true,
 	})
 
-	var counter2 = new CountUp('counter2', 0, 1135493, 0, 2, {
+	var counter2 = new CountUp('counter2', 0, 234182, 0, 2, {
 		useEasing: false,
 		useGrouping: true,
 	})
 
-	var counter3 = new CountUp('counter3', 0, 64534, 0, 2, {
+	var counter3 = new CountUp('counter3', 0, 2641, 0, 2, {
 		useEasing: false,
 		useGrouping: true,
 	})
@@ -145,22 +145,24 @@ $(document).ready(function() {
 	}
 })
 
-// // TOP BAR
-// var closeButton = document.querySelector('.top-bar__close')
-// var topBar = document.querySelector('.top-bar')
-//
-// document.addEventListener('DOMContentLoaded', function() {
-// 	const showMsg = localStorage.getItem('show')
-//
-// 	if (showMsg === 'false') {
-// 		topBar.classList.add('isClosed')
-// 	}
-// })
-//
-// closeButton.addEventListener('click', () => {
-// 	localStorage.setItem('show', false)
-// 	topBar.classList.add('isClosed')
-// })
+// TOP BAR
+let closeButton = document.querySelector('.top-bar__close')
+let topBar = document.querySelector('.top-bar')
+
+if (topBar) {
+	document.addEventListener('DOMContentLoaded', function() {
+		const showMsg = localStorage.getItem('show')
+
+		if (showMsg === 'false') {
+			topBar.classList.add('isClosed')
+		}
+	})
+
+	closeButton.addEventListener('click', () => {
+		localStorage.setItem('show', false)
+		topBar.classList.add('isClosed')
+	})
+}
 
 // YT Gallery
 document.addEventListener('DOMContentLoaded', function() {
@@ -209,41 +211,40 @@ document.addEventListener('DOMContentLoaded', function() {
     */
 	const getYoutubePlaylistClass = document.querySelector('.youtube-playlist')
 
-	function renderPlaylist(data) {
-		console.log(data.items.length)
+	if (getYoutubePlaylistClass) {
+		function renderPlaylist(data) {
+			// Loop through the array
+			for (let i = 1; i < data.items.length; i++) {
+				var thumbnail = data.items[i].snippet.thumbnails.medium.url
+				var title = data.items[i].snippet.title.substring(0, 50)
+				var videoID = data.items[i].snippet.resourceId.videoId
 
-		// Loop through the array
-		for (let i = 1; i < data.items.length; i++) {
-			var thumbnail = data.items[i].snippet.thumbnails.medium.url
-			var title = data.items[i].snippet.title.substring(0, 50)
-			var videoID = data.items[i].snippet.resourceId.videoId
-
-			getYoutubePlaylistClass.innerHTML += `
+				getYoutubePlaylistClass.innerHTML += `
 			<div class="youtube-playlist__item" data-key = "${videoID}">
 				<img src="${thumbnail}" alt="video_thumbnail_placeholder" class="thumbnails">
 				<p class="paragraph paragraph--sm"><strong>${title}</strong></p>
 			</div>
       `
+			}
 		}
+
+		/*
+        Call back function for the click event
+        */
+
+		/* every time if click on the video, you want to get the videoID of that specific video */
+
+		getYoutubePlaylistClass.addEventListener('click', function(event) {
+			const target = event.target
+
+			let mainVideoID_forclick
+			if (event.target.dataset.key) {
+				mainVideoID_forclick = event.target.dataset.key
+				renderMainVideo(mainVideoID_forclick)
+			} else {
+				mainVideoID_forclick = event.target.parentElement.dataset.key
+				renderMainVideo(mainVideoID_forclick)
+			}
+		})
 	}
-
-	/*
-    Call back function for the click event
-    */
-
-	/* every time if click on the video, you want to get the videoID of that specific video */
-	console.log(getYoutubePlaylistClass)
-
-	getYoutubePlaylistClass.addEventListener('click', function(event) {
-		const target = event.target
-
-		let mainVideoID_forclick
-		if (event.target.dataset.key) {
-			mainVideoID_forclick = event.target.dataset.key
-			renderMainVideo(mainVideoID_forclick)
-		} else {
-			mainVideoID_forclick = event.target.parentElement.dataset.key
-			renderMainVideo(mainVideoID_forclick)
-		}
-	})
 })
