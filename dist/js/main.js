@@ -40,7 +40,7 @@ if ($waipointWrapper.length > 0) {
 		useGrouping: true,
 	})
 
-	var counter2 = new CountUp('counter2', 0, 234182, 0, 2, {
+	var counter2 = new CountUp('counter2', 0, 34182, 0, 2, {
 		useEasing: false,
 		useGrouping: true,
 	})
